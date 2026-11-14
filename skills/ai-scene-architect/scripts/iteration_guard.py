@@ -1,4 +1,4 @@
-"""Bound an AI's visual-revision loop using explicitly recorded review evidence."""
+"""Bound an AI's visual-revision loop by revision count only."""
 
 import argparse
 import json
@@ -26,10 +26,6 @@ def validate(history):
             raise InvalidHistory("Iterations must be consecutive, beginning at 0")
         if review.get("visual_reviewed") is not True:
             raise InvalidHistory("Every iteration must confirm actual image inspection")
-        if not isinstance(review.get("elapsed_seconds"), (int, float)) or review["elapsed_seconds"] < 0:
-            raise InvalidHistory("elapsed_seconds must be a nonnegative number")
-        if expected and review["elapsed_seconds"] < history[expected - 1]["elapsed_seconds"]:
-            raise InvalidHistory("elapsed_seconds must be cumulative and nondecreasing")
         if not isinstance(review.get("change_signature"), str) or not review["change_signature"].strip():
             raise InvalidHistory("Every iteration needs a nonempty change_signature")
         renders = review.get("renders")
@@ -53,7 +49,7 @@ def validate(history):
             seen.add(issue["id"])
 
 
-def decide(history, max_revisions=2, max_seconds=600):
+def decide(history, max_revisions=2):
     try:
         validate(history)
     except InvalidHistory as exc:
@@ -74,37 +70,34 @@ def decide(history, max_revisions=2, max_seconds=600):
         return stop("no_remaining_issues")
     if revision >= max_revisions:
         return stop("revision_budget_reached")
-    if current["elapsed_seconds"] >= max_seconds:
-        return stop("elapsed_time_budget_reached")
-
+    warnings = []
     if len(history) >= 2:
         previous = history[-2]
         if current["renders"] == previous["renders"]:
-            return stop("identical_render_hashes")
+            warnings.append("identical_render_hashes")
         if (current["change_signature"] == previous["change_signature"]
                 and issue_fingerprint(current) == issue_fingerprint(previous)):
-            return stop("repeated_ineffective_change")
+            warnings.append("repeated_ineffective_change")
 
     if len(history) >= 3:
         a, b, c = history[-3:]
         if severity_total(c) >= severity_total(b) >= severity_total(a):
-            return stop("two_revisions_without_progress")
+            warnings.append("two_revisions_without_progress")
 
     return {**output, "decision": "continue", "reason": "targeted_revision_allowed",
-            "revisions_remaining": max_revisions - revision}
+            "revisions_remaining": max_revisions - revision, "warnings": warnings}
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--history", type=Path, required=True)
     parser.add_argument("--max-revisions", type=int, default=2)
-    parser.add_argument("--max-seconds", type=int, default=600)
     args = parser.parse_args()
-    if not 0 <= args.max_revisions <= 5 or not 1 <= args.max_seconds <= 3600:
-        parser.error("revision limit must be 0–5 and elapsed seconds 1–3600")
+    if not 0 <= args.max_revisions <= 5:
+        parser.error("revision limit must be 0–5")
     try:
         history = json.loads(args.history.read_text(encoding="utf-8"))
-        result = decide(history, args.max_revisions, args.max_seconds)
+        result = decide(history, args.max_revisions)
     except (OSError, json.JSONDecodeError) as exc:
         result = {"decision": "stop", "reason": "unreadable_history", "detail": str(exc)}
     print(json.dumps(result, ensure_ascii=False, indent=2))

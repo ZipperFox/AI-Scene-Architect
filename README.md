@@ -8,7 +8,7 @@ An open-source [Agent Skill](https://agentskills.io/) for AI-directed Blender sc
 
 The skill requires an agent to *look at actual renders*, identify concrete visual problems, make targeted changes, and compare the next render to the previous one. Rendering a PNG is not the same as evaluating its quality. The AI agent must have image-viewing capability; scripts alone cannot judge composition or art direction.
 
-The revision loop has hard stops: a maximum revision count, identical render detection, repeated ineffective changes, and lack of measurable progress. A user-approved visual direction must not be silently replaced.
+The **only configurable iteration limit is the revision count** (default: two changes after the first render). Identical renders or ineffective changes are reported as warnings, not independent stopping conditions. A user-approved visual direction must not be silently replaced.
 
 ## Quick start
 
@@ -23,7 +23,7 @@ blender --background my_scene.blend \
 ```
 
 The renderer writes `hero.png`, `three_quarter.png`, `top.png`, and `manifest.json`. It never saves changes back into the input `.blend` file.
-Use `--engine scene` to retain the file's renderer. The `cycles-cpu` option is suitable for environments where headless Eevee cannot initialize a graphics context. Bound the Blender subprocess with an external timeout; a stalled render must not cause an endless agent run.
+Use `--engine scene` to retain the file's renderer. The `cycles-cpu` option is suitable for environments where headless Eevee cannot initialize a graphics context.
 
 Have an image-capable agent inspect all three renders using the rubric in `skills/ai-scene-architect/references/visual-quality.md`, then record the review in JSON:
 
@@ -31,7 +31,6 @@ Have an image-capable agent inspect all three renders using the rubric in `skill
 {
   "iteration": 0,
   "visual_reviewed": true,
-  "elapsed_seconds": 25,
   "change_signature": "initial-preview",
   "renders": {"hero": "paste-actual-64-character-sha256-from-manifest"},
   "issues": [
@@ -40,7 +39,7 @@ Have an image-capable agent inspect all three renders using the rubric in `skill
 }
 ```
 
-Replace the `renders` placeholder with the actual 64-character digest from `manifest.json`. The `visual_reviewed` flag must be set only after an agent has opened the actual images. `elapsed_seconds` is cumulative time since the run started.
+Replace the `renders` placeholder with the actual 64-character digest from `manifest.json`. The `visual_reviewed` flag must be set only after an agent has opened the actual images. There is no total elapsed-time limit.
 
 Save a JSON array of reviews as `review-history.json`. After each review, check whether another revision is allowed:
 
@@ -49,7 +48,7 @@ python skills/ai-scene-architect/scripts/iteration_guard.py \
   --history review-history.json --max-revisions 2
 ```
 
-The command outputs a machine-readable `continue` or `stop` decision with reasons. The AI should never start a revision if it returns `stop`.
+The command outputs a machine-readable `continue` or `stop` decision with reasons. The AI should never start a revision if it returns `stop`. Identical-output and no-progress warnings remain informational; they do not consume additional revisions or cause an early stop.
 
 ## Planned next steps
 

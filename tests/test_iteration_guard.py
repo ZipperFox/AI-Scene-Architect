@@ -12,11 +12,10 @@ guard = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(guard)
 
 
-def review(iteration, severity, digest_char, signature="edit", elapsed=None):
+def review(iteration, severity, digest_char, signature="edit"):
     return {
         "iteration": iteration,
         "visual_reviewed": True,
-        "elapsed_seconds": iteration * 30 if elapsed is None else elapsed,
         "change_signature": signature,
         "renders": {"hero": digest_char * 64},
         "issues": ([{"id": "flat-lighting", "severity": severity,
@@ -37,23 +36,27 @@ class TestGuard(unittest.TestCase):
         history = [review(0, 3, "a"), review(1, 2, "b"), review(2, 1, "c")]
         self.assertEqual(guard.decide(history)["reason"], "revision_budget_reached")
 
-    def test_same_render_stops(self):
+    def test_same_render_warns_but_count_controls(self):
         history = [review(0, 3, "a"), review(1, 3, "a")]
-        self.assertEqual(guard.decide(history)["reason"], "identical_render_hashes")
+        self.assertEqual(guard.decide(history)["decision"], "continue")
+        self.assertIn("identical_render_hashes", guard.decide(history)["warnings"])
 
-    def test_same_ineffective_edit_stops(self):
+    def test_same_ineffective_edit_warns(self):
         history = [review(0, 3, "a", "light-move"), review(1, 3, "b", "light-move")]
-        self.assertEqual(guard.decide(history)["reason"], "repeated_ineffective_change")
+        self.assertEqual(guard.decide(history)["decision"], "continue")
+        self.assertIn("repeated_ineffective_change", guard.decide(history)["warnings"])
 
-    def test_two_non_improvements_stops_even_with_larger_budget(self):
+    def test_two_non_improvements_warns_even_with_larger_budget(self):
         history = [review(0, 2, "a", "initial"), review(1, 2, "b", "light"),
                    review(2, 3, "c", "material")]
-        self.assertEqual(guard.decide(history, max_revisions=5)["reason"],
-                         "two_revisions_without_progress")
+        self.assertEqual(guard.decide(history, max_revisions=5)["decision"], "continue")
+        self.assertIn("two_revisions_without_progress",
+                      guard.decide(history, max_revisions=5)["warnings"])
 
-    def test_time_budget_stops(self):
-        self.assertEqual(guard.decide([review(0, 2, "a", elapsed=601)])["reason"],
-                         "elapsed_time_budget_reached")
+    def test_no_time_budget(self):
+        history = [review(0, 2, "a")]
+        history[0]["elapsed_seconds"] = 86400
+        self.assertEqual(guard.decide(history)["decision"], "continue")
 
     def test_no_visual_inspection_is_invalid(self):
         item = review(0, 3, "a")

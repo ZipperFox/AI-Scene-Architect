@@ -19,7 +19,6 @@ Every review is one JSON object. Keep issue IDs stable between reviews, e.g. `ma
 {
   "iteration": 1,
   "visual_reviewed": true,
-  "elapsed_seconds": 95,
   "change_signature": "lighting:move-key-left",
   "renders": {
     "hero": "sha256-hex-of-rendered-file",
@@ -45,7 +44,7 @@ Severity: 1 = minor polish, 2 = noticeable quality issue, 3 = serious defect or 
 2. Open all generated images, state the highest-impact issues and evidence, and write a review record.
 3. Run `iteration_guard.py` on the cumulative JSON array **before** the next revision.
 4. If allowed, fix one issue cluster using the smallest meaningful edit, render again, and compare against baseline and previous version.
-5. Stop on diminishing returns, repeated identical output, incompatible user constraints, or the hard revision budget. Report unresolved issues honestly.
+5. Report no-progress or identical-render observations as warnings, but use the revision count as the only iteration limit (default 2 changes). Stop early if the target quality is met or a proposed change violates an approved constraint. Report unresolved issues honestly.
 
 ### Important limitation
 
