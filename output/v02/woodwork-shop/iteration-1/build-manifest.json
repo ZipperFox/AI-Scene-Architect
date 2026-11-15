@@ -1,0 +1,2171 @@
+{
+  "scene": "woodwork-shop",
+  "blender_version": "5.3.0",
+  "blender_executable": "D:\\SteamLibrary\\steamapps\\common\\Blender\\blender.exe",
+  "revision": 1,
+  "plan_sha256": "f983e3568873148c0df6cec40c09adf5ac9ab8c7854ad67eae49a831e0fe1d6f",
+  "source_blend": "D:\\AI_work\\AI-Scene-Architect\\output\\v02\\woodwork-shop\\iteration-1\\scene.blend",
+  "glb": "D:\\AI_work\\AI-Scene-Architect\\output\\v02\\woodwork-shop\\iteration-1\\scene.glb",
+  "generator_sha256": {
+    "builders.py": "86d6fc29551011098b32e63307b417e27784e4163171fcec9372c3738532ecf1",
+    "build_scene.py": "23681aa836ed8cb363757124ac27fdc6db294760ac12179e3173837a5133fe31",
+    "iteration_guard.py": "1632c21ad8880292392744593e7b962f3c42b83e5c4e9bd677e8368d3e4fcf91",
+    "prepare_planning.py": "d7ccce2daea759168304490844449250f70c4736c60ec5af98cb33045bdbd4a7",
+    "render_previews.py": "e2bf9669da5e7a6430db2aab6437f68ec55fd86c4d5afd09d0b1ca9ed26b820a",
+    "review_history.py": "946bb213502e1d3b71e52c3a83718772e728b38e6c768e49163735f71c1f8c53",
+    "run_scene.py": "455c051a61a80589cc384675b28664e7bb7731e7bd302c08e1f25ecb1669d74f",
+    "scene_plan.py": "d94df386e8a74fa5c4ac3ffc59af3b50dc7313adf7a2604e563bd6462bfa19b7",
+    "verify_scene.py": "ff8f3cf2d387322f5cfcc561c83fba0c52872a03fdd3b2786a78c28352772c3c"
+  },
+  "blend_sha256": "cfb8cbed4ee6110cdf0d88a567e579ae70763941effe32d9d9c96cafbe9960a0",
+  "glb_sha256": "80a7575ca67502cc0e1580d3f91cd2db545ec07a41a1e22fe1ef8b7ffe5920e0",
+  "metrics": {
+    "meshes": {
+      "storage_upper__bottom": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.3523612022399902,
+            -0.9969566464424133,
+            0.6499999761581421
+          ],
+          [
+            -1.6476386785507202,
+            -0.40304332971572876,
+            0.69159996509552
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__long_board_-1_0": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.2870864868164062,
+            -0.9969566464424133,
+            0.6947999596595764
+          ],
+          [
+            -1.6476386785507202,
+            -0.8674984574317932,
+            0.8079999685287476
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__end_board_-1_0": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.3466851711273193,
+            -0.956569254398346,
+            0.6947999596595764
+          ],
+          [
+            -2.2458910942077637,
+            -0.5267119407653809,
+            0.8079999685287476
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__long_board_-1_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.2870864868164062,
+            -0.9969566464424133,
+            0.8144000172615051
+          ],
+          [
+            -1.6476386785507202,
+            -0.8674984574317932,
+            0.9276000261306763
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__end_board_-1_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.3466851711273193,
+            -0.956569254398346,
+            0.8144000172615051
+          ],
+          [
+            -2.2458910942077637,
+            -0.5267119407653809,
+            0.9276000261306763
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__long_board_-1_2": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.2870864868164062,
+            -0.9969566464424133,
+            0.9340000152587891
+          ],
+          [
+            -1.6476386785507202,
+            -0.8674984574317932,
+            1.0471999645233154
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__end_board_-1_2": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.3466851711273193,
+            -0.956569254398346,
+            0.9340000152587891
+          ],
+          [
+            -2.2458910942077637,
+            -0.5267119407653809,
+            1.0471999645233154
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__long_board_-1_3": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.2870864868164062,
+            -0.9969566464424133,
+            1.0535999536514282
+          ],
+          [
+            -1.6476386785507202,
+            -0.8674984574317932,
+            1.1668000221252441
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__end_board_-1_3": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.3466851711273193,
+            -0.956569254398346,
+            1.0535999536514282
+          ],
+          [
+            -2.2458910942077637,
+            -0.5267119407653809,
+            1.1668000221252441
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__long_board_1_0": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.3523612022399902,
+            -0.5325015187263489,
+            0.6947999596595764
+          ],
+          [
+            -1.7129136323928833,
+            -0.40304332971572876,
+            0.8079999685287476
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__end_board_1_0": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.7541087865829468,
+            -0.8732880353927612,
+            0.6947999596595764
+          ],
+          [
+            -1.6533148288726807,
+            -0.44343072175979614,
+            0.8079999685287476
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__long_board_1_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.3523612022399902,
+            -0.5325015187263489,
+            0.8144000172615051
+          ],
+          [
+            -1.7129136323928833,
+            -0.40304332971572876,
+            0.9276000261306763
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__end_board_1_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.7541087865829468,
+            -0.8732880353927612,
+            0.8144000172615051
+          ],
+          [
+            -1.6533148288726807,
+            -0.44343072175979614,
+            0.9276000261306763
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__long_board_1_2": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.3523612022399902,
+            -0.5325015187263489,
+            0.9340000152587891
+          ],
+          [
+            -1.7129136323928833,
+            -0.40304332971572876,
+            1.0471999645233154
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__end_board_1_2": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.7541087865829468,
+            -0.8732880353927612,
+            0.9340000152587891
+          ],
+          [
+            -1.6533148288726807,
+            -0.44343072175979614,
+            1.0471999645233154
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__long_board_1_3": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.3523612022399902,
+            -0.5325015187263489,
+            1.0535999536514282
+          ],
+          [
+            -1.7129136323928833,
+            -0.40304332971572876,
+            1.1668000221252441
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__end_board_1_3": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.7541087865829468,
+            -0.8732880353927612,
+            1.0535999536514282
+          ],
+          [
+            -1.6533148288726807,
+            -0.44343072175979614,
+            1.1668000221252441
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__strap_-1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.2397048473358154,
+            -0.9860725402832031,
+            0.6499999761581421
+          ],
+          [
+            -2.1405580043792725,
+            -0.4673699140548706,
+            1.1699999570846558
+          ]
+        ],
+        "materials": [
+          "steel"
+        ],
+        "parent": "storage_upper"
+      },
+      "storage_upper__strap_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.8594419956207275,
+            -0.9326300621032715,
+            0.6499999761581421
+          ],
+          [
+            -1.7602951526641846,
+            -0.41392743587493896,
+            1.1699999570846558
+          ]
+        ],
+        "materials": [
+          "steel"
+        ],
+        "parent": "storage_upper"
+      },
+      "spare_timber_1__beam": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.265000104904175,
+            1.6349999904632568,
+            0.0
+          ],
+          [
+            -2.134999990463257,
+            1.7650001049041748,
+            1.600000023841858
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "spare_timber_1"
+      },
+      "floor__ground": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -3.0,
+            -2.5,
+            -0.2199999988079071
+          ],
+          [
+            3.0,
+            2.5,
+            0.0
+          ]
+        ],
+        "materials": [
+          "floor_gray"
+        ],
+        "parent": "floor"
+      },
+      "rear__wall": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -3.0,
+            2.31000018119812,
+            0.0
+          ],
+          [
+            3.0,
+            2.490000009536743,
+            2.799999952316284
+          ]
+        ],
+        "materials": [
+          "plaster"
+        ],
+        "parent": "rear"
+      },
+      "side__wall": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.990000009536743,
+            -2.5,
+            0.0
+          ],
+          [
+            -2.81000018119812,
+            2.5,
+            2.799999952316284
+          ]
+        ],
+        "materials": [
+          "plaster"
+        ],
+        "parent": "side"
+      },
+      "table__top_plank_0": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.350000023841858,
+            0.9750000238418579,
+            0.8360000252723694
+          ],
+          [
+            -0.8596463203430176,
+            1.9250000715255737,
+            0.949999988079071
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "table"
+      },
+      "table__top_plank_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -0.8475884795188904,
+            0.9750000238418579,
+            0.8360000252723694
+          ],
+          [
+            -0.35723474621772766,
+            1.9250000715255737,
+            0.949999988079071
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "table"
+      },
+      "table__top_plank_2": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -0.3451768755912781,
+            0.9750000238418579,
+            0.8360000252723694
+          ],
+          [
+            0.14517685770988464,
+            1.9250000715255737,
+            0.949999988079071
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "table"
+      },
+      "table__top_plank_3": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            0.15723475813865662,
+            0.9750000238418579,
+            0.8360000252723694
+          ],
+          [
+            0.6475884318351746,
+            1.9250000715255737,
+            0.949999988079071
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "table"
+      },
+      "table__top_plank_4": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            0.6596462726593018,
+            0.9750000238418579,
+            0.8360000252723694
+          ],
+          [
+            1.149999976158142,
+            1.9250000715255737,
+            0.949999988079071
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "table"
+      },
+      "table__leg_-1_-1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.205305576324463,
+            1.0510001182556152,
+            0.0
+          ],
+          [
+            -0.9540997743606567,
+            1.2030000686645508,
+            0.8360000252723694
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "table"
+      },
+      "table__leg_-1_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.205305576324463,
+            1.6970000267028809,
+            0.0
+          ],
+          [
+            -0.9540997743606567,
+            1.8489999771118164,
+            0.8360000252723694
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "table"
+      },
+      "table__leg_1_-1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            0.7540997266769409,
+            1.0510001182556152,
+            0.0
+          ],
+          [
+            1.005305528640747,
+            1.2030000686645508,
+            0.8360000252723694
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "table"
+      },
+      "table__leg_1_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            0.7540997266769409,
+            1.6970000267028809,
+            0.0
+          ],
+          [
+            1.005305528640747,
+            1.8489999771118164,
+            0.8360000252723694
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "table"
+      },
+      "table__lower_stretcher": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.1299437284469604,
+            1.3930000066757202,
+            0.1615000069141388
+          ],
+          [
+            0.9299436807632446,
+            1.5070000886917114,
+            0.2565000057220459
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "table"
+      },
+      "table__apron_-1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.1676247119903564,
+            1.0842499732971191,
+            0.703000009059906
+          ],
+          [
+            0.9676246643066406,
+            1.1697499752044678,
+            0.8360000252723694
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "table"
+      },
+      "table__apron_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.1676247119903564,
+            1.7302501201629639,
+            0.703000009059906
+          ],
+          [
+            0.9676246643066406,
+            1.8157501220703125,
+            0.8360000252723694
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "table"
+      },
+      "bench__top_plank_0": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -0.9500000476837158,
+            0.14000000059604645,
+            0.42239999771118164
+          ],
+          [
+            -0.39139020442962646,
+            0.5600000023841858,
+            0.47999998927116394
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "bench"
+      },
+      "bench__top_plank_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -0.3793048858642578,
+            0.14000000059604645,
+            0.42239999771118164
+          ],
+          [
+            0.17930489778518677,
+            0.5600000023841858,
+            0.47999998927116394
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "bench"
+      },
+      "bench__top_plank_2": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            0.19139021635055542,
+            0.14000000059604645,
+            0.42239999771118164
+          ],
+          [
+            0.75,
+            0.5600000023841858,
+            0.47999998927116394
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "bench"
+      },
+      "bench__leg_-1_-1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -0.8533176183700562,
+            0.1735999882221222,
+            0.0
+          ],
+          [
+            -0.6821090579032898,
+            0.24079999327659607,
+            0.42239999771118164
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "bench"
+      },
+      "bench__leg_-1_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -0.8533176183700562,
+            0.459199994802475,
+            0.0
+          ],
+          [
+            -0.6821090579032898,
+            0.5263999700546265,
+            0.42239999771118164
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "bench"
+      },
+      "bench__leg_1_-1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            0.48210904002189636,
+            0.1735999882221222,
+            0.0
+          ],
+          [
+            0.6533175706863403,
+            0.24079999327659607,
+            0.42239999771118164
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "bench"
+      },
+      "bench__leg_1_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            0.48210904002189636,
+            0.459199994802475,
+            0.0
+          ],
+          [
+            0.6533175706863403,
+            0.5263999700546265,
+            0.42239999771118164
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "bench"
+      },
+      "bench__lower_stretcher": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -0.8019550442695618,
+            0.3247999846935272,
+            0.08160000294446945
+          ],
+          [
+            0.601954996585846,
+            0.3752000033855438,
+            0.12960000336170197
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "bench"
+      },
+      "bench__apron_-1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -0.8276363015174866,
+            0.1882999986410141,
+            0.35519999265670776
+          ],
+          [
+            0.6276362538337708,
+            0.22609999775886536,
+            0.42239999771118164
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "bench"
+      },
+      "bench__apron_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -0.8276363015174866,
+            0.4738999903202057,
+            0.35519999265670776
+          ],
+          [
+            0.6276362538337708,
+            0.5116999745368958,
+            0.42239999771118164
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "bench"
+      },
+      "storage_lower__bottom": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.4404516220092773,
+            -1.0711958408355713,
+            0.0
+          ],
+          [
+            -1.5595483779907227,
+            -0.3288041651248932,
+            0.052000004798173904
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__long_board_-1_0": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.3588578701019287,
+            -1.0711958408355713,
+            0.056000005453825
+          ],
+          [
+            -1.5595483779907227,
+            -0.9093731045722961,
+            0.19750000536441803
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__end_board_-1_0": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.433356523513794,
+            -1.0207115411758423,
+            0.056000005453825
+          ],
+          [
+            -2.307363986968994,
+            -0.48338988423347473,
+            0.19750000536441803
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__long_board_-1_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.3588578701019287,
+            -1.0711958408355713,
+            0.2055000215768814
+          ],
+          [
+            -1.5595483779907227,
+            -0.9093731045722961,
+            0.34700000286102295
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__end_board_-1_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.433356523513794,
+            -1.0207115411758423,
+            0.2055000215768814
+          ],
+          [
+            -2.307363986968994,
+            -0.48338988423347473,
+            0.34700000286102295
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__long_board_-1_2": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.3588578701019287,
+            -1.0711958408355713,
+            0.35499998927116394
+          ],
+          [
+            -1.5595483779907227,
+            -0.9093731045722961,
+            0.49650001525878906
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__end_board_-1_2": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.433356523513794,
+            -1.0207115411758423,
+            0.35499998927116394
+          ],
+          [
+            -2.307363986968994,
+            -0.48338988423347473,
+            0.49650001525878906
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__long_board_-1_3": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.3588578701019287,
+            -1.0711958408355713,
+            0.5044999718666077
+          ],
+          [
+            -1.5595483779907227,
+            -0.9093731045722961,
+            0.6460000276565552
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__end_board_-1_3": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.433356523513794,
+            -1.0207115411758423,
+            0.5044999718666077
+          ],
+          [
+            -2.307363986968994,
+            -0.48338988423347473,
+            0.6460000276565552
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__long_board_1_0": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.4404516220092773,
+            -0.49062690138816833,
+            0.056000005453825
+          ],
+          [
+            -1.6411420106887817,
+            -0.3288041651248932,
+            0.19750000536441803
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__end_board_1_0": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.6926360130310059,
+            -0.916610062122345,
+            0.056000005453825
+          ],
+          [
+            -1.566643476486206,
+            -0.3792884051799774,
+            0.19750000536441803
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__long_board_1_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.4404516220092773,
+            -0.49062690138816833,
+            0.2055000215768814
+          ],
+          [
+            -1.6411420106887817,
+            -0.3288041651248932,
+            0.34700000286102295
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__end_board_1_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.6926360130310059,
+            -0.916610062122345,
+            0.2055000215768814
+          ],
+          [
+            -1.566643476486206,
+            -0.3792884051799774,
+            0.34700000286102295
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__long_board_1_2": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.4404516220092773,
+            -0.49062690138816833,
+            0.35499998927116394
+          ],
+          [
+            -1.6411420106887817,
+            -0.3288041651248932,
+            0.49650001525878906
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__end_board_1_2": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.6926360130310059,
+            -0.916610062122345,
+            0.35499998927116394
+          ],
+          [
+            -1.566643476486206,
+            -0.3792884051799774,
+            0.49650001525878906
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__long_board_1_3": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.4404516220092773,
+            -0.49062690138816833,
+            0.5044999718666077
+          ],
+          [
+            -1.6411420106887817,
+            -0.3288041651248932,
+            0.6460000276565552
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__end_board_1_3": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.6926360130310059,
+            -0.916610062122345,
+            0.5044999718666077
+          ],
+          [
+            -1.566643476486206,
+            -0.3792884051799774,
+            0.6460000276565552
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__strap_-1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.299631118774414,
+            -1.0575906038284302,
+            0.0
+          ],
+          [
+            -2.1756975650787354,
+            -0.4092124104499817,
+            0.6499999761581421
+          ]
+        ],
+        "materials": [
+          "steel"
+        ],
+        "parent": "storage_lower"
+      },
+      "storage_lower__strap_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.8243024349212646,
+            -0.9907875657081604,
+            0.0
+          ],
+          [
+            -1.700368881225586,
+            -0.34240931272506714,
+            0.6499999761581421
+          ]
+        ],
+        "materials": [
+          "steel"
+        ],
+        "parent": "storage_lower"
+      },
+      "front_frame__post_-1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.8442740440368652,
+            -2.3001275062561035,
+            0.0
+          ],
+          [
+            -2.6152353286743164,
+            -2.0843162536621094,
+            2.4704999923706055
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "front_frame"
+      },
+      "front_frame__shoe_-1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.8499999046325684,
+            -2.304443597793579,
+            0.0
+          ],
+          [
+            -2.609509229660034,
+            -2.080000162124634,
+            0.4320000112056732
+          ]
+        ],
+        "materials": [
+          "steel"
+        ],
+        "parent": "front_frame"
+      },
+      "front_frame__shoe_bolt_-1": {
+        "vertices": 16,
+        "triangles": 28,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.754948854446411,
+            -2.319999933242798,
+            0.2177550047636032
+          ],
+          [
+            -2.7045602798461914,
+            -2.2975196838378906,
+            0.26824501156806946
+          ]
+        ],
+        "materials": [
+          "steel"
+        ],
+        "parent": "front_frame"
+      },
+      "front_frame__post_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.6152353286743164,
+            -2.3001275062561035,
+            0.0
+          ],
+          [
+            2.8442740440368652,
+            -2.0843162536621094,
+            2.4704999923706055
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "front_frame"
+      },
+      "front_frame__shoe_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.609509229660034,
+            -2.304443597793579,
+            0.0
+          ],
+          [
+            2.8499999046325684,
+            -2.080000162124634,
+            0.4320000112056732
+          ]
+        ],
+        "materials": [
+          "steel"
+        ],
+        "parent": "front_frame"
+      },
+      "front_frame__shoe_bolt_1": {
+        "vertices": 16,
+        "triangles": 28,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.7045602798461914,
+            -2.319999933242798,
+            0.2177550047636032
+          ],
+          [
+            2.754948854446411,
+            -2.2975196838378906,
+            0.26824501156806946
+          ]
+        ],
+        "materials": [
+          "steel"
+        ],
+        "parent": "front_frame"
+      },
+      "front_frame__lintel": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.8442740440368652,
+            -2.3001275062561035,
+            2.4704999923706055
+          ],
+          [
+            2.8442740440368652,
+            -2.0843162536621094,
+            2.700000047683716
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "front_frame"
+      },
+      "front_frame__knee_brace_-1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.6425862312316895,
+            -2.245877981185913,
+            1.7107527256011963
+          ],
+          [
+            -1.5085570812225342,
+            -2.1385657787323,
+            2.514747381210327
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "front_frame"
+      },
+      "front_frame__knee_brace_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.5085570812225342,
+            -2.245877981185913,
+            1.7107527256011963
+          ],
+          [
+            2.6425862312316895,
+            -2.1385657787323,
+            2.514747381210327
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "front_frame"
+      },
+      "hand_winch__skid_left": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.342797875404358,
+            0.8626692295074463,
+            0.0
+          ],
+          [
+            1.753206491470337,
+            1.7795557975769043,
+            0.12222222983837128
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__skid_right": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.1192357540130615,
+            0.6546233296394348,
+            0.0
+          ],
+          [
+            2.52964448928833,
+            1.571509838104248,
+            0.12222222983837128
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__bearing_post_-1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.4739623069763184,
+            1.1422303915023804,
+            0.055000003427267075
+          ],
+          [
+            1.688593864440918,
+            1.4821621179580688,
+            0.971666693687439
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__drum_flange_-1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.5711086988449097,
+            1.0153597593307495,
+            0.4888889193534851
+          ],
+          [
+            1.7689189910888672,
+            1.5614793300628662,
+            1.100000023841858
+          ]
+        ],
+        "materials": [
+          "steel"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__bearing_post_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.1838483810424805,
+            0.9520170092582703,
+            0.055000003427267075
+          ],
+          [
+            2.39847993850708,
+            1.291948676109314,
+            0.971666693687439
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__drum_flange_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.1035232543945312,
+            0.8726996779441833,
+            0.4888889193534851
+          ],
+          [
+            2.3013336658477783,
+            1.4188193082809448,
+            1.100000023841858
+          ]
+        ],
+        "materials": [
+          "steel"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__rope_drum": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.6325585842132568,
+            0.9483391642570496,
+            0.5622222423553467
+          ],
+          [
+            2.2398836612701416,
+            1.4858399629592896,
+            1.0266666412353516
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__shaft": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.4033623933792114,
+            1.015136480331421,
+            0.7211110591888428
+          ],
+          [
+            2.4690797328948975,
+            1.4190425872802734,
+            0.8677778244018555
+          ]
+        ],
+        "materials": [
+          "steel"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__crank": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.4147980213165283,
+            1.0582997798919678,
+            0.7728144526481628
+          ],
+          [
+            2.5479867458343506,
+            1.3632475137710571,
+            1.0605189800262451
+          ]
+        ],
+        "materials": [
+          "steel"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__handle": {
+        "vertices": 20,
+        "triangles": 36,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.459153413772583,
+            1.2576953172683716,
+            0.9865808486938477
+          ],
+          [
+            2.662248134613037,
+            1.4008753299713135,
+            1.0911970138549805
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__rope_turn_0": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.6543837785720825,
+            1.056277871131897,
+            0.5487778186798096
+          ],
+          [
+            1.7965636253356934,
+            1.4908404350280762,
+            1.0401110649108887
+          ]
+        ],
+        "materials": [
+          "cord"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__rope_turn_1": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.7065160274505615,
+            1.042309045791626,
+            0.5487778186798096
+          ],
+          [
+            1.8486957550048828,
+            1.4768716096878052,
+            1.0401110649108887
+          ]
+        ],
+        "materials": [
+          "cord"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__rope_turn_2": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.75864839553833,
+            1.028340220451355,
+            0.5487778186798096
+          ],
+          [
+            1.9008281230926514,
+            1.4629027843475342,
+            1.0401110649108887
+          ]
+        ],
+        "materials": [
+          "cord"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__rope_turn_3": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.810780644416809,
+            1.0143715143203735,
+            0.5487778186798096
+          ],
+          [
+            1.9529603719711304,
+            1.4489340782165527,
+            1.0401110649108887
+          ]
+        ],
+        "materials": [
+          "cord"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__rope_turn_4": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.862912893295288,
+            1.0004026889801025,
+            0.5487778186798096
+          ],
+          [
+            2.0050926208496094,
+            1.4349652528762817,
+            1.0401110649108887
+          ]
+        ],
+        "materials": [
+          "cord"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__rope_turn_5": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.915045142173767,
+            0.9864338636398315,
+            0.5487778186798096
+          ],
+          [
+            2.057224988937378,
+            1.4209964275360107,
+            1.0401110649108887
+          ]
+        ],
+        "materials": [
+          "cord"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__rope_turn_6": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.967177391052246,
+            0.9724650979042053,
+            0.5487778186798096
+          ],
+          [
+            2.1093571186065674,
+            1.4070276021957397,
+            1.0401110649108887
+          ]
+        ],
+        "materials": [
+          "cord"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__rope_turn_7": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.0193097591400146,
+            0.9584962725639343,
+            0.5487778186798096
+          ],
+          [
+            2.161489486694336,
+            1.3930588960647583,
+            1.0401110649108887
+          ]
+        ],
+        "materials": [
+          "cord"
+        ],
+        "parent": "hand_winch"
+      },
+      "hand_winch__rope_turn_8": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.071441888809204,
+            0.9445275068283081,
+            0.5487778186798096
+          ],
+          [
+            2.2136216163635254,
+            1.3790900707244873,
+            1.0401110649108887
+          ]
+        ],
+        "materials": [
+          "cord"
+        ],
+        "parent": "hand_winch"
+      },
+      "spare_timber_0__beam": {
+        "vertices": 24,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.4650001525878906,
+            1.6349999904632568,
+            0.0
+          ],
+          [
+            -2.3350000381469727,
+            1.7650001049041748,
+            2.0
+          ]
+        ],
+        "materials": [
+          "oak"
+        ],
+        "parent": "spare_timber_0"
+      }
+    },
+    "mesh_count": 93,
+    "triangles": 4052,
+    "invalid_vertices": 0,
+    "degenerate_triangles": 0,
+    "bounds": [
+      [
+        -3.0,
+        -2.5,
+        -0.2199999988079071
+      ],
+      [
+        3.0,
+        2.5,
+        2.799999952316284
+      ]
+    ]
+  },
+  "layout": {
+    "errors": [],
+    "warnings": [],
+    "contacts": [
+      {
+        "object": "rear",
+        "support": "floor",
+        "vertical_gap": 0.0,
+        "xy_overlap": true,
+        "pass": true
+      },
+      {
+        "object": "side",
+        "support": "floor",
+        "vertical_gap": 0.0,
+        "xy_overlap": true,
+        "pass": true
+      },
+      {
+        "object": "table",
+        "support": "floor",
+        "vertical_gap": 0.0,
+        "xy_overlap": true,
+        "pass": true
+      },
+      {
+        "object": "bench",
+        "support": "floor",
+        "vertical_gap": 0.0,
+        "xy_overlap": true,
+        "pass": true
+      },
+      {
+        "object": "storage_lower",
+        "support": "floor",
+        "vertical_gap": 0.0,
+        "xy_overlap": true,
+        "pass": true
+      },
+      {
+        "object": "storage_upper",
+        "support": "storage_lower",
+        "vertical_gap": 0.0,
+        "xy_overlap": true,
+        "pass": true
+      },
+      {
+        "object": "front_frame",
+        "support": "floor",
+        "vertical_gap": 0.0,
+        "xy_overlap": true,
+        "pass": true
+      },
+      {
+        "object": "hand_winch",
+        "support": "floor",
+        "vertical_gap": 0.0,
+        "xy_overlap": true,
+        "pass": true
+      },
+      {
+        "object": "spare_timber_0",
+        "support": "floor",
+        "vertical_gap": 0.0,
+        "xy_overlap": true,
+        "pass": true
+      },
+      {
+        "object": "spare_timber_1",
+        "support": "floor",
+        "vertical_gap": 0.0,
+        "xy_overlap": true,
+        "pass": true
+      }
+    ],
+    "method": "Evaluated part AABBs and sampled path discs; visual review remains required."
+  },
+  "cameras": [
+    "shop_hero",
+    "shop_reverse",
+    "shop_overview"
+  ],
+  "material_export": "PBR factors/emission portable; procedural bump stays Blender-only. Area/world lights are not supported in GLB; relight in target engine."
+}

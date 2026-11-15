@@ -1,0 +1,12 @@
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:33:43)
+
+Blender quit
+Traceback (most recent call last):
+  File "D:\AI_work\AI-Scene-Architect\skills\ai-scene-architect\scripts\build_scene.py", line 226, in <module>
+    main()
+    ~~~~^^
+  File "D:\AI_work\AI-Scene-Architect\skills\ai-scene-architect\scripts\build_scene.py", line 189, in main
+    raise PlanError('Output directory must be NEW; refusing any overwrite: '+str(target))
+scene_plan.PlanError: Output directory must be NEW; refusing any overwrite: D:\AI_work\AI-Scene-Architect\output\v02\crystal-mine\iteration-2
+
+Error: script failed, file: 'D:\AI_work\AI-Scene-Architect\skills\ai-scene-architect\scripts\build_scene.py', exiting.

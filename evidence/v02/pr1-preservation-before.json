@@ -1,0 +1,94 @@
+[
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\actual-guard-decision.json",
+    "Hash": "311C73DE0A84600FA7E3D6CE4B060636816E8D393E68DEABCBB50BEE13D31A20"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\actual-visual-review.json",
+    "Hash": "E7CBEB6C441A2701A05D8FDFA4482ACE6D7BDFDEE714575E268740E0E8CF1853"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\create-scene.log",
+    "Hash": "F473DC548BF77151ECEB89B7709D38EA7AEDE5782C454406CB0DB05099D3E774"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\existing-output-exit.txt",
+    "Hash": "F1B2F662800122BED0FF255693DF89C4487FBDCF453D3524A42D4EC20C3D9C04"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\existing-output-rejection.log",
+    "Hash": "89B0061D5581C377CE0F68C58910BA7D1E880F08AF7B40F87D882E9D0C7CA6CD"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\render.log",
+    "Hash": "6DBC19318C2774F2C03D484156247032C760AF8D78F05D9900AB322088CCD010"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\reopen_check.py",
+    "Hash": "FA1FC1BDA28BE5324A146095B521B3667550E0AEB4F0291C2AA5AF6533C2C165"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\reopen-results.json",
+    "Hash": "25817CC7CADA237A588E8C5E14B38F83A6573C186BC466B3EE116754CE3B7ED3"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\reopen.log",
+    "Hash": "23BDFE776424C17124BCCA54B381F520B6333EC25C77CAB2F1A14D115082FB91"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\REPORT_ZH.md",
+    "Hash": "D53716104E4E256461056651C1B56D8A89F04080EEB469D376C57170C1775414"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\source-before.json",
+    "Hash": "FE7A8039105C82C11774BDDF46F4F4C8F9ABE24CA2752B11865E6A549A37C276"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\synthetic-history-0.json",
+    "Hash": "2C5BE9F13C27F489015605A46EB22EA9E483B4F52C104E1900DD18F5E60E0722"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\synthetic-history-1.json",
+    "Hash": "9C6D4E55E6B7FD3D9F98C2323D248E3D6FF1CB2A9FB032D99C17DE786727BBD5"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\synthetic-history-2.json",
+    "Hash": "99576968B4B4688A15D2A37DA27FDDA1D198FAD4134497DC0961F4CECBEE6D29"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\unit-tests.log",
+    "Hash": "AFCDC20FA075E5A75739542A118FF7CF6676170A9BB92F88AC6DB2DC4C613039"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\verification-results.json",
+    "Hash": "1D007808D1D12E91B572E103C055CE4E6FB58FDC089AF5DAE26E3F7D9C1F9C89"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\verify_evidence.py",
+    "Hash": "AD93BE9B08938580EB3D5DA8CB037D4B175DA319B06E4AE49BD78D12FE31E67D"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\verify.log",
+    "Hash": "3ACE681C6DD2EA0EEBE7C0317D2A6628CF38ADF83D2B6AD3C75B98EE5603454E"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\測試場景 空白路徑\\original smoke.blend",
+    "Hash": "C5F588F42C45AA5707B69EC2B1E2A2B19778E5AA7994896075E915F58F4C9687"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\測試場景 空白路徑\\previews iteration-0\\hero.png",
+    "Hash": "C1FE648640D5572403AD4C6E187022EF429378E6CAB0FB5C364405382780FEC5"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\測試場景 空白路徑\\previews iteration-0\\manifest.json",
+    "Hash": "3AEEACAC43C74A0995DB6DDC2CC2FF265E2F5B2287757F327407D263609B92A2"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\測試場景 空白路徑\\previews iteration-0\\three_quarter.png",
+    "Hash": "F6C236C5E5E7D14F708044B32F2C64E484E0CC132EEE3AD4BEC9C7AA9EA105D9"
+  },
+  {
+    "Path": "D:\\AI_work\\AI-Scene-Architect\\evidence\\pr1-windows\\測試場景 空白路徑\\previews iteration-0\\top.png",
+    "Hash": "5A34995B6EA1CD828AD3FB9D02488C341DD70C09D000AFB15D3BD6B3AF26EA31"
+  }
+]

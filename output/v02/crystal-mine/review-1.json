@@ -1,0 +1,30 @@
+{
+  "iteration": 1,
+  "visual_reviewed": true,
+  "change_signature": "geometry:normals;layout:clearance;camera:inspection;lighting:focus",
+  "renders": {
+    "hero": "02f1c3d27c2e181abb51f66fbb252109cb11b8ae5c7707bb8b720ebba7eec71f",
+    "three_quarter": "01d9e96227c7a37a4fa4a25951cca25300d6304b8469b62837f4d3c2b19b8493",
+    "top": "0615fb2741d0eade1d184ccb2c49f33cdf0c4b2e38b6a08295723e179bb9c971"
+  },
+  "issues": [
+    {
+      "id": "cave-envelope",
+      "severity": 2,
+      "evidence": "The rear canopy reads detached at the right wall and remains a broad slab.（後方岩頂在右側有接合間隙，輪廓偏板狀。）",
+      "fix": "Reduce canopy depth/thickness and raise the supporting right rock wall."
+    },
+    {
+      "id": "roof-overview-occlusion",
+      "severity": 1,
+      "evidence": "The canopy hides the rear crystal bases in the top view.（俯視時岩頂遮擋後方水晶底部。）",
+      "fix": "Shorten the canopy to keep the crystal zone visible in the cutaway."
+    },
+    {
+      "id": "rubble-clearance",
+      "severity": 1,
+      "evidence": "The layout check flags one loose ore fragment intersecting the left boulder.（配置檢查指出一塊碎礦與左側岩塊重疊。）",
+      "fix": "Move that single fragment into the nearby free ground."
+    }
+  ]
+}

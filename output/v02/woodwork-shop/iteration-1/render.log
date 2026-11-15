@@ -1,0 +1,8 @@
+00:00.265  blend            | Read blend: "D:\AI_work\AI-Scene-Architect\output\v02\woodwork-shop\iteration-1\scene.blend"
+00:02.234  render           | Saved: 'D:\AI_work\AI-Scene-Architect\output\v02\woodwork-shop\iteration-1\previews\hero.png'
+00:05.218  render           | Saved: 'D:\AI_work\AI-Scene-Architect\output\v02\woodwork-shop\iteration-1\previews\three_quarter.png'
+00:08.015  render           | Saved: 'D:\AI_work\AI-Scene-Architect\output\v02\woodwork-shop\iteration-1\previews\top.png'
+ASA_PREVIEW_MANIFEST=D:\AI_work\AI-Scene-Architect\output\v02\woodwork-shop\iteration-1\previews\manifest.json
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:33:43)
+
+Blender quit

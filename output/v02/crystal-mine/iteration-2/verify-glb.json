@@ -1,0 +1,2566 @@
+{
+  "mode": "glb",
+  "blender_version": "5.3.0",
+  "checks": {
+    "source_hash_matches_build": true,
+    "source_unchanged": true,
+    "mesh_names_match": true,
+    "triangle_count_matches": true,
+    "no_invalid_vertices": true,
+    "no_degenerate_triangles": true,
+    "per_mesh_geometry_material_hierarchy_matches": true,
+    "all_meshes_have_uvs": true
+  },
+  "deviations": [],
+  "all_passed": true,
+  "metrics": {
+    "meshes": {
+      "abandoned_cart__axle_1": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.7399497032165527,
+            0.5371622443199158,
+            0.4176313877105713
+          ],
+          [
+            -1.2600502967834473,
+            0.6086125373840332,
+            0.4929197430610657
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__axle_-1": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.7399497032165527,
+            -0.6629800200462341,
+            0.4176313877105713
+          ],
+          [
+            -1.2600502967834473,
+            -0.5915297269821167,
+            0.4929197430610657
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__chassis_1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.6417086124420166,
+            -0.9583286046981812,
+            0.5229173302650452
+          ],
+          [
+            -1.4859297275543213,
+            0.9039610624313354,
+            0.6699645519256592
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__chassis_-1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.5140702724456787,
+            -0.9583286046981812,
+            0.5229173302650452
+          ],
+          [
+            -2.3582913875579834,
+            0.9039610624313354,
+            0.6699645519256592
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__end_plate_1": {
+        "vertices": 24,
+        "triangles": 12,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.669849157333374,
+            0.6945136785507202,
+            0.7640748023986816
+          ],
+          [
+            -1.330150842666626,
+            0.9582177400588989,
+            1.6169489622116089
+          ]
+        ],
+        "materials": [
+          "rust"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__end_plate_-1": {
+        "vertices": 24,
+        "triangles": 12,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.669849157333374,
+            -1.012585163116455,
+            0.7640748023986816
+          ],
+          [
+            -1.330150842666626,
+            -0.7488811612129211,
+            1.6169489622116089
+          ]
+        ],
+        "materials": [
+          "rust"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__end_rim_1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.685427188873291,
+            0.8743064999580383,
+            1.563897728919983
+          ],
+          [
+            -1.314572811126709,
+            0.9750000238418579,
+            1.6700000762939453
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__end_rim_-1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.685427188873291,
+            -1.029367446899414,
+            1.563897728919983
+          ],
+          [
+            -1.314572811126709,
+            -0.9286739826202393,
+            1.6700000762939453
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__hopper_floor": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.498492479324341,
+            -0.7824456691741943,
+            0.7287074327468872
+          ],
+          [
+            -1.5015075206756592,
+            0.7280781865119934,
+            0.7994421720504761
+          ]
+        ],
+        "materials": [
+          "rust"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__hub_1_1": {
+        "vertices": 48,
+        "triangles": 28,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.2795226573944092,
+            0.4947386085987091,
+            0.37292909622192383
+          ],
+          [
+            -1.225000023841858,
+            0.6510362029075623,
+            0.5376220345497131
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__hub_1_-1": {
+        "vertices": 48,
+        "triangles": 28,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.7750000953674316,
+            0.4947386085987091,
+            0.37292909622192383
+          ],
+          [
+            -2.720477342605591,
+            0.6510362029075623,
+            0.5376220345497131
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__hub_-1_1": {
+        "vertices": 48,
+        "triangles": 28,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.2795226573944092,
+            -0.7054036855697632,
+            0.37292909622192383
+          ],
+          [
+            -1.225000023841858,
+            -0.5491060614585876,
+            0.5376220345497131
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__hub_-1_-1": {
+        "vertices": 48,
+        "triangles": 28,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.7750000953674316,
+            -0.7054036855697632,
+            0.37292909622192383
+          ],
+          [
+            -2.720477342605591,
+            -0.5491060614585876,
+            0.5376220345497131
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__long_rim_1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.3827261924743652,
+            -0.9997127652168274,
+            1.563897728919983
+          ],
+          [
+            -1.2775753736495972,
+            0.9453452825546265,
+            1.6700000762939453
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__long_rim_-1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.7224245071411133,
+            -0.9997127652168274,
+            1.563897728919983
+          ],
+          [
+            -2.6172738075256348,
+            0.9453452825546265,
+            1.6700000762939453
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__rivet_1_0.28": {
+        "vertices": 48,
+        "triangles": 28,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.3402764797210693,
+            0.5320565700531006,
+            1.2869291305541992
+          ],
+          [
+            -1.2701759338378906,
+            0.5723339915275574,
+            1.329370141029358
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__rivet_1_-0.28": {
+        "vertices": 48,
+        "triangles": 28,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.3402764797210693,
+            -0.6267014741897583,
+            1.2869291305541992
+          ],
+          [
+            -1.2701759338378906,
+            -0.5864240527153015,
+            1.329370141029358
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__rivet_-1_0.28": {
+        "vertices": 48,
+        "triangles": 28,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.7298240661621094,
+            0.5320565700531006,
+            1.2869291305541992
+          ],
+          [
+            -2.6597235202789307,
+            0.5723339915275574,
+            1.329370141029358
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__rivet_-1_-0.28": {
+        "vertices": 48,
+        "triangles": 28,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.7298240661621094,
+            -0.6267014741897583,
+            1.2869291305541992
+          ],
+          [
+            -2.6597235202789307,
+            -0.5864240527153015,
+            1.329370141029358
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__side_plate_1": {
+        "vertices": 24,
+        "triangles": 12,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.5365577936172485,
+            -0.9790207743644714,
+            0.7640748023986816
+          ],
+          [
+            -1.295100450515747,
+            0.9246532917022705,
+            1.6169489622116089
+          ]
+        ],
+        "materials": [
+          "rust"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__side_plate_-1": {
+        "vertices": 24,
+        "triangles": 12,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.704899549484253,
+            -0.9790207743644714,
+            0.7640748023986816
+          ],
+          [
+            -2.463442087173462,
+            0.9246532917022705,
+            1.6169489622116089
+          ]
+        ],
+        "materials": [
+          "rust"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__tow_loop_stem": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.0350501537323,
+            -1.1750000715255737,
+            0.5566339492797852
+          ],
+          [
+            -1.9649497270584106,
+            -0.9692704081535339,
+            0.6921259164810181
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__wheel_1_1": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.4002513885498047,
+            0.34960517287254333,
+            0.2199999988079071
+          ],
+          [
+            -1.2600502967834473,
+            0.796169638633728,
+            0.6905511617660522
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__wheel_1_-1": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.7399497032165527,
+            0.34960517287254333,
+            0.2199999988079071
+          ],
+          [
+            -2.5997486114501953,
+            0.796169638633728,
+            0.6905511617660522
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__wheel_-1_1": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.4002513885498047,
+            -0.8505371809005737,
+            0.2199999988079071
+          ],
+          [
+            -1.2600502967834473,
+            -0.4039725959300995,
+            0.6905511617660522
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "abandoned_cart__wheel_-1_-1": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.7399497032165527,
+            -0.8505371809005737,
+            0.2199999988079071
+          ],
+          [
+            -2.5997486114501953,
+            -0.4039725959300995,
+            0.6905511617660522
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "abandoned_cart"
+      },
+      "back_wall__faceted_strata": {
+        "vertices": 354,
+        "triangles": 196,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -5.199999809265137,
+            4.425000190734863,
+            0.0
+          ],
+          [
+            5.199999809265137,
+            5.574999809265137,
+            4.400000095367432
+          ]
+        ],
+        "materials": [
+          "slate"
+        ],
+        "parent": "back_wall"
+      },
+      "entrance_support__knee_brace_1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            0.11604416370391846,
+            -3.863417387008667,
+            2.2898454666137695
+          ],
+          [
+            1.2330108880996704,
+            -3.7174038887023926,
+            3.3441543579101562
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "entrance_support"
+      },
+      "entrance_support__knee_brace_-1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.033010959625244,
+            -3.863417387008667,
+            2.2898454666137695
+          ],
+          [
+            -2.916044235229492,
+            -3.7174038887023926,
+            3.3441543579101562
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "entrance_support"
+      },
+      "entrance_support__lintel": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.292370319366455,
+            -3.9831132888793945,
+            3.2939999103546143
+          ],
+          [
+            1.4923702478408813,
+            -3.597707986831665,
+            3.5999999046325684
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "entrance_support"
+      },
+      "entrance_support__post_1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.1871753931045532,
+            -3.9831132888793945,
+            0.0
+          ],
+          [
+            1.4923702478408813,
+            -3.597707986831665,
+            3.2939999103546143
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "entrance_support"
+      },
+      "entrance_support__post_-1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.292370319366455,
+            -3.9831132888793945,
+            0.0
+          ],
+          [
+            -3.987175464630127,
+            -3.597707986831665,
+            3.2939999103546143
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "entrance_support"
+      },
+      "entrance_support__shoe_1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.179545283317566,
+            -3.990821361541748,
+            0.0
+          ],
+          [
+            1.5000001192092896,
+            -3.5899999141693115,
+            0.5759999752044678
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "entrance_support"
+      },
+      "entrance_support__shoe_-1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.300000190734863,
+            -3.990821361541748,
+            0.0
+          ],
+          [
+            -3.9795451164245605,
+            -3.5899999141693115,
+            0.5759999752044678
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "entrance_support"
+      },
+      "entrance_support__shoe_bolt_1": {
+        "vertices": 48,
+        "triangles": 28,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.3062013387680054,
+            -4.009999752044678,
+            0.29034000635147095
+          ],
+          [
+            1.37334406375885,
+            -3.9870591163635254,
+            0.3576599955558777
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "entrance_support"
+      },
+      "entrance_support__shoe_bolt_-1": {
+        "vertices": 48,
+        "triangles": 28,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.173344135284424,
+            -4.009999752044678,
+            0.29034000635147095
+          ],
+          [
+            -4.106201171875,
+            -3.9870591163635254,
+            0.3576599955558777
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "entrance_support"
+      },
+      "entry_shard__six_sided_growth": {
+        "vertices": 48,
+        "triangles": 22,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -3.814039468765259,
+            -3.9510607719421387,
+            0.0
+          ],
+          [
+            -3.4859607219696045,
+            -3.6489391326904297,
+            0.6000000238418579
+          ]
+        ],
+        "materials": [
+          "cyan"
+        ],
+        "parent": "entry_shard"
+      },
+      "floor__ground": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -6.0,
+            -6.0,
+            -0.3799999952316284
+          ],
+          [
+            6.0,
+            6.0,
+            0.0
+          ]
+        ],
+        "materials": [
+          "earth"
+        ],
+        "parent": "floor"
+      },
+      "focal_companion__six_sided_growth": {
+        "vertices": 40,
+        "triangles": 18,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.414496421813965,
+            1.7399895191192627,
+            0.0
+          ],
+          [
+            3.1855034828186035,
+            2.460010290145874,
+            1.649999976158142
+          ]
+        ],
+        "materials": [
+          "teal"
+        ],
+        "parent": "focal_companion"
+      },
+      "focal_crystal__six_sided_growth": {
+        "vertices": 48,
+        "triangles": 22,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.3851978778839111,
+            2.051248788833618,
+            0.0
+          ],
+          [
+            2.3148021697998047,
+            2.948751211166382,
+            2.450000047683716
+          ]
+        ],
+        "materials": [
+          "cyan"
+        ],
+        "parent": "focal_crystal"
+      },
+      "focal_shard__six_sided_growth": {
+        "vertices": 48,
+        "triangles": 22,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            0.8113023042678833,
+            2.5166993141174316,
+            0.0
+          ],
+          [
+            1.288697600364685,
+            2.9833006858825684,
+            0.800000011920929
+          ]
+        ],
+        "materials": [
+          "cyan"
+        ],
+        "parent": "focal_shard"
+      },
+      "front_boulder__weathered_mass": {
+        "vertices": 60,
+        "triangles": 20,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            3.2488949298858643,
+            -4.148072242736816,
+            0.0
+          ],
+          [
+            4.251105308532715,
+            -3.2519278526306152,
+            0.5199999809265137
+          ]
+        ],
+        "materials": [
+          "slate"
+        ],
+        "parent": "front_boulder"
+      },
+      "haul_winch__bearing_post_1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            3.3676366806030273,
+            -0.8664413094520569,
+            0.057500001043081284
+          ],
+          [
+            3.598876476287842,
+            -0.5397526621818542,
+            1.0158333778381348
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__bearing_post_-1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.677030086517334,
+            -0.6150810718536377,
+            0.057500001043081284
+          ],
+          [
+            2.9082698822021484,
+            -0.28839242458343506,
+            1.0158333778381348
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__crank": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            3.6021270751953125,
+            -0.7822506427764893,
+            0.8111613988876343
+          ],
+          [
+            3.75374174118042,
+            -0.49429184198379517,
+            1.105505347251892
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__drum_flange_1": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            3.271623134613037,
+            -0.9516572952270508,
+            0.5111111402511597
+          ],
+          [
+            3.5222384929656982,
+            -0.391696572303772,
+            1.149999976158142
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__drum_flange_-1": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.7536683082580566,
+            -0.76313716173172,
+            0.5111111402511597
+          ],
+          [
+            3.0042834281921387,
+            -0.20317640900611877,
+            1.149999976158142
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__handle": {
+        "vertices": 60,
+        "triangles": 36,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            3.660679578781128,
+            -0.6142195463180542,
+            1.0314254760742188
+          ],
+          [
+            3.868730306625366,
+            -0.45412129163742065,
+            1.1407968997955322
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__rope_drum": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.8204305171966553,
+            -0.8711085319519043,
+            0.5877777934074402
+          ],
+          [
+            3.4554760456085205,
+            -0.28372520208358765,
+            1.0733333826065063
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__rope_turn_0": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.8403830528259277,
+            -0.7249135971069336,
+            0.5737223029136658
+          ],
+          [
+            3.0254759788513184,
+            -0.2806749939918518,
+            1.0873888731002808
+          ]
+        ],
+        "materials": [
+          "rope"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__rope_turn_1": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.891099452972412,
+            -0.7433728575706482,
+            0.5737223029136658
+          ],
+          [
+            3.0761923789978027,
+            -0.2991342544555664,
+            1.0873888731002808
+          ]
+        ],
+        "materials": [
+          "rope"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__rope_turn_2": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.9418158531188965,
+            -0.7618321180343628,
+            0.5737223029136658
+          ],
+          [
+            3.126908779144287,
+            -0.317593514919281,
+            1.0873888731002808
+          ]
+        ],
+        "materials": [
+          "rope"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__rope_turn_3": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.99253249168396,
+            -0.7802914381027222,
+            0.5737223029136658
+          ],
+          [
+            3.1776251792907715,
+            -0.3360527753829956,
+            1.0873888731002808
+          ]
+        ],
+        "materials": [
+          "rope"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__rope_turn_4": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            3.0432488918304443,
+            -0.7987506985664368,
+            0.5737223029136658
+          ],
+          [
+            3.228341579437256,
+            -0.3545120656490326,
+            1.0873888731002808
+          ]
+        ],
+        "materials": [
+          "rope"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__rope_turn_5": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            3.0939652919769287,
+            -0.8172099590301514,
+            0.5737223029136658
+          ],
+          [
+            3.2790579795837402,
+            -0.3729713261127472,
+            1.0873888731002808
+          ]
+        ],
+        "materials": [
+          "rope"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__rope_turn_6": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            3.144681692123413,
+            -0.835669219493866,
+            0.5737223029136658
+          ],
+          [
+            3.3297743797302246,
+            -0.3914305865764618,
+            1.0873888731002808
+          ]
+        ],
+        "materials": [
+          "rope"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__rope_turn_7": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            3.1953980922698975,
+            -0.8541284799575806,
+            0.5737223029136658
+          ],
+          [
+            3.380490779876709,
+            -0.4098898470401764,
+            1.0873888731002808
+          ]
+        ],
+        "materials": [
+          "rope"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__rope_turn_8": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            3.246114492416382,
+            -0.8725877404212952,
+            0.5737223029136658
+          ],
+          [
+            3.4312071800231934,
+            -0.4283491373062134,
+            1.0873888731002808
+          ]
+        ],
+        "materials": [
+          "rope"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__shaft": {
+        "vertices": 72,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.6125850677490234,
+            -0.8248845338821411,
+            0.7538888454437256
+          ],
+          [
+            3.6633214950561523,
+            -0.32994914054870605,
+            0.907222330570221
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__skid_left": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.5285935401916504,
+            -0.8707436323165894,
+            0.0
+          ],
+          [
+            2.991962194442749,
+            -0.009164854884147644,
+            0.12777778506278992
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "haul_winch"
+      },
+      "haul_winch__skid_right": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            3.2839443683624268,
+            -1.145668864250183,
+            0.0
+          ],
+          [
+            3.7473132610321045,
+            -0.2840901017189026,
+            0.12777778506278992
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "haul_winch"
+      },
+      "inner_support__knee_brace_1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            0.11837518215179443,
+            0.8403592705726624,
+            2.158315896987915
+          ],
+          [
+            1.2482444047927856,
+            0.9776360988616943,
+            3.162684202194214
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "inner_support"
+      },
+      "inner_support__knee_brace_-1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.048244476318359,
+            0.8403592705726624,
+            2.158315896987915
+          ],
+          [
+            -2.918375015258789,
+            0.9776360988616943,
+            3.162684202194214
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "inner_support"
+      },
+      "inner_support__lintel": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.292793273925781,
+            0.7445724010467529,
+            3.1110000610351562
+          ],
+          [
+            1.4927932024002075,
+            1.0734230279922485,
+            3.4000000953674316
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "inner_support"
+      },
+      "inner_support__post_1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.204511284828186,
+            0.7445724010467529,
+            0.0
+          ],
+          [
+            1.4927932024002075,
+            1.0734230279922485,
+            3.1110000610351562
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "inner_support"
+      },
+      "inner_support__post_-1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.292793273925781,
+            0.7445724010467529,
+            0.0
+          ],
+          [
+            -4.00451135635376,
+            1.0734230279922485,
+            3.1110000610351562
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "inner_support"
+      },
+      "inner_support__shoe_1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.197304368019104,
+            0.7379953861236572,
+            0.0
+          ],
+          [
+            1.5000001192092896,
+            1.0799999237060547,
+            0.5440000295639038
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "inner_support"
+      },
+      "inner_support__shoe_-1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.300000190734863,
+            0.7379953861236572,
+            0.0
+          ],
+          [
+            -3.9973044395446777,
+            1.0799999237060547,
+            0.5440000295639038
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "inner_support"
+      },
+      "inner_support__shoe_bolt_1": {
+        "vertices": 48,
+        "triangles": 28,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.3169411420822144,
+            0.7199999690055847,
+            0.27421000599861145
+          ],
+          [
+            1.3803633451461792,
+            0.7428368330001831,
+            0.33778998255729675
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "inner_support"
+      },
+      "inner_support__shoe_bolt_-1": {
+        "vertices": 48,
+        "triangles": 28,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.180363178253174,
+            0.7199999690055847,
+            0.27421000599861145
+          ],
+          [
+            -4.116940975189209,
+            0.7428368330001831,
+            0.33778998255729675
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "inner_support"
+      },
+      "left_boulder__weathered_mass": {
+        "vertices": 60,
+        "triangles": 20,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.254097938537598,
+            3.237739086151123,
+            0.0
+          ],
+          [
+            -3.0459022521972656,
+            4.362260818481445,
+            0.5600000023841858
+          ]
+        ],
+        "materials": [
+          "strata"
+        ],
+        "parent": "left_boulder"
+      },
+      "left_wall__faceted_strata": {
+        "vertices": 354,
+        "triangles": 196,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -5.5500006675720215,
+            -4.750000476837158,
+            0.0
+          ],
+          [
+            -4.4499993324279785,
+            4.750000476837158,
+            3.799999952316284
+          ]
+        ],
+        "materials": [
+          "strata"
+        ],
+        "parent": "left_wall"
+      },
+      "ore_0__weathered_mass": {
+        "vertices": 60,
+        "triangles": 20,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -3.828000068664551,
+            -3.0959999561309814,
+            0.0
+          ],
+          [
+            -3.572000026702881,
+            -2.9040000438690186,
+            0.14400000870227814
+          ]
+        ],
+        "materials": [
+          "ore"
+        ],
+        "parent": "ore_0"
+      },
+      "ore_1__weathered_mass": {
+        "vertices": 60,
+        "triangles": 20,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -3.339266061782837,
+            -2.9296863079071045,
+            0.0
+          ],
+          [
+            -3.0607340335845947,
+            -2.670313596725464,
+            0.12600000202655792
+          ]
+        ],
+        "materials": [
+          "ore"
+        ],
+        "parent": "ore_1"
+      },
+      "ore_2__weathered_mass": {
+        "vertices": 60,
+        "triangles": 20,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -3.5172829627990723,
+            2.2628700733184814,
+            0.0
+          ],
+          [
+            -3.082716941833496,
+            2.7371299266815186,
+            0.2160000205039978
+          ]
+        ],
+        "materials": [
+          "ore"
+        ],
+        "parent": "ore_2"
+      },
+      "ore_3__weathered_mass": {
+        "vertices": 60,
+        "triangles": 20,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -3.1782093048095703,
+            3.8339388370513916,
+            0.0
+          ],
+          [
+            -2.921790599822998,
+            4.166060924530029,
+            0.18000000715255737
+          ]
+        ],
+        "materials": [
+          "ore"
+        ],
+        "parent": "ore_3"
+      },
+      "ore_4__weathered_mass": {
+        "vertices": 60,
+        "triangles": 20,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            1.0799401998519897,
+            3.320225715637207,
+            0.0
+          ],
+          [
+            1.4200598001480103,
+            3.679774284362793,
+            0.16200000047683716
+          ]
+        ],
+        "materials": [
+          "ore"
+        ],
+        "parent": "ore_4"
+      },
+      "ore_5__weathered_mass": {
+        "vertices": 60,
+        "triangles": 20,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.304276466369629,
+            3.2736241817474365,
+            0.0
+          ],
+          [
+            2.695723533630371,
+            3.626375913619995,
+            0.18000000715255737
+          ]
+        ],
+        "materials": [
+          "ore"
+        ],
+        "parent": "ore_5"
+      },
+      "ore_6__weathered_mass": {
+        "vertices": 60,
+        "triangles": 20,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.97124981880188,
+            1.1479495763778687,
+            0.0
+          ],
+          [
+            3.228749990463257,
+            1.3520504236221313,
+            0.13500000536441803
+          ]
+        ],
+        "materials": [
+          "ore"
+        ],
+        "parent": "ore_6"
+      },
+      "ore_7__weathered_mass": {
+        "vertices": 60,
+        "triangles": 20,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            3.4200003147125244,
+            1.3270859718322754,
+            0.0
+          ],
+          [
+            3.7799994945526123,
+            1.6729140281677246,
+            0.16200000047683716
+          ]
+        ],
+        "materials": [
+          "ore"
+        ],
+        "parent": "ore_7"
+      },
+      "ore_8__weathered_mass": {
+        "vertices": 60,
+        "triangles": 20,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            3.5774409770965576,
+            -2.2512929439544678,
+            0.0
+          ],
+          [
+            4.022558689117432,
+            -1.7487070560455322,
+            0.23399999737739563
+          ]
+        ],
+        "materials": [
+          "ore"
+        ],
+        "parent": "ore_8"
+      },
+      "ore_9__weathered_mass": {
+        "vertices": 60,
+        "triangles": 20,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            3.8995134830474854,
+            -2.6237616539001465,
+            0.0
+          ],
+          [
+            4.1004862785339355,
+            -2.3762383460998535,
+            0.12600000202655792
+          ]
+        ],
+        "materials": [
+          "ore"
+        ],
+        "parent": "ore_9"
+      },
+      "ore_10__weathered_mass": {
+        "vertices": 60,
+        "triangles": 20,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -0.6266013383865356,
+            -4.729805946350098,
+            0.0
+          ],
+          [
+            -0.37339863181114197,
+            -4.470193862915039,
+            0.11699999868869781
+          ]
+        ],
+        "materials": [
+          "ore"
+        ],
+        "parent": "ore_10"
+      },
+      "rail_left__beam": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.682500123977661,
+            -4.300000190734863,
+            0.09000000357627869
+          ],
+          [
+            -2.5975000858306885,
+            3.700000047683716,
+            0.2199999988079071
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "rail_left"
+      },
+      "rail_right__beam": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -1.402500033378601,
+            -4.300000190734863,
+            0.09000000357627869
+          ],
+          [
+            -1.3174999952316284,
+            3.700000047683716,
+            0.2199999988079071
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "rail_right"
+      },
+      "rear_rock_canopy__faceted_strata": {
+        "vertices": 354,
+        "triangles": 196,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -5.199999809265137,
+            3.299999713897705,
+            3.0999999046325684
+          ],
+          [
+            5.199999809265137,
+            5.0,
+            3.8000001907348633
+          ]
+        ],
+        "materials": [
+          "slate"
+        ],
+        "parent": "rear_rock_canopy"
+      },
+      "right_wall__faceted_strata": {
+        "vertices": 284,
+        "triangles": 156,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            4.424999713897705,
+            -0.5500002503395081,
+            0.0
+          ],
+          [
+            5.575000286102295,
+            4.950000286102295,
+            4.0
+          ]
+        ],
+        "materials": [
+          "slate"
+        ],
+        "parent": "right_wall"
+      },
+      "sleeper_0__beam": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.950000047683716,
+            -3.809999942779541,
+            0.0
+          ],
+          [
+            -1.0499999523162842,
+            -3.5900001525878906,
+            0.09000000357627869
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "sleeper_0"
+      },
+      "sleeper_1__beam": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.950000047683716,
+            -2.809999942779541,
+            0.0
+          ],
+          [
+            -1.0499999523162842,
+            -2.5900001525878906,
+            0.09000000357627869
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "sleeper_1"
+      },
+      "sleeper_2__beam": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.950000047683716,
+            -1.8100000619888306,
+            0.0
+          ],
+          [
+            -1.0499999523162842,
+            -1.590000033378601,
+            0.09000000357627869
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "sleeper_2"
+      },
+      "sleeper_3__beam": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.950000047683716,
+            -0.8100000023841858,
+            0.0
+          ],
+          [
+            -1.0499999523162842,
+            -0.5899999737739563,
+            0.09000000357627869
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "sleeper_3"
+      },
+      "sleeper_4__beam": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.950000047683716,
+            0.1900000125169754,
+            0.0
+          ],
+          [
+            -1.0499999523162842,
+            0.4100000262260437,
+            0.09000000357627869
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "sleeper_4"
+      },
+      "sleeper_5__beam": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.950000047683716,
+            1.1899999380111694,
+            0.0
+          ],
+          [
+            -1.0499999523162842,
+            1.409999966621399,
+            0.09000000357627869
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "sleeper_5"
+      },
+      "sleeper_6__beam": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.950000047683716,
+            2.190000057220459,
+            0.0
+          ],
+          [
+            -1.0499999523162842,
+            2.4099998474121094,
+            0.09000000357627869
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "sleeper_6"
+      },
+      "sleeper_7__beam": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -2.950000047683716,
+            3.190000057220459,
+            0.0
+          ],
+          [
+            -1.0499999523162842,
+            3.4099998474121094,
+            0.09000000357627869
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "sleeper_7"
+      },
+      "supply_crate__bottom": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.268619537353516,
+            -2.2989463806152344,
+            0.0
+          ],
+          [
+            -3.331380605697632,
+            -1.5010534524917603,
+            0.052000004798173904
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__end_board_1_0": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -3.471290349960327,
+            -2.137402057647705,
+            0.056000005453825
+          ],
+          [
+            -3.3384757041931152,
+            -1.5515377521514893,
+            0.19750000536441803
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__end_board_1_1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -3.471290349960327,
+            -2.137402057647705,
+            0.2055000215768814
+          ],
+          [
+            -3.3384757041931152,
+            -1.5515377521514893,
+            0.34700000286102295
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__end_board_1_2": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -3.471290349960327,
+            -2.137402057647705,
+            0.35499998927116394
+          ],
+          [
+            -3.3384757041931152,
+            -1.5515377521514893,
+            0.49650001525878906
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__end_board_1_3": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -3.471290349960327,
+            -2.137402057647705,
+            0.5044999718666077
+          ],
+          [
+            -3.3384757041931152,
+            -1.5515377521514893,
+            0.6460000276565552
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__end_board_-1_0": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.261524200439453,
+            -2.248462200164795,
+            0.056000005453825
+          ],
+          [
+            -4.128709316253662,
+            -1.662597894668579,
+            0.19750000536441803
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__end_board_-1_1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.261524200439453,
+            -2.248462200164795,
+            0.2055000215768814
+          ],
+          [
+            -4.128709316253662,
+            -1.662597894668579,
+            0.34700000286102295
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__end_board_-1_2": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.261524200439453,
+            -2.248462200164795,
+            0.35499998927116394
+          ],
+          [
+            -4.128709316253662,
+            -1.662597894668579,
+            0.49650001525878906
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__end_board_-1_3": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.261524200439453,
+            -2.248462200164795,
+            0.5044999718666077
+          ],
+          [
+            -4.128709316253662,
+            -1.662597894668579,
+            0.6460000276565552
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__long_board_1_0": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.268619537353516,
+            -1.6698349714279175,
+            0.056000005453825
+          ],
+          [
+            -3.4197964668273926,
+            -1.5010534524917603,
+            0.19750000536441803
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__long_board_1_1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.268619537353516,
+            -1.6698349714279175,
+            0.2055000215768814
+          ],
+          [
+            -3.4197964668273926,
+            -1.5010534524917603,
+            0.34700000286102295
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__long_board_1_2": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.268619537353516,
+            -1.6698349714279175,
+            0.35499998927116394
+          ],
+          [
+            -3.4197964668273926,
+            -1.5010534524917603,
+            0.49650001525878906
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__long_board_1_3": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.268619537353516,
+            -1.6698349714279175,
+            0.5044999718666077
+          ],
+          [
+            -3.4197964668273926,
+            -1.5010534524917603,
+            0.6460000276565552
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__long_board_-1_0": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.180203437805176,
+            -2.2989463806152344,
+            0.056000005453825
+          ],
+          [
+            -3.331380605697632,
+            -2.1301651000976562,
+            0.19750000536441803
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__long_board_-1_1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.180203437805176,
+            -2.2989463806152344,
+            0.2055000215768814
+          ],
+          [
+            -3.331380605697632,
+            -2.1301651000976562,
+            0.34700000286102295
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__long_board_-1_2": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.180203437805176,
+            -2.2989463806152344,
+            0.35499998927116394
+          ],
+          [
+            -3.331380605697632,
+            -2.1301651000976562,
+            0.49650001525878906
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__long_board_-1_3": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.180203437805176,
+            -2.2989463806152344,
+            0.5044999718666077
+          ],
+          [
+            -3.331380605697632,
+            -2.1301651000976562,
+            0.6460000276565552
+          ]
+        ],
+        "materials": [
+          "timber"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__strap_1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -3.6129276752471924,
+            -2.213456630706787,
+            0.0
+          ],
+          [
+            -3.4820353984832764,
+            -1.5155649185180664,
+            0.6499999761581421
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "supply_crate"
+      },
+      "supply_crate__strap_-1": {
+        "vertices": 96,
+        "triangles": 44,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            -4.117964267730713,
+            -2.2844350337982178,
+            0.0
+          ],
+          [
+            -3.987072229385376,
+            -1.586543321609497,
+            0.6499999761581421
+          ]
+        ],
+        "materials": [
+          "iron"
+        ],
+        "parent": "supply_crate"
+      },
+      "wall_boulder__weathered_mass": {
+        "vertices": 60,
+        "triangles": 20,
+        "invalid_vertices": 0,
+        "degenerate_triangles": 0,
+        "bounds": [
+          [
+            2.7750258445739746,
+            2.804307699203491,
+            0.0
+          ],
+          [
+            4.224974155426025,
+            4.19569206237793,
+            0.64000004529953
+          ]
+        ],
+        "materials": [
+          "strata"
+        ],
+        "parent": "wall_boulder"
+      }
+    },
+    "mesh_count": 115,
+    "triangles": 4872,
+    "invalid_vertices": 0,
+    "degenerate_triangles": 0,
+    "bounds": [
+      [
+        -6.0,
+        -6.0,
+        -0.3799999952316284
+      ],
+      [
+        6.0,
+        6.0,
+        4.400000095367432
+      ]
+    ]
+  }
+}

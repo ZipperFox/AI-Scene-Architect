@@ -1,0 +1,18 @@
+{
+  "iteration": 2,
+  "visual_reviewed": true,
+  "change_signature": "canopy:fit-supports-and-shorten;camera:front-inspection;rubble:move-fragment",
+  "renders": {
+    "hero": "182e1cc2ecd6aa797ffc30716c72106c0500fd3e2cd4850efaa8e50533ba2b2d",
+    "three_quarter": "46ade901c83fa731c9634d46c1f6891b1203285b6e021dd4372a6e4b1f54a0a2",
+    "top": "9006e1d3cb6d07f03b53e577b8a3c0cd679b21d8e0b245f146c796f3dbb7259b"
+  },
+  "issues": [
+    {
+      "id": "cave-envelope",
+      "severity": 1,
+      "evidence": "The hero and secondary views retain a broad slab-like rear canopy silhouette, despite improved attachment.（主視角與次視角的後部岩頂仍偏板狀，接合已改善。）",
+      "fix": "Future user-authorized work could use a shaped continuous tunnel cross-section instead of modular slabs."
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.2"
+    },
+    "id": {
+      "$ref": "#/$defs/id"
+    },
+    "brief": {
+      "$ref": "#/$defs/text"
+    },
+    "scene_type": {
+      "$ref": "#/$defs/text"
+    },
+    "style": {
+      "$ref": "#/$defs/text"
+    },
+    "purpose": {
+      "$ref": "#/$defs/text"
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    "art_direction": {
+      "type": "object",
+      "properties": {
+        "mood": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text"
+          },
+          "minItems": 1,
+          "maxItems": 5
+        },
+        "focal_point": {
+          "$ref": "#/$defs/text"
+        },
+        "palette_rationale": {
+          "$ref": "#/$defs/text"
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text"
+          },
+          "minItems": 1,
+          "maxItems": 30
+        },
+        "avoid": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text"
+          },
+          "minItems": 1,
+          "maxItems": 30
+        }
+      },
+      "required": [
+        "mood",
+        "focal_point",
+        "palette_rationale",
+        "assumptions",
+        "avoid"
+      ],
+      "additionalProperties": false
+    },
+    "space": {
+      "type": "object",
+      "properties": {
+        "units": {
+          "const": "meters"
+        },
+        "up_axis": {
+          "const": "Z"
+        },
+        "size": {
+          "$ref": "#/$defs/positive3"
+        },
+        "origin": {
+          "$ref": "#/$defs/text"
+        }
+      },
+      "required": [
+        "units",
+        "up_axis",
+        "size",
+        "origin"
+      ],
+      "additionalProperties": false
+    },
+    "zones": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/zone"
+      },
+      "minItems": 1,
+      "maxItems": 30
+    },
+    "paths": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/path"
+      },
+      "minItems": 0,
+      "maxItems": 20
+    },
+    "materials": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/material"
+      },
+      "minItems": 1,
+      "maxItems": 100
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/asset"
+      },
+      "minItems": 1,
+      "maxItems": 100
+    },
+    "objects": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/object"
+      },
+      "minItems": 1,
+      "maxItems": 1000
+    },
+    "lights": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/light"
+      },
+      "minItems": 1,
+      "maxItems": 30
+    },
+    "cameras": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/camera"
+      },
+      "minItems": 3,
+      "maxItems": 12
+    },
+    "hero_camera": {
+      "$ref": "#/$defs/id"
+    },
+    "world_color": {
+      "$ref": "#/$defs/color"
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "brief",
+    "scene_type",
+    "style",
+    "purpose",
+    "seed",
+    "art_direction",
+    "space",
+    "zones",
+    "paths",
+    "materials",
+    "assets",
+    "objects",
+    "lights",
+    "cameras",
+    "hero_camera",
+    "world_color"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ZipperFox/AI-Scene-Architect/scene-plan-0.2.schema.json",
+  "title": "AI Scene Architect scene plan v0.2",
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{0,62}$",
+      "minLength": 1,
+      "maxLength": 63
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 12000
+    },
+    "position": {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minimum": -10000,
+        "maximum": 10000
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "positive3": {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minimum": 0.001,
+        "maximum": 1000
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "color": {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "variant": {
+          "enum": [
+            "table",
+            "bench",
+            "crate",
+            "minecart",
+            "winch"
+          ]
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "segments": {
+          "type": "integer",
+          "minimum": 4,
+          "maximum": 32
+        },
+        "roughness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.4
+        },
+        "bevel": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.08
+        },
+        "braces": {
+          "type": "boolean"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "material": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "color": {
+          "$ref": "#/$defs/color"
+        },
+        "roughness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "metallic": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "emission": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "surface": {
+          "enum": [
+            "stone",
+            "wood",
+            "metal",
+            "crystal",
+            "plain"
+          ]
+        },
+        "variation": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.3
+        }
+      },
+      "required": [
+        "id",
+        "color",
+        "roughness",
+        "metallic",
+        "emission",
+        "surface",
+        "variation"
+      ],
+      "additionalProperties": false
+    },
+    "asset": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "enum": [
+            "ground",
+            "wall",
+            "rock",
+            "rock_wall",
+            "beam",
+            "timber_frame",
+            "crystal",
+            "furniture",
+            "mechanism"
+          ]
+        },
+        "dimensions": {
+          "$ref": "#/$defs/positive3"
+        },
+        "materials": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "minItems": 1,
+          "maxItems": 8
+        },
+        "parameters": {
+          "$ref": "#/$defs/parameters"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "dimensions",
+        "materials",
+        "parameters"
+      ],
+      "additionalProperties": false
+    },
+    "object": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "asset": {
+          "$ref": "#/$defs/id"
+        },
+        "position": {
+          "$ref": "#/$defs/position"
+        },
+        "rotation": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": -360,
+            "maximum": 360
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "scale": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0.01,
+            "maximum": 100
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "support": {
+          "$ref": "#/$defs/id"
+        },
+        "allow_overlap_with": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        },
+        "purpose": {
+          "$ref": "#/$defs/text"
+        }
+      },
+      "required": [
+        "id",
+        "asset",
+        "position",
+        "rotation",
+        "scale",
+        "purpose"
+      ],
+      "additionalProperties": false
+    },
+    "light": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "type": {
+          "enum": [
+            "AREA",
+            "POINT",
+            "SUN"
+          ]
+        },
+        "position": {
+          "$ref": "#/$defs/position"
+        },
+        "target": {
+          "$ref": "#/$defs/position"
+        },
+        "color": {
+          "$ref": "#/$defs/color"
+        },
+        "energy": {
+          "type": "number",
+          "minimum": 0.001,
+          "maximum": 100000
+        },
+        "size": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "position",
+        "target",
+        "color",
+        "energy",
+        "size"
+      ],
+      "additionalProperties": false
+    },
+    "camera": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "position": {
+          "$ref": "#/$defs/position"
+        },
+        "target": {
+          "$ref": "#/$defs/position"
+        },
+        "lens": {
+          "type": "number",
+          "minimum": 10,
+          "maximum": 200
+        },
+        "ortho_scale": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "purpose": {
+          "$ref": "#/$defs/text"
+        }
+      },
+      "required": [
+        "id",
+        "position",
+        "target",
+        "lens",
+        "ortho_scale",
+        "purpose"
+      ],
+      "additionalProperties": false
+    },
+    "zone": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "center": {
+          "$ref": "#/$defs/position"
+        },
+        "size": {
+          "$ref": "#/$defs/positive3"
+        },
+        "purpose": {
+          "$ref": "#/$defs/text"
+        }
+      },
+      "required": [
+        "id",
+        "center",
+        "size",
+        "purpose"
+      ],
+      "additionalProperties": false
+    },
+    "path": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/position"
+          },
+          "minItems": 2,
+          "maxItems": 100
+        },
+        "width": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 10
+        },
+        "purpose": {
+          "$ref": "#/$defs/text"
+        }
+      },
+      "required": [
+        "id",
+        "points",
+        "width",
+        "purpose"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

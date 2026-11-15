@@ -1,0 +1,5 @@
+00:00.281  blend            | Read blend: "D:\AI_work\AI-Scene-Architect\output\v02\crystal-mine\iteration-1\scene.blend"
+ASA_VERIFY={"source_hash_matches_build": true, "source_unchanged": true, "mesh_names_match": true, "triangle_count_matches": true, "no_invalid_vertices": true, "no_degenerate_triangles": true, "per_mesh_geometry_material_hierarchy_matches": true, "all_meshes_have_uvs": true}
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:33:43)
+
+Blender quit

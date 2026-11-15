@@ -1,0 +1,105 @@
+11:49:12 | INFO: Data are loaded, start creating Blender stuff
+11:49:12 | INFO: Blender create Mesh node cart__axle_1
+11:49:12 | INFO: Blender create Mesh node cart__axle_-1
+11:49:12 | INFO: Blender create Mesh node cart__chassis_1
+11:49:12 | INFO: Blender create Mesh node cart__chassis_-1
+11:49:12 | INFO: Blender create Mesh node cart__end_plate_1
+11:49:12 | INFO: Blender create Mesh node cart__end_plate_-1
+11:49:12 | INFO: Blender create Mesh node cart__end_rim_1
+11:49:12 | INFO: Blender create Mesh node cart__end_rim_-1
+11:49:12 | INFO: Blender create Mesh node cart__hopper_floor
+11:49:12 | INFO: Blender create Mesh node cart__hub_1_1
+11:49:12 | INFO: Blender create Mesh node cart__hub_1_-1
+11:49:12 | INFO: Blender create Mesh node cart__hub_-1_1
+11:49:12 | INFO: Blender create Mesh node cart__hub_-1_-1
+11:49:12 | INFO: Blender create Mesh node cart__long_rim_1
+11:49:12 | INFO: Blender create Mesh node cart__long_rim_-1
+11:49:12 | INFO: Blender create Mesh node cart__rivet_1_0.28
+11:49:12 | INFO: Blender create Mesh node cart__rivet_1_-0.28
+11:49:12 | INFO: Blender create Mesh node cart__rivet_-1_0.28
+11:49:12 | INFO: Blender create Mesh node cart__rivet_-1_-0.28
+11:49:12 | INFO: Blender create Mesh node cart__side_plate_1
+11:49:12 | INFO: Blender create Mesh node cart__side_plate_-1
+11:49:13 | INFO: Blender create Mesh node cart__tow_loop_stem
+11:49:13 | INFO: Blender create Mesh node cart__wheel_1_1
+11:49:13 | INFO: Blender create Mesh node cart__wheel_1_-1
+11:49:13 | INFO: Blender create Mesh node cart__wheel_-1_1
+11:49:13 | INFO: Blender create Mesh node cart__wheel_-1_-1
+11:49:13 | INFO: Blender create Mesh node back_strata__faceted_strata
+11:49:13 | INFO: Blender create Mesh node entry_frame__knee_brace_1
+11:49:13 | INFO: Blender create Mesh node entry_frame__knee_brace_-1
+11:49:13 | INFO: Blender create Mesh node entry_frame__lintel
+11:49:13 | INFO: Blender create Mesh node entry_frame__post_1
+11:49:13 | INFO: Blender create Mesh node entry_frame__post_-1
+11:49:13 | INFO: Blender create Mesh node entry_frame__shoe_1
+11:49:13 | INFO: Blender create Mesh node entry_frame__shoe_-1
+11:49:13 | INFO: Blender create Mesh node entry_frame__shoe_bolt_1
+11:49:13 | INFO: Blender create Mesh node entry_frame__shoe_bolt_-1
+11:49:13 | INFO: Blender create Mesh node crystal_small__six_sided_growth
+11:49:13 | INFO: Blender create Mesh node chamber_floor__ground
+11:49:13 | INFO: Blender create Mesh node crystal_mid__six_sided_growth
+11:49:13 | INFO: Blender create Mesh node crystal_tall__six_sided_growth
+11:49:13 | INFO: Blender create Mesh node Icosphere.001
+11:49:13 | INFO: Blender create Mesh node manual_winch__bearing_post_1
+11:49:13 | INFO: Blender create Mesh node manual_winch__bearing_post_-1
+11:49:13 | INFO: Blender create Mesh node manual_winch__crank
+11:49:13 | INFO: Blender create Mesh node manual_winch__drum_flange_1
+11:49:13 | INFO: Blender create Mesh node manual_winch__drum_flange_-1
+11:49:13 | INFO: Blender create Mesh node manual_winch__handle
+11:49:13 | INFO: Blender create Mesh node manual_winch__rope_drum
+11:49:13 | INFO: Blender create Mesh node manual_winch__rope_turn_0
+11:49:13 | INFO: Blender create Mesh node manual_winch__rope_turn_1
+11:49:13 | INFO: Blender create Mesh node manual_winch__rope_turn_2
+11:49:13 | INFO: Blender create Mesh node manual_winch__rope_turn_3
+11:49:13 | INFO: Blender create Mesh node manual_winch__rope_turn_4
+11:49:13 | INFO: Blender create Mesh node manual_winch__rope_turn_5
+11:49:13 | INFO: Blender create Mesh node manual_winch__rope_turn_6
+11:49:13 | INFO: Blender create Mesh node manual_winch__rope_turn_7
+11:49:13 | INFO: Blender create Mesh node manual_winch__rope_turn_8
+11:49:13 | INFO: Blender create Mesh node manual_winch__shaft
+11:49:13 | INFO: Blender create Mesh node manual_winch__skid_left
+11:49:13 | INFO: Blender create Mesh node manual_winch__skid_right
+11:49:13 | INFO: Blender create Mesh node rear_frame__knee_brace_1
+11:49:13 | INFO: Blender create Mesh node rear_frame__knee_brace_-1
+11:49:13 | INFO: Blender create Mesh node rear_frame__lintel
+11:49:13 | INFO: Blender create Mesh node rear_frame__post_1
+11:49:13 | INFO: Blender create Mesh node rear_frame__post_-1
+11:49:13 | INFO: Blender create Mesh node rear_frame__shoe_1
+11:49:13 | INFO: Blender create Mesh node rear_frame__shoe_-1
+11:49:13 | INFO: Blender create Mesh node rear_frame__shoe_bolt_1
+11:49:13 | INFO: Blender create Mesh node rear_frame__shoe_bolt_-1
+11:49:13 | INFO: Blender create Mesh node Icosphere
+11:49:13 | INFO: Blender create Mesh node left_strata__faceted_strata
+11:49:13 | INFO: Blender create Mesh node Icosphere.002
+11:49:13 | INFO: Blender create Mesh node rail__beam
+11:49:13 | INFO: Blender create Mesh node rear_canopy__faceted_strata
+11:49:13 | INFO: Blender create Mesh node right_strata__faceted_strata
+11:49:13 | INFO: Blender create Mesh node sleeper__beam
+11:49:13 | INFO: Blender create Mesh node supply_box__bottom
+11:49:13 | INFO: Blender create Mesh node supply_box__end_board_1_0
+11:49:13 | INFO: Blender create Mesh node supply_box__end_board_1_1
+11:49:13 | INFO: Blender create Mesh node supply_box__end_board_1_2
+11:49:13 | INFO: Blender create Mesh node supply_box__end_board_1_3
+11:49:13 | INFO: Blender create Mesh node supply_box__end_board_-1_0
+11:49:13 | INFO: Blender create Mesh node supply_box__end_board_-1_1
+11:49:13 | INFO: Blender create Mesh node supply_box__end_board_-1_2
+11:49:13 | INFO: Blender create Mesh node supply_box__end_board_-1_3
+11:49:13 | INFO: Blender create Mesh node supply_box__long_board_1_0
+11:49:13 | INFO: Blender create Mesh node supply_box__long_board_1_1
+11:49:13 | INFO: Blender create Mesh node supply_box__long_board_1_2
+11:49:13 | INFO: Blender create Mesh node supply_box__long_board_1_3
+11:49:13 | INFO: Blender create Mesh node supply_box__long_board_-1_0
+11:49:13 | INFO: Blender create Mesh node supply_box__long_board_-1_1
+11:49:13 | INFO: Blender create Mesh node supply_box__long_board_-1_2
+11:49:13 | INFO: Blender create Mesh node supply_box__long_board_-1_3
+11:49:13 | INFO: Blender create Mesh node supply_box__strap_1
+11:49:13 | INFO: Blender create Mesh node supply_box__strap_-1
+11:49:13 | INFO: glTF import finished in 0.06s
+00:01.375  render           | Saved: 'D:\AI_work\AI-Scene-Architect\output\v02\crystal-mine\iteration-2\glb-previews\hero.png'
+00:02.688  render           | Saved: 'D:\AI_work\AI-Scene-Architect\output\v02\crystal-mine\iteration-2\glb-previews\three_quarter.png'
+00:04.047  render           | Saved: 'D:\AI_work\AI-Scene-Architect\output\v02\crystal-mine\iteration-2\glb-previews\top.png'
+ASA_VERIFY={"source_hash_matches_build": true, "source_unchanged": true, "mesh_names_match": true, "triangle_count_matches": true, "no_invalid_vertices": true, "no_degenerate_triangles": true, "per_mesh_geometry_material_hierarchy_matches": true, "all_meshes_have_uvs": true}
+ASA_PREVIEW_MANIFEST=D:\AI_work\AI-Scene-Architect\output\v02\crystal-mine\iteration-2\glb-previews\manifest.json
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:33:43)
+
+Blender quit

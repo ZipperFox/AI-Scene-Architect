@@ -2,7 +2,38 @@
 
 An open-source [Agent Skill](https://agentskills.io/) for AI-directed Blender scene creation, visual review, and controlled iteration.
 
-**Current status: visual feedback foundation (v0.1).** This repository does **not** yet generate complete scenes autonomously. The implemented foundation renders a scene from several viewpoints and makes the AI's visual revision loop bounded and auditable.
+**Current status: agent-driven scene planning and procedural assembly (v0.2, draft).** An AI agent turns a text brief into validated scene data; reusable Blender builders assemble editable small scenes and GLB exports. The Python scripts do not contain a text-understanding model or a keyword-to-template scene selector. The v0.1 multiview/iteration foundation is retained.
+
+PR dependency: this work is stacked on **PR #1**, which remains unmerged. Review the v0.2 PR against `feat/visual-review-guard`; do not merge the base PR as part of this draft.
+
+## Text brief → scene plan → editable scene
+
+Use an image-capable AI agent with [SKILL.md](skills/ai-scene-architect/SKILL.md).
+The agent reads the actual brief and [planning contract](skills/ai-scene-architect/references/scene-planning.md), then authors `scene_plan.json` against the [JSON Schema](skills/ai-scene-architect/references/scene-plan.schema.json). The example plans are two independently authored demonstrations, not runtime templates.
+
+```powershell
+# Optional: prepare a request for your AI agent（產生給 AI 的規劃請求）
+python skills/ai-scene-architect/scripts/prepare_planning.py --brief examples/crystal-mine/brief.txt --output planning-request.md
+# Validate an AI-authored plan（驗證 AI 撰寫的規劃）
+python skills/ai-scene-architect/scripts/scene_plan.py examples/crystal-mine/scene_plan.json
+# Use your EXISTING Blender executable and a NEW output directory（既有 Blender、新輸出目錄）
+python skills/ai-scene-architect/scripts/run_scene.py --blender 'D:/SteamLibrary/steamapps/common/Blender/blender.exe' --plan examples/crystal-mine/scene_plan.json --output output/my-mine-01
+```
+
+The pipeline creates `scene.blend`, `scene.glb`, the source plan and generator snapshot, three authored PNGs/manifest, fresh-process verification JSON, and three relit GLB diagnostic previews. It refuses existing output directories. Inspect the images, append a review via `review_history.py`, and consult the existing guard before any correction. Corrections use `--revision 1` or `2` with the **same** `--history`; do not reset it.
+
+Builders cover ground/walls, irregular rocks/continuous relief walls, timber members/braced frames, pointed crystals, planked tables/benches/crates, and assembled minecarts/winches. Materials provide portable PBR factors plus Blender-native procedural bump. GLB does not preserve procedural bump, area lights or world lighting; relight it in the destination engine. Layout/support checks flag candidates and do not replace visual inspection or a collision solver.
+
+Examples: [fantasy crystal mine](examples/crystal-mine/scene_plan.json) and [woodwork shop](examples/woodwork-shop/scene_plan.json). See [Windows Blender 5.3.0 validation](evidence/v02/REPORT_ZH.md) for actual renders, checks and remaining cave-art limitations. Blender 5.2.3 was not tested.
+
+## Tests
+
+```powershell
+python -m unittest discover -s tests -v
+& 'D:/SteamLibrary/steamapps/common/Blender/blender.exe' --background --factory-startup --python-exit-code 1 --python tests/blender_contract_checks.py
+```
+
+No pip installation is needed. Tests cover the v0.1 policy, plan/schema relations, review journal boundaries and Blender builder dimensions/topology/reuse. Visual quality remains an image review, not a unit-test score.
 
 ## What makes it different
 
@@ -50,12 +81,12 @@ python skills/ai-scene-architect/scripts/iteration_guard.py \
 
 The command outputs a machine-readable `continue` or `stop` decision with reasons. The AI should never start a revision if it returns `stop`. Identical-output and no-progress warnings remain informational; they do not consume additional revisions or cause an early stop.
 
-## Planned next steps
+## Possible next steps
 
-1. Scene planning schema (dimensions, layout, style constraints, asset inventory).
-2. Reusable Blender procedural builders and asset-library reuse.
-3. Engine-specific export and verification for Godot, Unity, and web GLB.
-4. Reference-image alignment and visual comparisons, with human approvals at style boundaries.
+1. Continuous tunnel/organic enclosure builders and more furniture families.
+2. Portable texture baking and packed UV layouts; asset-library ingestion.
+3. Engine-specific verification for Godot, Unity, and web GLB.
+4. Surface-aware contact/collision checks and reference-aligned visual comparisons.
 
 ## License
 

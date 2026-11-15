@@ -1,0 +1,13 @@
+00:00.281  blend            | Read blend: "D:\AI_work\AI-Scene-Architect\output\v02\crystal-mine\iteration-2\scene.blend"
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:33:43)
+
+Blender quit
+Traceback (most recent call last):
+  File "D:\AI_work\AI-Scene-Architect\skills\ai-scene-architect\scripts\build_scene.py", line 226, in <module>
+    main()
+    ~~~~^^
+  File "D:\AI_work\AI-Scene-Architect\skills\ai-scene-architect\scripts\build_scene.py", line 192, in main
+    raise PlanError('Use --factory-startup with no input .blend; existing sources are never edited')
+scene_plan.PlanError: Use --factory-startup with no input .blend; existing sources are never edited
+
+Error: script failed, file: 'D:\AI_work\AI-Scene-Architect\skills\ai-scene-architect\scripts\build_scene.py', exiting.

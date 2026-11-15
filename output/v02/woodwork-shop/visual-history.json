@@ -1,0 +1,37 @@
+[
+  {
+    "iteration": 0,
+    "visual_reviewed": true,
+    "change_signature": "initial-preview",
+    "renders": {
+      "hero": "f612daa8b320cc1047b54d4fbafc02001016f1fa80676d9ae4ba5b47d9ba2c54",
+      "three_quarter": "7681fa6a63ab788a71424947e7c6aedad8e42ec68aa07b0fcbc52973c827a8ef",
+      "top": "0231d387883f15da076d95e3558733e6ed52255cda23f61acca98d4faeebe24c"
+    },
+    "issues": [
+      {
+        "id": "secondary-occlusion",
+        "severity": 1,
+        "evidence": "The left wall hides the table legs and storage in the secondary view.（次視角左牆遮擋家具。）",
+        "fix": "Choose an open-right inspection camera."
+      },
+      {
+        "id": "manufactured-corner-shading",
+        "severity": 1,
+        "evidence": "Small black corner artifacts are visible at the wall junction.（牆角有小黑色陰影瑕疵。）",
+        "fix": "Inspect box winding and correct shared geometry normals."
+      }
+    ]
+  },
+  {
+    "iteration": 1,
+    "visual_reviewed": true,
+    "change_signature": "geometry:normals;layout:clearance;camera:inspection;lighting:focus",
+    "renders": {
+      "hero": "4d1e89a551e802eaf8eb99612095ef5328e19f9d94a9f33217f7d624789d0a66",
+      "three_quarter": "03d3302ea307c497a7ab381a2a461d11fa387cbd63622ce8442a625843548336",
+      "top": "8d9ae203146cd0aef6b18adb10eed8d0bcb4813d2537a2b5552026073ac9b5e1"
+    },
+    "issues": []
+  }
+]
