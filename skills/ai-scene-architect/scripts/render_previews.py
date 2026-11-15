@@ -28,6 +28,8 @@ def arguments():
     parser.add_argument("--samples", type=int, default=16, help="Cycles sample cap (1–256)")
     parser.add_argument("--engine", choices=("scene", "cycles-cpu"), default="scene",
                         help="Use scene renderer or headless-friendly Cycles CPU")
+    parser.add_argument("--camera-names", nargs=3, metavar=("HERO", "SECONDARY", "OVERVIEW"),
+                        help="Optional three authored camera objects; retains v0.1 defaults when omitted")
     args = parser.parse_args(argv)
     if not 128 <= args.resolution <= 2048:
         parser.error("--resolution must be 128–2048")
@@ -104,6 +106,13 @@ def sha256(path):
 
 def main():
     args = arguments()
+    authored_cameras = None
+    if args.camera_names:
+        authored_cameras = [bpy.context.scene.objects.get(name) for name in args.camera_names]
+        if any(camera is None or camera.type != "CAMERA" for camera in authored_cameras):
+            raise RuntimeError("All --camera-names must identify existing scene cameras")
+        if len(set(args.camera_names)) != 3:
+            raise RuntimeError("Three distinct authored cameras are required")
     target = Path(args.output).expanduser().resolve()
     if target.exists() and any(target.iterdir()):
         raise RuntimeError("Preview directory is not empty; use a new directory for each iteration: " + str(target))
@@ -128,7 +137,7 @@ def main():
         scene.cycles.samples = args.samples
 
     old_camera = scene.camera
-    cameras = {
+    cameras = dict(zip(VIEWS, authored_cameras)) if authored_cameras else {
         "hero": old_camera if old_camera else create_camera(
             scene, "hero", center + radius * Vector((1.6, -3.0, 1.6)), center, radius
         ),

@@ -1,0 +1,36 @@
+{
+  "iteration": 0,
+  "visual_reviewed": true,
+  "change_signature": "initial-preview",
+  "renders": {
+    "hero": "f1185fc5fb1870a84f55053d257dd0e770330279edf2c92ab739ca91cdf2d652",
+    "three_quarter": "05745e66c9db73e027be9e6a586e18c9aff4243f71bbc07a3b2131f5ae3369b0",
+    "top": "088f9599d50e695059565797d0a916bd0cc0c58d6b716a6e078092a4a0b21bbf"
+  },
+  "issues": [
+    {
+      "id": "cave-envelope",
+      "severity": 2,
+      "evidence": "The rock walls are straight rectangular panels; the open top lacks a rear rock canopy and reads as a quarry.（岩壁矩形外框過直、缺少局部洞頂，較像露天採石場。）",
+      "fix": "Shape the wall outline and add a supported rear canopy, retaining the agreed cutaway."
+    },
+    {
+      "id": "rail-post-clearance",
+      "severity": 2,
+      "evidence": "Entrance and inner support shoes intersect the left rail, corroborated by overlap candidates.（支架柱腳與左軌重疊。）",
+      "fix": "Widen and offset the same timber frames to clear both rails."
+    },
+    {
+      "id": "overview-crop",
+      "severity": 1,
+      "evidence": "The rotated top camera crops the floor corners.（旋轉俯視鏡頭裁掉地板角落。）",
+      "fix": "Align the overview with world axes and preserve a margin."
+    },
+    {
+      "id": "focal-lighting",
+      "severity": 1,
+      "evidence": "Bright neutral lighting weakens the crystal focal hierarchy.（全場過亮，水晶焦點不明確。）",
+      "fix": "Reduce broad fill and use restrained local crystal light."
+    }
+  ]
+}

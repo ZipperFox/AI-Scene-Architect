@@ -1,0 +1,86 @@
+[
+  {
+    "iteration": 0,
+    "visual_reviewed": true,
+    "change_signature": "initial-preview",
+    "renders": {
+      "hero": "f1185fc5fb1870a84f55053d257dd0e770330279edf2c92ab739ca91cdf2d652",
+      "three_quarter": "05745e66c9db73e027be9e6a586e18c9aff4243f71bbc07a3b2131f5ae3369b0",
+      "top": "088f9599d50e695059565797d0a916bd0cc0c58d6b716a6e078092a4a0b21bbf"
+    },
+    "issues": [
+      {
+        "id": "cave-envelope",
+        "severity": 2,
+        "evidence": "The rock walls are straight rectangular panels; the open top lacks a rear rock canopy and reads as a quarry.（岩壁矩形外框過直、缺少局部洞頂，較像露天採石場。）",
+        "fix": "Shape the wall outline and add a supported rear canopy, retaining the agreed cutaway."
+      },
+      {
+        "id": "rail-post-clearance",
+        "severity": 2,
+        "evidence": "Entrance and inner support shoes intersect the left rail, corroborated by overlap candidates.（支架柱腳與左軌重疊。）",
+        "fix": "Widen and offset the same timber frames to clear both rails."
+      },
+      {
+        "id": "overview-crop",
+        "severity": 1,
+        "evidence": "The rotated top camera crops the floor corners.（旋轉俯視鏡頭裁掉地板角落。）",
+        "fix": "Align the overview with world axes and preserve a margin."
+      },
+      {
+        "id": "focal-lighting",
+        "severity": 1,
+        "evidence": "Bright neutral lighting weakens the crystal focal hierarchy.（全場過亮，水晶焦點不明確。）",
+        "fix": "Reduce broad fill and use restrained local crystal light."
+      }
+    ]
+  },
+  {
+    "iteration": 1,
+    "visual_reviewed": true,
+    "change_signature": "geometry:normals;layout:clearance;camera:inspection;lighting:focus",
+    "renders": {
+      "hero": "02f1c3d27c2e181abb51f66fbb252109cb11b8ae5c7707bb8b720ebba7eec71f",
+      "three_quarter": "01d9e96227c7a37a4fa4a25951cca25300d6304b8469b62837f4d3c2b19b8493",
+      "top": "0615fb2741d0eade1d184ccb2c49f33cdf0c4b2e38b6a08295723e179bb9c971"
+    },
+    "issues": [
+      {
+        "id": "cave-envelope",
+        "severity": 2,
+        "evidence": "The rear canopy reads detached at the right wall and remains a broad slab.（後方岩頂在右側有接合間隙，輪廓偏板狀。）",
+        "fix": "Reduce canopy depth/thickness and raise the supporting right rock wall."
+      },
+      {
+        "id": "roof-overview-occlusion",
+        "severity": 1,
+        "evidence": "The canopy hides the rear crystal bases in the top view.（俯視時岩頂遮擋後方水晶底部。）",
+        "fix": "Shorten the canopy to keep the crystal zone visible in the cutaway."
+      },
+      {
+        "id": "rubble-clearance",
+        "severity": 1,
+        "evidence": "The layout check flags one loose ore fragment intersecting the left boulder.（配置檢查指出一塊碎礦與左側岩塊重疊。）",
+        "fix": "Move that single fragment into the nearby free ground."
+      }
+    ]
+  },
+  {
+    "iteration": 2,
+    "visual_reviewed": true,
+    "change_signature": "canopy:fit-supports-and-shorten;camera:front-inspection;rubble:move-fragment",
+    "renders": {
+      "hero": "182e1cc2ecd6aa797ffc30716c72106c0500fd3e2cd4850efaa8e50533ba2b2d",
+      "three_quarter": "46ade901c83fa731c9634d46c1f6891b1203285b6e021dd4372a6e4b1f54a0a2",
+      "top": "9006e1d3cb6d07f03b53e577b8a3c0cd679b21d8e0b245f146c796f3dbb7259b"
+    },
+    "issues": [
+      {
+        "id": "cave-envelope",
+        "severity": 1,
+        "evidence": "The hero and secondary views retain a broad slab-like rear canopy silhouette, despite improved attachment.（主視角與次視角的後部岩頂仍偏板狀，接合已改善。）",
+        "fix": "Future user-authorized work could use a shaped continuous tunnel cross-section instead of modular slabs."
+      }
+    ]
+  }
+]

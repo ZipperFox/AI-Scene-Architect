@@ -1,0 +1,8 @@
+00:00.266  blend            | Read blend: "D:\AI_work\AI-Scene-Architect\output\v02\crystal-mine\iteration-0\scene.blend"
+00:02.922  render           | Saved: 'D:\AI_work\AI-Scene-Architect\output\v02\crystal-mine\iteration-0\previews\hero.png'
+00:05.829  render           | Saved: 'D:\AI_work\AI-Scene-Architect\output\v02\crystal-mine\iteration-0\previews\three_quarter.png'
+00:09.157  render           | Saved: 'D:\AI_work\AI-Scene-Architect\output\v02\crystal-mine\iteration-0\previews\top.png'
+ASA_PREVIEW_MANIFEST=D:\AI_work\AI-Scene-Architect\output\v02\crystal-mine\iteration-0\previews\manifest.json
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:33:43)
+
+Blender quit

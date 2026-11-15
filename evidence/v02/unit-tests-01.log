@@ -1,0 +1,42 @@
+test_baseline_allows_one_targeted_revision (test_iteration_guard.TestGuard.test_baseline_allows_one_targeted_revision) ... ok
+test_constraint_violation_stops (test_iteration_guard.TestGuard.test_constraint_violation_stops) ... ok
+test_good_result_stops (test_iteration_guard.TestGuard.test_good_result_stops) ... ok
+test_no_time_budget (test_iteration_guard.TestGuard.test_no_time_budget) ... ok
+test_no_visual_inspection_is_invalid (test_iteration_guard.TestGuard.test_no_visual_inspection_is_invalid) ... ok
+test_nonconsecutive_review_invalid (test_iteration_guard.TestGuard.test_nonconsecutive_review_invalid) ... ok
+test_same_ineffective_edit_warns (test_iteration_guard.TestGuard.test_same_ineffective_edit_warns) ... ok
+test_same_render_warns_but_count_controls (test_iteration_guard.TestGuard.test_same_render_warns_but_count_controls) ... ok
+test_two_non_improvements_warns_even_with_larger_budget (test_iteration_guard.TestGuard.test_two_non_improvements_warns_even_with_larger_budget) ... ok
+test_two_revisions_max (test_iteration_guard.TestGuard.test_two_revisions_max) ... ok
+test_all_three_views_required (test_scene_plan.JournalTests.test_all_three_views_required) ... ok
+test_append_preserves_history_and_stops_after_two (test_scene_plan.JournalTests.test_append_preserves_history_and_stops_after_two) ... ok
+test_cannot_reset_existing_history (test_scene_plan.JournalTests.test_cannot_reset_existing_history) ... ok
+test_existing_lock_prevents_overwrite (test_scene_plan.JournalTests.test_existing_lock_prevents_overwrite) ... ok
+test_hash_mismatch_cannot_append (test_scene_plan.JournalTests.test_hash_mismatch_cannot_append) ... ok
+test_uninspected_review_rejected (test_scene_plan.JournalTests.test_uninspected_review_rejected) ... ok
+test_asset_reference (test_scene_plan.PlanTests.test_asset_reference) ... ok
+test_boolean_is_not_seed (test_scene_plan.PlanTests.test_boolean_is_not_seed) ... ok
+test_brief_is_kept_not_keyword_mapped (test_scene_plan.PlanTests.test_brief_is_kept_not_keyword_mapped) ... ok
+test_duplicate_id (test_scene_plan.PlanTests.test_duplicate_id) ... ok
+test_empty_brief_rejected (test_scene_plan.PlanTests.test_empty_brief_rejected) ... ok
+test_global_identifiers (test_scene_plan.PlanTests.test_global_identifiers) ... ok
+test_material_reference (test_scene_plan.PlanTests.test_material_reference) ... ok
+test_missing_furniture_variant (test_scene_plan.PlanTests.test_missing_furniture_variant) ... ok
+test_negative_dimensions (test_scene_plan.PlanTests.test_negative_dimensions) ... ok
+test_nonfinite (test_scene_plan.PlanTests.test_nonfinite) ... ok
+test_support_cycle (test_scene_plan.PlanTests.test_support_cycle) ... ok
+test_support_reference (test_scene_plan.PlanTests.test_support_reference) ... ok
+test_two_different_valid_plans_reuse_families (test_scene_plan.PlanTests.test_two_different_valid_plans_reuse_families) ... ok
+test_unimplemented_schema_keyword_fails_closed (test_scene_plan.PlanTests.test_unimplemented_schema_keyword_fails_closed) ... ok
+test_unknown_camera (test_scene_plan.PlanTests.test_unknown_camera) ... ok
+test_unknown_fields_fail (test_scene_plan.PlanTests.test_unknown_fields_fail) ... ok
+test_unknown_overlap (test_scene_plan.PlanTests.test_unknown_overlap) ... ok
+test_unsupported_builder (test_scene_plan.PlanTests.test_unsupported_builder) ... ok
+test_wrong_coordinate_system (test_scene_plan.PlanTests.test_wrong_coordinate_system) ... ok
+test_wrong_parameter_for_builder (test_scene_plan.PlanTests.test_wrong_parameter_for_builder) ... ok
+test_wrong_vector_size (test_scene_plan.PlanTests.test_wrong_vector_size) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.143s
+
+OK

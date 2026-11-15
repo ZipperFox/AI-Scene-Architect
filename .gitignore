@@ -4,3 +4,9 @@ __pycache__/
 *.blend2
 previews/
 review-history.json
+# Preserve local validation history; do not republish the earlier PR evidence.
+/evidence/pr1-windows/
+# Reference photos are inspection-only and have no redistribution permission.
+/evidence/v02/references/
+# Generator snapshots are retained locally and archived as source-snapshot.zip.
+/output/v02/**/source/

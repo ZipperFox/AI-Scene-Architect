@@ -1,0 +1,1497 @@
+{
+  "schema_version": "0.2",
+  "id": "crystal-mine",
+  "brief": "建立小型、低模風格的奇幻水晶礦洞，包含不規則洞穴岩壁、木製支架、不同大小的發光水晶、一輛廢棄礦車、散落礦石、入口與主要探索區域，燈光與構圖合理。",
+  "scene_type": "Cutaway fantasy mining chamber",
+  "style": "Low-poly, faceted mineral forms, restrained cool crystal glow and aged warm timber",
+  "purpose": "Editable game environment diorama with a clear entrance and exploration route",
+  "seed": 37,
+  "art_direction": {
+    "mood": [
+      "幽靜",
+      "粗獷",
+      "微光"
+    ],
+    "focal_point": "後方右側三支高低錯落的青色晶簇；入口支架與軌道引導視線。",
+    "palette_rationale": "冷灰岩壁、赭棕木材、氧化鐵灰礦車；青綠僅用於水晶焦點。",
+    "assumptions": [
+      "採用可檢視的剖面洞穴，前側與上方開放，以便遊戲鏡頭與俯視檢查；不是封閉的整座地下山體。",
+      "範圍約 12×12 公尺，洞壁最高 4.4 公尺，人物參考通行高度 1.9 公尺。",
+      "礦車留有空心料斗、四輪、車軸、輪轂及牽引柄，保留廢棄但結構完整的狀態。",
+      "水晶為不透明低模礦物，使用低強度發光及有限局部補光，不使用粒子或泛光。"
+    ],
+    "avoid": [
+      "均勻圓滑倒角",
+      "全場發光",
+      "隨機裝飾填滿動線",
+      "以漆黑掩藏未完成的岩壁"
+    ]
+  },
+  "space": {
+    "units": "meters",
+    "up_axis": "Z",
+    "size": [
+      14,
+      14,
+      7
+    ],
+    "origin": "XY center of chamber; Z=0 is the walkable ground surface"
+  },
+  "zones": [
+    {
+      "id": "entrance",
+      "center": [
+        -0.7,
+        -4,
+        0
+      ],
+      "size": [
+        4,
+        2,
+        3.8
+      ],
+      "purpose": "支架形成入口門洞，右側保留步行空間。"
+    },
+    {
+      "id": "exploration",
+      "center": [
+        0.8,
+        0.5,
+        0
+      ],
+      "size": [
+        3.2,
+        4,
+        3.5
+      ],
+      "purpose": "入口到晶簇前方的清楚探索區。"
+    },
+    {
+      "id": "extraction",
+      "center": [
+        1.7,
+        2.7,
+        0
+      ],
+      "size": [
+        3.5,
+        2.5,
+        3.5
+      ],
+      "purpose": "主要水晶焦點及開採工具區。"
+    },
+    {
+      "id": "haulage",
+      "center": [
+        -2,
+        -0.2,
+        0
+      ],
+      "size": [
+        2.1,
+        7.5,
+        2
+      ],
+      "purpose": "偏左軌道與停駛礦車。"
+    }
+  ],
+  "paths": [
+    {
+      "id": "explore_route",
+      "points": [
+        [
+          0.5,
+          -5,
+          0
+        ],
+        [
+          0.5,
+          -2,
+          0
+        ],
+        [
+          0.6,
+          0.2,
+          0
+        ],
+        [
+          0.3,
+          2,
+          0
+        ]
+      ],
+      "width": 1.0,
+      "purpose": "從入口右側繞過礦車抵達晶簇前方。"
+    }
+  ],
+  "materials": [
+    {
+      "id": "slate",
+      "color": [
+        0.19,
+        0.23,
+        0.27
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "stone",
+      "variation": 0.16
+    },
+    {
+      "id": "earth",
+      "color": [
+        0.24,
+        0.2,
+        0.16
+      ],
+      "roughness": 0.97,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "stone",
+      "variation": 0.12
+    },
+    {
+      "id": "strata",
+      "color": [
+        0.25,
+        0.29,
+        0.32
+      ],
+      "roughness": 0.93,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "stone",
+      "variation": 0.12
+    },
+    {
+      "id": "timber",
+      "color": [
+        0.27,
+        0.125,
+        0.049
+      ],
+      "roughness": 0.86,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "wood",
+      "variation": 0.1
+    },
+    {
+      "id": "iron",
+      "color": [
+        0.12,
+        0.14,
+        0.15
+      ],
+      "roughness": 0.57,
+      "metallic": 0.7,
+      "emission": 0,
+      "surface": "metal",
+      "variation": 0.06
+    },
+    {
+      "id": "rust",
+      "color": [
+        0.25,
+        0.115,
+        0.055
+      ],
+      "roughness": 0.84,
+      "metallic": 0.35,
+      "emission": 0,
+      "surface": "metal",
+      "variation": 0.1
+    },
+    {
+      "id": "cyan",
+      "color": [
+        0.035,
+        0.55,
+        0.52
+      ],
+      "roughness": 0.32,
+      "metallic": 0.05,
+      "emission": 0.55,
+      "surface": "crystal",
+      "variation": 0
+    },
+    {
+      "id": "teal",
+      "color": [
+        0.025,
+        0.32,
+        0.36
+      ],
+      "roughness": 0.39,
+      "metallic": 0.08,
+      "emission": 0.28,
+      "surface": "crystal",
+      "variation": 0
+    },
+    {
+      "id": "ore",
+      "color": [
+        0.31,
+        0.29,
+        0.25
+      ],
+      "roughness": 0.92,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "stone",
+      "variation": 0.08
+    },
+    {
+      "id": "rope",
+      "color": [
+        0.32,
+        0.24,
+        0.13
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "wood",
+      "variation": 0.05
+    }
+  ],
+  "assets": [
+    {
+      "id": "chamber_floor",
+      "kind": "ground",
+      "dimensions": [
+        12,
+        12,
+        0.38
+      ],
+      "materials": [
+        "earth"
+      ],
+      "parameters": {
+        "bevel": 0.02
+      }
+    },
+    {
+      "id": "back_strata",
+      "kind": "rock_wall",
+      "dimensions": [
+        10.4,
+        1.15,
+        4.4
+      ],
+      "materials": [
+        "slate"
+      ],
+      "parameters": {
+        "seed": 11,
+        "segments": 9,
+        "roughness": 0.27
+      }
+    },
+    {
+      "id": "left_strata",
+      "kind": "rock_wall",
+      "dimensions": [
+        9.5,
+        1.1,
+        3.8
+      ],
+      "materials": [
+        "strata"
+      ],
+      "parameters": {
+        "seed": 22,
+        "segments": 9,
+        "roughness": 0.25
+      }
+    },
+    {
+      "id": "right_strata",
+      "kind": "rock_wall",
+      "dimensions": [
+        5.5,
+        1.15,
+        3.1
+      ],
+      "materials": [
+        "slate"
+      ],
+      "parameters": {
+        "seed": 33,
+        "segments": 7,
+        "roughness": 0.24
+      }
+    },
+    {
+      "id": "entry_frame",
+      "kind": "timber_frame",
+      "dimensions": [
+        4.7,
+        0.42,
+        3.6
+      ],
+      "materials": [
+        "timber",
+        "iron"
+      ],
+      "parameters": {
+        "braces": true,
+        "bevel": 0.012
+      }
+    },
+    {
+      "id": "rear_frame",
+      "kind": "timber_frame",
+      "dimensions": [
+        4.7,
+        0.36,
+        3.4
+      ],
+      "materials": [
+        "timber",
+        "iron"
+      ],
+      "parameters": {
+        "braces": true,
+        "bevel": 0.008
+      }
+    },
+    {
+      "id": "rail",
+      "kind": "beam",
+      "dimensions": [
+        0.085,
+        8,
+        0.13
+      ],
+      "materials": [
+        "iron"
+      ],
+      "parameters": {
+        "bevel": 0.004
+      }
+    },
+    {
+      "id": "sleeper",
+      "kind": "beam",
+      "dimensions": [
+        1.9,
+        0.22,
+        0.09
+      ],
+      "materials": [
+        "timber"
+      ],
+      "parameters": {
+        "bevel": 0.01
+      }
+    },
+    {
+      "id": "cart",
+      "kind": "mechanism",
+      "dimensions": [
+        1.55,
+        2.15,
+        1.45
+      ],
+      "materials": [
+        "rust",
+        "iron"
+      ],
+      "parameters": {
+        "variant": "minecart",
+        "bevel": 0.006
+      }
+    },
+    {
+      "id": "crystal_tall",
+      "kind": "crystal",
+      "dimensions": [
+        0.75,
+        0.7,
+        2.45
+      ],
+      "materials": [
+        "cyan"
+      ],
+      "parameters": {
+        "segments": 6,
+        "seed": 5
+      }
+    },
+    {
+      "id": "crystal_mid",
+      "kind": "crystal",
+      "dimensions": [
+        0.65,
+        0.58,
+        1.65
+      ],
+      "materials": [
+        "teal"
+      ],
+      "parameters": {
+        "segments": 5,
+        "seed": 8
+      }
+    },
+    {
+      "id": "crystal_small",
+      "kind": "crystal",
+      "dimensions": [
+        0.36,
+        0.32,
+        0.8
+      ],
+      "materials": [
+        "cyan"
+      ],
+      "parameters": {
+        "segments": 6,
+        "seed": 9
+      }
+    },
+    {
+      "id": "boulder_a",
+      "kind": "rock",
+      "dimensions": [
+        1.4,
+        1.2,
+        0.8
+      ],
+      "materials": [
+        "strata"
+      ],
+      "parameters": {
+        "seed": 4,
+        "roughness": 0.28
+      }
+    },
+    {
+      "id": "boulder_b",
+      "kind": "rock",
+      "dimensions": [
+        0.85,
+        0.7,
+        0.52
+      ],
+      "materials": [
+        "slate"
+      ],
+      "parameters": {
+        "seed": 9,
+        "roughness": 0.28
+      }
+    },
+    {
+      "id": "ore_fragment",
+      "kind": "rock",
+      "dimensions": [
+        0.32,
+        0.24,
+        0.18
+      ],
+      "materials": [
+        "ore"
+      ],
+      "parameters": {
+        "seed": 19,
+        "roughness": 0.3
+      }
+    },
+    {
+      "id": "supply_box",
+      "kind": "furniture",
+      "dimensions": [
+        0.85,
+        0.7,
+        0.65
+      ],
+      "materials": [
+        "timber",
+        "iron"
+      ],
+      "parameters": {
+        "variant": "crate",
+        "bevel": 0.008
+      }
+    },
+    {
+      "id": "manual_winch",
+      "kind": "mechanism",
+      "dimensions": [
+        1.2,
+        0.85,
+        1.15
+      ],
+      "materials": [
+        "timber",
+        "iron",
+        "rope"
+      ],
+      "parameters": {
+        "variant": "winch",
+        "bevel": 0.008
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "floor",
+      "asset": "chamber_floor",
+      "position": [
+        0,
+        0,
+        -0.38
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floor"
+    },
+    {
+      "id": "back_wall",
+      "asset": "back_strata",
+      "position": [
+        0,
+        5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "back wall",
+      "support": "floor"
+    },
+    {
+      "id": "left_wall",
+      "asset": "left_strata",
+      "position": [
+        -5,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        90
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "left wall",
+      "support": "floor",
+      "allow_overlap_with": [
+        "back_wall"
+      ]
+    },
+    {
+      "id": "right_wall",
+      "asset": "right_strata",
+      "position": [
+        5,
+        2.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -90
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "right wall",
+      "support": "floor",
+      "allow_overlap_with": [
+        "back_wall"
+      ]
+    },
+    {
+      "id": "entrance_support",
+      "asset": "entry_frame",
+      "position": [
+        -0.6,
+        -3.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "entrance support",
+      "support": "floor"
+    },
+    {
+      "id": "inner_support",
+      "asset": "rear_frame",
+      "position": [
+        -0.6,
+        1.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "inner support",
+      "support": "floor"
+    },
+    {
+      "id": "rail_left",
+      "asset": "rail",
+      "position": [
+        -2.64,
+        -0.3,
+        0.09
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "rail left",
+      "support": "sleeper_0"
+    },
+    {
+      "id": "rail_right",
+      "asset": "rail",
+      "position": [
+        -1.36,
+        -0.3,
+        0.09
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "rail right",
+      "support": "sleeper_0"
+    },
+    {
+      "id": "abandoned_cart",
+      "asset": "cart",
+      "position": [
+        -2,
+        -0.1,
+        0.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "abandoned cart",
+      "support": "rail_left"
+    },
+    {
+      "id": "focal_crystal",
+      "asset": "crystal_tall",
+      "position": [
+        1.85,
+        2.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -18
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "focal crystal",
+      "support": "floor"
+    },
+    {
+      "id": "focal_companion",
+      "asset": "crystal_mid",
+      "position": [
+        2.8,
+        2.1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        14
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "focal companion",
+      "support": "floor"
+    },
+    {
+      "id": "focal_shard",
+      "asset": "crystal_small",
+      "position": [
+        1.05,
+        2.75,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        34
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "focal shard",
+      "support": "floor"
+    },
+    {
+      "id": "entry_shard",
+      "asset": "crystal_small",
+      "position": [
+        -3.65,
+        -3.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -10
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.75
+      ],
+      "purpose": "entry shard",
+      "support": "floor"
+    },
+    {
+      "id": "wall_boulder",
+      "asset": "boulder_a",
+      "position": [
+        3.8,
+        3.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        30
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "wall boulder",
+      "support": "floor"
+    },
+    {
+      "id": "left_boulder",
+      "asset": "boulder_a",
+      "position": [
+        -3.75,
+        3.1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -20
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "left boulder",
+      "support": "floor"
+    },
+    {
+      "id": "front_boulder",
+      "asset": "boulder_b",
+      "position": [
+        3.75,
+        -3.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        15
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "front boulder",
+      "support": "floor"
+    },
+    {
+      "id": "supply_crate",
+      "asset": "supply_box",
+      "position": [
+        -3.8,
+        -1.9,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "supply crate",
+      "support": "floor"
+    },
+    {
+      "id": "haul_winch",
+      "asset": "manual_winch",
+      "position": [
+        3.2,
+        -0.6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -20
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "haul winch",
+      "support": "floor"
+    },
+    {
+      "id": "sleeper_0",
+      "asset": "sleeper",
+      "position": [
+        -2,
+        -3.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "sleeper 0",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rail_left",
+        "rail_right"
+      ]
+    },
+    {
+      "id": "sleeper_1",
+      "asset": "sleeper",
+      "position": [
+        -2,
+        -2.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "sleeper 1",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rail_left",
+        "rail_right"
+      ]
+    },
+    {
+      "id": "sleeper_2",
+      "asset": "sleeper",
+      "position": [
+        -2,
+        -1.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "sleeper 2",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rail_left",
+        "rail_right"
+      ]
+    },
+    {
+      "id": "sleeper_3",
+      "asset": "sleeper",
+      "position": [
+        -2,
+        -0.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "sleeper 3",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rail_left",
+        "rail_right"
+      ]
+    },
+    {
+      "id": "sleeper_4",
+      "asset": "sleeper",
+      "position": [
+        -2,
+        0.3,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "sleeper 4",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rail_left",
+        "rail_right"
+      ]
+    },
+    {
+      "id": "sleeper_5",
+      "asset": "sleeper",
+      "position": [
+        -2,
+        1.3,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "sleeper 5",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rail_left",
+        "rail_right"
+      ]
+    },
+    {
+      "id": "sleeper_6",
+      "asset": "sleeper",
+      "position": [
+        -2,
+        2.3,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "sleeper 6",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rail_left",
+        "rail_right"
+      ]
+    },
+    {
+      "id": "sleeper_7",
+      "asset": "sleeper",
+      "position": [
+        -2,
+        3.3,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "sleeper 7",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rail_left",
+        "rail_right"
+      ]
+    },
+    {
+      "id": "ore_0",
+      "asset": "ore_fragment",
+      "position": [
+        -3.7,
+        -3,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "purpose": "ore 0",
+      "support": "floor"
+    },
+    {
+      "id": "ore_1",
+      "asset": "ore_fragment",
+      "position": [
+        -3.2,
+        -2.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        31
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "purpose": "ore 1",
+      "support": "floor"
+    },
+    {
+      "id": "ore_2",
+      "asset": "ore_fragment",
+      "position": [
+        -3.1,
+        2.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        62
+      ],
+      "scale": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "purpose": "ore 2",
+      "support": "floor"
+    },
+    {
+      "id": "ore_3",
+      "asset": "ore_fragment",
+      "position": [
+        -3.5,
+        3.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        93
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "purpose": "ore 3",
+      "support": "floor"
+    },
+    {
+      "id": "ore_4",
+      "asset": "ore_fragment",
+      "position": [
+        1.25,
+        3.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        124
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "purpose": "ore 4",
+      "support": "floor"
+    },
+    {
+      "id": "ore_5",
+      "asset": "ore_fragment",
+      "position": [
+        2.5,
+        3.45,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        155
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "purpose": "ore 5",
+      "support": "floor"
+    },
+    {
+      "id": "ore_6",
+      "asset": "ore_fragment",
+      "position": [
+        3.1,
+        1.25,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        186
+      ],
+      "scale": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "purpose": "ore 6",
+      "support": "floor"
+    },
+    {
+      "id": "ore_7",
+      "asset": "ore_fragment",
+      "position": [
+        3.6,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        217
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "purpose": "ore 7",
+      "support": "floor"
+    },
+    {
+      "id": "ore_8",
+      "asset": "ore_fragment",
+      "position": [
+        3.8,
+        -2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        248
+      ],
+      "scale": [
+        1.3,
+        1.3,
+        1.3
+      ],
+      "purpose": "ore 8",
+      "support": "floor"
+    },
+    {
+      "id": "ore_9",
+      "asset": "ore_fragment",
+      "position": [
+        4,
+        -2.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        279
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "purpose": "ore 9",
+      "support": "floor"
+    },
+    {
+      "id": "ore_10",
+      "asset": "ore_fragment",
+      "position": [
+        -0.5,
+        -4.6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        310
+      ],
+      "scale": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "purpose": "ore 10",
+      "support": "floor"
+    }
+  ],
+  "lights": [
+    {
+      "id": "entrance_daylight",
+      "type": "AREA",
+      "position": [
+        0,
+        -6,
+        7
+      ],
+      "target": [
+        0,
+        1,
+        0
+      ],
+      "color": [
+        0.65,
+        0.78,
+        1
+      ],
+      "energy": 1700,
+      "size": 6
+    },
+    {
+      "id": "warm_worklight",
+      "type": "AREA",
+      "position": [
+        -3,
+        -1,
+        4
+      ],
+      "target": [
+        -1,
+        1,
+        0.5
+      ],
+      "color": [
+        1,
+        0.64,
+        0.32
+      ],
+      "energy": 650,
+      "size": 3
+    },
+    {
+      "id": "crystal_fill",
+      "type": "POINT",
+      "position": [
+        2,
+        2.5,
+        2
+      ],
+      "target": [
+        0,
+        1,
+        0
+      ],
+      "color": [
+        0.1,
+        0.85,
+        0.78
+      ],
+      "energy": 80,
+      "size": 0.65
+    },
+    {
+      "id": "rim_light",
+      "type": "AREA",
+      "position": [
+        2,
+        4,
+        5
+      ],
+      "target": [
+        0,
+        0,
+        1
+      ],
+      "color": [
+        0.48,
+        0.64,
+        0.8
+      ],
+      "energy": 1000,
+      "size": 4
+    }
+  ],
+  "cameras": [
+    {
+      "id": "mine_hero",
+      "position": [
+        11,
+        -16,
+        12
+      ],
+      "target": [
+        0,
+        0.2,
+        1.1
+      ],
+      "lens": 42,
+      "ortho_scale": 0,
+      "purpose": "入口、礦車與晶簇的整體三角構圖。"
+    },
+    {
+      "id": "mine_reverse",
+      "position": [
+        -10,
+        -11,
+        10
+      ],
+      "target": [
+        0,
+        0.6,
+        1.1
+      ],
+      "lens": 40,
+      "ortho_scale": 0,
+      "purpose": "檢查左側支架、礦車空心料斗與相反側岩壁。"
+    },
+    {
+      "id": "mine_overview",
+      "position": [
+        0.01,
+        -0.01,
+        19
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "lens": 45,
+      "ortho_scale": 15,
+      "purpose": "俯視檢查步行路徑與物件配置。"
+    }
+  ],
+  "hero_camera": "mine_hero",
+  "world_color": [
+    0.12,
+    0.16,
+    0.22
+  ]
+}

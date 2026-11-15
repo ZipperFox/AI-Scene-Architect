@@ -1,0 +1,39 @@
+{
+  "blender_version": "5.3.0",
+  "source_blend": "D:\\AI_work\\AI-Scene-Architect\\output\\v02\\crystal-mine\\iteration-2\\scene.blend",
+  "engine": "CYCLES",
+  "resolution": 768,
+  "temporary_lighting_added": false,
+  "viewpoints": {
+    "hero": {
+      "path": "D:\\AI_work\\AI-Scene-Architect\\output\\v02\\crystal-mine\\iteration-2\\previews\\hero.png",
+      "sha256": "182e1cc2ecd6aa797ffc30716c72106c0500fd3e2cd4850efaa8e50533ba2b2d",
+      "camera": "mine_hero",
+      "location": [
+        11.0,
+        -16.0,
+        12.0
+      ]
+    },
+    "three_quarter": {
+      "path": "D:\\AI_work\\AI-Scene-Architect\\output\\v02\\crystal-mine\\iteration-2\\previews\\three_quarter.png",
+      "sha256": "46ade901c83fa731c9634d46c1f6891b1203285b6e021dd4372a6e4b1f54a0a2",
+      "camera": "mine_reverse",
+      "location": [
+        0.0,
+        -14.0,
+        9.0
+      ]
+    },
+    "top": {
+      "path": "D:\\AI_work\\AI-Scene-Architect\\output\\v02\\crystal-mine\\iteration-2\\previews\\top.png",
+      "sha256": "9006e1d3cb6d07f03b53e577b8a3c0cd679b21d8e0b245f146c796f3dbb7259b",
+      "camera": "mine_overview",
+      "location": [
+        0.0,
+        0.0,
+        20.0
+      ]
+    }
+  }
+}

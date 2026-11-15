@@ -1,0 +1,104 @@
+{
+  "checks": {
+    "reject-existing-output": true,
+    "reject-loaded-source": true,
+    "loaded_source_output_absent": true,
+    "reject-third-revision": true,
+    "third_revision_output_absent": true,
+    "reject-invalid-camera": true,
+    "invalid_camera_output_absent": true,
+    "all_pr1_evidence_unchanged": true,
+    "all_versioned_sources_unchanged": true,
+    "all_png_hashes_and_headers_valid": true,
+    "mine_exactly_two_revisions_no_reset": true,
+    "shop_stops_after_one_revision": true,
+    "v01_default_pixel_payload_identical": true
+  },
+  "all_passed": true,
+  "refusal_commands": [
+    {
+      "label": "reject-existing-output",
+      "command": [
+        "D:\\SteamLibrary\\steamapps\\common\\Blender\\blender.exe",
+        "--background",
+        "--factory-startup",
+        "--disable-autoexec",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "D:\\AI_work\\AI-Scene-Architect\\skills\\ai-scene-architect\\scripts\\build_scene.py",
+        "--",
+        "--plan",
+        "D:\\AI_work\\AI-Scene-Architect\\examples\\crystal-mine\\scene_plan.json",
+        "--output",
+        "D:\\AI_work\\AI-Scene-Architect\\output\\v02\\crystal-mine\\iteration-2"
+      ],
+      "exit_code": 1
+    },
+    {
+      "label": "reject-loaded-source",
+      "command": [
+        "D:\\SteamLibrary\\steamapps\\common\\Blender\\blender.exe",
+        "--background",
+        "--factory-startup",
+        "--disable-autoexec",
+        "D:\\AI_work\\AI-Scene-Architect\\output\\v02\\crystal-mine\\iteration-2\\scene.blend",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "D:\\AI_work\\AI-Scene-Architect\\skills\\ai-scene-architect\\scripts\\build_scene.py",
+        "--",
+        "--plan",
+        "D:\\AI_work\\AI-Scene-Architect\\examples\\crystal-mine\\scene_plan.json",
+        "--output",
+        "D:\\AI_work\\AI-Scene-Architect\\evidence\\v02\\must-not-create-loaded-source"
+      ],
+      "exit_code": 1
+    },
+    {
+      "label": "reject-third-revision",
+      "command": [
+        "D:\\SteamLibrary\\steamapps\\common\\Blender\\blender.exe",
+        "--background",
+        "--factory-startup",
+        "--disable-autoexec",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "D:\\AI_work\\AI-Scene-Architect\\skills\\ai-scene-architect\\scripts\\build_scene.py",
+        "--",
+        "--plan",
+        "D:\\AI_work\\AI-Scene-Architect\\examples\\crystal-mine\\scene_plan.json",
+        "--output",
+        "D:\\AI_work\\AI-Scene-Architect\\evidence\\v02\\must-not-create-revision-three",
+        "--revision",
+        "3",
+        "--history",
+        "D:\\AI_work\\AI-Scene-Architect\\output\\v02\\crystal-mine\\visual-history.json"
+      ],
+      "exit_code": 1
+    },
+    {
+      "label": "reject-invalid-camera",
+      "command": [
+        "D:\\SteamLibrary\\steamapps\\common\\Blender\\blender.exe",
+        "--background",
+        "--factory-startup",
+        "--disable-autoexec",
+        "D:\\AI_work\\AI-Scene-Architect\\output\\v02\\crystal-mine\\iteration-2\\scene.blend",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "D:\\AI_work\\AI-Scene-Architect\\skills\\ai-scene-architect\\scripts\\render_previews.py",
+        "--",
+        "--output",
+        "D:\\AI_work\\AI-Scene-Architect\\evidence\\v02\\must-not-create-invalid-camera",
+        "--camera-names",
+        "missing",
+        "missing2",
+        "missing3"
+      ],
+      "exit_code": 1
+    }
+  ]
+}

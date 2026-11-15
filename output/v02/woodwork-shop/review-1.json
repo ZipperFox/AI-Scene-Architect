@@ -1,0 +1,11 @@
+{
+  "iteration": 1,
+  "visual_reviewed": true,
+  "change_signature": "geometry:normals;layout:clearance;camera:inspection;lighting:focus",
+  "renders": {
+    "hero": "4d1e89a551e802eaf8eb99612095ef5328e19f9d94a9f33217f7d624789d0a66",
+    "three_quarter": "03d3302ea307c497a7ab381a2a461d11fa387cbd63622ce8442a625843548336",
+    "top": "8d9ae203146cd0aef6b18adb10eed8d0bcb4813d2537a2b5552026073ac9b5e1"
+  },
+  "issues": []
+}

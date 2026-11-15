@@ -1,0 +1,77 @@
+{
+  "errors": [],
+  "warnings": [],
+  "contacts": [
+    {
+      "object": "rear",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "side",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "table",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "bench",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "storage_lower",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "storage_upper",
+      "support": "storage_lower",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "front_frame",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "hand_winch",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "spare_timber_0",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "spare_timber_1",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    }
+  ],
+  "method": "Evaluated part AABBs and sampled path discs; visual review remains required."
+}
