@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "crystal-mine_manifest_index_hash": true,
+    "crystal-mine_manifest_lf": true,
+    "crystal-mine_art_direction_brief_index_hash": true,
+    "crystal-mine_art_direction_brief_lf": true,
+    "woodwork-shop_manifest_index_hash": true,
+    "woodwork-shop_manifest_lf": true,
+    "woodwork-shop_art_direction_brief_index_hash": true,
+    "woodwork-shop_art_direction_brief_lf": true
+  },
+  "all_passed": true
+}

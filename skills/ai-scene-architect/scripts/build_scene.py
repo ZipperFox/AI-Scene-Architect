@@ -15,7 +15,7 @@ import bpy
 from mathutils import Vector
 from builders import build_asset, create_material
 from iteration_guard import decide
-from scene_plan import PlanError, digest, read_json, validate_plan
+from scene_plan import PlanError, digest, read_json, load_plan
 
 
 def bounds(objects):
@@ -182,7 +182,7 @@ def main():
     p.add_argument('--plan',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
     p.add_argument('--revision',type=int,default=0);p.add_argument('--history',type=Path)
     args=p.parse_args(argv)
-    plan=validate_plan(read_json(args.plan))
+    plan=load_plan(args.plan)
     authorize_revision(args.revision,args.history)
     target=args.output.resolve()
     if target.exists():
@@ -192,6 +192,10 @@ def main():
         raise PlanError('Use --factory-startup with no input .blend; existing sources are never edited')
     target.mkdir(parents=True)
     shutil.copyfile(args.plan,target/'scene_plan.json')
+    if 'research' in plan:
+        from reference_scout import validate_plan_research
+        for reference in validate_plan_research(plan,args.plan.resolve().parent):
+            shutil.copyfile(reference,target/reference.name)
     source_dir=target/'source';source_dir.mkdir()
     source_hashes={}
     for source in Path(__file__).resolve().parent.glob('*.py'):

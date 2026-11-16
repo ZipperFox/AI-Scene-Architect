@@ -1,0 +1,687 @@
+{
+  "schema_version": "0.2",
+  "id": "woodwork-shop",
+  "brief": "建立小型開放剖面的低模木工作坊：工作桌、長凳、木箱、木製柱樑與手動繩索絞盤。保留中央走道，暖木色配灰白牆，日光從開放前側照入，沒有水晶或礦洞。",
+  "scene_type": "Open-front carpentry workshop",
+  "style": "Low-poly utilitarian timber workshop, warm daylight, no fantasy glow",
+  "purpose": "Second independently planned reuse test with furniture, structure and hand machinery",
+  "seed": 73,
+  "art_direction": {
+    "mood": [
+      "溫暖",
+      "實用",
+      "安靜"
+    ],
+    "focal_point": "工作桌作主要量體，較低長凳承接前景，絞盤在右側形成次焦點；左側疊箱較密，中央保持安靜。",
+    "palette_rationale": "我選蜂蜜棕木、灰白牆與深鐵灰；從開放前側引入偏暖的大面柔光，讓材質靠明度與粗糙度區分，不靠每件物品不同顏色。",
+    "assumptions": [
+      "6×5 公尺開放前側與屋頂的剖面工作坊。",
+      "家具與機械保持可辨識的構件和實際支撐。",
+      "Reference Scout：分板檯面、四腳與下方橫撐是本案選擇，非宣稱所有工作檯必須如此；夾具與絞盤細節保留未驗證狀態。"
+    ],
+    "avoid": [
+      "水晶與發光",
+      "全表面同樣倒角",
+      "塞滿中央動線"
+    ]
+  },
+  "space": {
+    "units": "meters",
+    "up_axis": "Z",
+    "size": [
+      8,
+      7,
+      5
+    ],
+    "origin": "Room center XY; Z=0 finished floor"
+  },
+  "zones": [
+    {
+      "id": "work",
+      "center": [
+        0,
+        1.35,
+        0
+      ],
+      "size": [
+        3,
+        1.8,
+        2
+      ],
+      "purpose": "工作桌與長凳。"
+    },
+    {
+      "id": "storage",
+      "center": [
+        -2,
+        0,
+        0
+      ],
+      "size": [
+        1.4,
+        2,
+        2
+      ],
+      "purpose": "側邊堆放木箱，不阻擋中央。"
+    },
+    {
+      "id": "hoist",
+      "center": [
+        2,
+        1,
+        0
+      ],
+      "size": [
+        1.6,
+        1.5,
+        2
+      ],
+      "purpose": "手動絞盤工位。"
+    }
+  ],
+  "paths": [
+    {
+      "id": "aisle",
+      "points": [
+        [
+          0,
+          -2.4,
+          0
+        ],
+        [
+          0,
+          -0.8,
+          0
+        ],
+        [
+          1,
+          -0.5,
+          0
+        ]
+      ],
+      "width": 0.9,
+      "purpose": "入口到兩個工位之間。"
+    }
+  ],
+  "materials": [
+    {
+      "id": "oak",
+      "color": [
+        0.4,
+        0.22,
+        0.09
+      ],
+      "roughness": 0.78,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "wood",
+      "variation": 0.1
+    },
+    {
+      "id": "plaster",
+      "color": [
+        0.62,
+        0.59,
+        0.49
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "plain",
+      "variation": 0.035
+    },
+    {
+      "id": "floor_gray",
+      "color": [
+        0.29,
+        0.28,
+        0.25
+      ],
+      "roughness": 0.92,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "stone",
+      "variation": 0.08
+    },
+    {
+      "id": "steel",
+      "color": [
+        0.13,
+        0.16,
+        0.17
+      ],
+      "roughness": 0.5,
+      "metallic": 0.75,
+      "emission": 0,
+      "surface": "metal",
+      "variation": 0.04
+    },
+    {
+      "id": "cord",
+      "color": [
+        0.48,
+        0.36,
+        0.19
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "wood",
+      "variation": 0.04
+    }
+  ],
+  "assets": [
+    {
+      "id": "floor_slab",
+      "kind": "ground",
+      "dimensions": [
+        6,
+        5,
+        0.22
+      ],
+      "materials": [
+        "floor_gray"
+      ],
+      "parameters": {
+        "bevel": 0.01
+      }
+    },
+    {
+      "id": "rear_wall",
+      "kind": "wall",
+      "dimensions": [
+        6,
+        0.18,
+        2.8
+      ],
+      "materials": [
+        "plaster"
+      ],
+      "parameters": {
+        "bevel": 0.004
+      }
+    },
+    {
+      "id": "side_wall",
+      "kind": "wall",
+      "dimensions": [
+        0.18,
+        5,
+        2.8
+      ],
+      "materials": [
+        "plaster"
+      ],
+      "parameters": {
+        "bevel": 0.004
+      }
+    },
+    {
+      "id": "worktable",
+      "kind": "furniture",
+      "dimensions": [
+        2.5,
+        0.95,
+        0.95
+      ],
+      "materials": [
+        "oak",
+        "steel"
+      ],
+      "parameters": {
+        "variant": "table",
+        "bevel": 0.01
+      }
+    },
+    {
+      "id": "seat",
+      "kind": "furniture",
+      "dimensions": [
+        1.7,
+        0.42,
+        0.48
+      ],
+      "materials": [
+        "oak",
+        "steel"
+      ],
+      "parameters": {
+        "variant": "bench",
+        "bevel": 0.006
+      }
+    },
+    {
+      "id": "crate",
+      "kind": "furniture",
+      "dimensions": [
+        0.8,
+        0.65,
+        0.65
+      ],
+      "materials": [
+        "oak",
+        "steel"
+      ],
+      "parameters": {
+        "variant": "crate",
+        "bevel": 0.008
+      }
+    },
+    {
+      "id": "frame",
+      "kind": "timber_frame",
+      "dimensions": [
+        5.7,
+        0.24,
+        2.7
+      ],
+      "materials": [
+        "oak",
+        "steel"
+      ],
+      "parameters": {
+        "braces": true,
+        "bevel": 0.01
+      }
+    },
+    {
+      "id": "winch",
+      "kind": "mechanism",
+      "dimensions": [
+        1.2,
+        0.9,
+        1.1
+      ],
+      "materials": [
+        "oak",
+        "steel",
+        "cord"
+      ],
+      "parameters": {
+        "variant": "winch",
+        "bevel": 0.006
+      }
+    },
+    {
+      "id": "spare_beam",
+      "kind": "beam",
+      "dimensions": [
+        0.13,
+        0.13,
+        2
+      ],
+      "materials": [
+        "oak"
+      ],
+      "parameters": {
+        "bevel": 0.004
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "floor",
+      "asset": "floor_slab",
+      "position": [
+        0,
+        0,
+        -0.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floor"
+    },
+    {
+      "id": "rear",
+      "asset": "rear_wall",
+      "position": [
+        0,
+        2.4,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "rear",
+      "support": "floor"
+    },
+    {
+      "id": "side",
+      "asset": "side_wall",
+      "position": [
+        -2.9,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "side",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear"
+      ]
+    },
+    {
+      "id": "table",
+      "asset": "worktable",
+      "position": [
+        -0.1,
+        1.45,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "table",
+      "support": "floor"
+    },
+    {
+      "id": "bench",
+      "asset": "seat",
+      "position": [
+        -0.1,
+        0.35,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "bench",
+      "support": "floor"
+    },
+    {
+      "id": "storage_lower",
+      "asset": "crate",
+      "position": [
+        -2,
+        -0.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "storage lower",
+      "support": "floor"
+    },
+    {
+      "id": "storage_upper",
+      "asset": "crate",
+      "position": [
+        -2,
+        -0.7,
+        0.65
+      ],
+      "rotation": [
+        0,
+        0,
+        8
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "purpose": "storage upper",
+      "support": "storage_lower"
+    },
+    {
+      "id": "front_frame",
+      "asset": "frame",
+      "position": [
+        0,
+        -2.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "front frame",
+      "support": "floor",
+      "allow_overlap_with": [
+        "side"
+      ]
+    },
+    {
+      "id": "hand_winch",
+      "asset": "winch",
+      "position": [
+        2,
+        1.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -15
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "hand winch",
+      "support": "floor"
+    },
+    {
+      "id": "spare_timber_0",
+      "asset": "spare_beam",
+      "position": [
+        -2.4,
+        1.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "spare timber 0",
+      "support": "floor"
+    },
+    {
+      "id": "spare_timber_1",
+      "asset": "spare_beam",
+      "position": [
+        -2.2,
+        1.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        0.8
+      ],
+      "purpose": "spare timber 1",
+      "support": "floor"
+    }
+  ],
+  "lights": [
+    {
+      "id": "window_key",
+      "type": "AREA",
+      "position": [
+        1,
+        -4,
+        6
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        1,
+        0.85,
+        0.65
+      ],
+      "energy": 1400,
+      "size": 5
+    },
+    {
+      "id": "ceiling_fill",
+      "type": "AREA",
+      "position": [
+        -1,
+        1,
+        5
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        0.7,
+        0.8,
+        1
+      ],
+      "energy": 500,
+      "size": 4
+    }
+  ],
+  "cameras": [
+    {
+      "id": "shop_hero",
+      "position": [
+        9,
+        -12,
+        9
+      ],
+      "target": [
+        0,
+        0,
+        0.7
+      ],
+      "lens": 44,
+      "ortho_scale": 0,
+      "purpose": "入口、工作桌與側邊儲物區。"
+    },
+    {
+      "id": "shop_reverse",
+      "position": [
+        8,
+        -2,
+        6
+      ],
+      "target": [
+        0,
+        0.4,
+        0.8
+      ],
+      "lens": 42,
+      "ortho_scale": 0,
+      "purpose": "檢查家具支撐與手動機構。"
+    },
+    {
+      "id": "shop_overview",
+      "position": [
+        0,
+        0,
+        12
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "lens": 45,
+      "ortho_scale": 8,
+      "purpose": "檢查中央走道。"
+    }
+  ],
+  "hero_camera": "shop_hero",
+  "world_color": [
+    0.25,
+    0.28,
+    0.33
+  ],
+  "research": {
+    "manifest": "reference_manifest.json",
+    "manifest_sha256": "e1a752cf50658ff3c5b57167c1b6950929f637f0b76c27746f68b022f37c8b1f",
+    "art_direction_brief": "art_direction_brief.md",
+    "art_direction_brief_sha256": "afb2ff10037607bb78edc2a5cfca6b733abc5fc59c5b9b80bf143c828da1714c",
+    "decision_bindings": [
+      {
+        "decision_id": "bench-structure-choice",
+        "target": "/art_direction/assumptions",
+        "value_sha256": "808e44ff290e5f0ce9581d6be402397c1ed22512e938186a29f6162543035300"
+      },
+      {
+        "decision_id": "grain-aware-materials",
+        "target": "/art_direction/palette_rationale",
+        "value_sha256": "83dc2b8f41d003fd9510bbe3e3dc031a471d3122c986b4202f33b46421a5eaad"
+      },
+      {
+        "decision_id": "shop-focal-clarity",
+        "target": "/art_direction/focal_point",
+        "value_sha256": "a10cfa542cf720b35c3a9a4eff6c732d016b15e633fc40ac386a5ddd7e511890"
+      },
+      {
+        "decision_id": "original-shop-aesthetic",
+        "target": "/art_direction/focal_point",
+        "value_sha256": "a10cfa542cf720b35c3a9a4eff6c732d016b15e633fc40ac386a5ddd7e511890"
+      }
+    ]
+  }
+}

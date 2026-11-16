@@ -1,0 +1,55 @@
+00:02.250  reports          | WARNING Path 'D:\SteamLibrary\steamapps\common\Blender\5.3\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Dots Stroke'
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:33:43)
+00:02.250  reports          | WARNING Path 'D:\SteamLibrary\steamapps\common\Blender\5.3\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Material'
+Info: Saved as "scene.blend"
+INFO Draco is available, use library at D:\SteamLibrary\steamapps\common\Blender\blender.shared\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at D:\SteamLibrary\steamapps\common\Blender\blender.shared\bf_intern_meshopt_bridge.dll
+11:00:07 | INFO: Starting glTF 2.0 export
+11:00:07 | WARNING: Unsupported light source AREA
+11:00:07 | INFO: Extracting primitive: floor_slab__ground
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__bottom
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__end_board_1_0
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__end_board_1_1
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__end_board_1_2
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__end_board_1_3
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__end_board_-1_0
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__end_board_-1_1
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__end_board_-1_2
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__end_board_-1_3
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__long_board_1_0
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__long_board_1_1
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__long_board_1_2
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__long_board_1_3
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__long_board_-1_0
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__long_board_-1_1
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__long_board_-1_2
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__long_board_-1_3
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__strap_1
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | INFO: Extracting primitive: crate__strap_-1
+11:00:07 | INFO: Primitives created: 1
+11:00:07 | WARNING: Unsupported light source AREA
+11:00:07 | INFO: Finished glTF 2.0 export in 0.05141711235046387 s
+
+ASA_BUILD_MANIFEST=C:\Users\Pocky\AppData\Local\Temp\scout-integration-_bsoioeo\new-fixture\build-manifest.json
+{"blender": "5.3.0", "checks": {"crystal-mine_loads_in_blender": true, "woodwork-shop_loads_in_blender": true, "tamper_rejected_before_scene_mutation": true, "fixture_blend_and_glb_created": true, "portable_bundle_copied": true, "copied_plan_validates_after_relocation": true}, "all_passed": true, "scope": "Temporary floor/crate fixture; no v0.2 scene or revision journal changed."}
+
+Blender quit

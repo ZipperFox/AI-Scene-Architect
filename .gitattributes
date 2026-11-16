@@ -1,0 +1,2 @@
+# Research bundles contain byte hashes. Keep their portable text bytes stable.
+examples/reference-scout/** text eol=lf

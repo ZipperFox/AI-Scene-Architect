@@ -1,0 +1,13 @@
+{
+  "blender": "5.3.0",
+  "checks": {
+    "crystal-mine_loads_in_blender": true,
+    "woodwork-shop_loads_in_blender": true,
+    "tamper_rejected_before_scene_mutation": true,
+    "fixture_blend_and_glb_created": true,
+    "portable_bundle_copied": true,
+    "copied_plan_validates_after_relocation": true
+  },
+  "all_passed": true,
+  "scope": "Temporary floor/crate fixture; no v0.2 scene or revision journal changed."
+}

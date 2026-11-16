@@ -152,6 +152,70 @@
     },
     "world_color": {
       "$ref": "#/$defs/color"
+    },
+    "research": {
+      "type": "object",
+      "properties": {
+        "manifest": {
+          "const": "reference_manifest.json"
+        },
+        "manifest_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "art_direction_brief": {
+          "const": "art_direction_brief.md"
+        },
+        "art_direction_brief_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "decision_bindings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "decision_id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_-]{0,62}$",
+                "minLength": 1,
+                "maxLength": 63
+              },
+              "target": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 512
+              },
+              "value_sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$",
+                "minLength": 64,
+                "maxLength": 64
+              }
+            },
+            "required": [
+              "decision_id",
+              "target",
+              "value_sha256"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "maxItems": 100
+        }
+      },
+      "required": [
+        "manifest",
+        "manifest_sha256",
+        "art_direction_brief",
+        "art_direction_brief_sha256",
+        "decision_bindings"
+      ],
+      "additionalProperties": false
     }
   },
   "required": [

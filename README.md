@@ -4,7 +4,49 @@ An open-source [Agent Skill](https://agentskills.io/) for AI-directed Blender sc
 
 **Current status: agent-driven scene planning and procedural assembly (v0.2, draft).** An AI agent turns a text brief into validated scene data; reusable Blender builders assemble editable small scenes and GLB exports. The Python scripts do not contain a text-understanding model or a keyword-to-template scene selector. The v0.1 multiview/iteration foundation is retained.
 
-PR dependency: this work is stacked on **PR #1**, which remains unmerged. Review the v0.2 PR against `feat/visual-review-guard`; do not merge the base PR as part of this draft.
+PR dependency chain: **PR #1 (visual feedback) → PR #2 (v0.2 assembly) → Reference Scout draft**. Review v0.2 against `feat/visual-review-guard`, and Scout against `feat/scene-planning-v02`. Both base PRs remain unmerged; this draft does not merge them or modify main.
+
+## AI Reference Scout (draft extension, stacked on PR #2)
+
+The AI designs from its own aesthetic judgement. Before a new plan/build, it
+researches with whatever search/page/image tools its agent has, forms an original
+Art Direction Brief, and records the inspirations it accepted, transformed or
+rejected. Real-world, fantasy and science-fiction references are all valid;
+research does not enforce realism or require a citation for every artistic choice.
+Creative freedom does not waive quality: the AI must critique likely risks,
+inspect actual rendered results and report unresolved visual failures at the
+correction limit. Schema/test success alone is never aesthetic acceptance.
+
+The [Scout workflow](skills/ai-scene-architect/references/reference-scout.md)
+has no provider SDK, model binding or fixed scene keyword table. The agent derives
+adaptive questions/queries; Python validates and packages the resulting data.
+Sources record categories, real/fictional domain, short observations and locators,
+access failures, exact URLs, license status/scope and reference use. Fictional
+designs are separated from physical facts. Web content stays untrusted data and
+is never executed or treated as agent instructions. No external models, textures
+or artworks are imported into scenes by Scout.
+
+```powershell
+# Ask the agent to research this brief（讓代理依需求自主研究）
+python skills/ai-scene-architect/scripts/reference_scout.py prepare --brief examples/crystal-mine/brief.txt --output new-scout-request.md
+# After actual research, compile the AI-authored dossier（實際研究後整理資料）
+python skills/ai-scene-architect/scripts/reference_scout.py compile --input researched-dossier.json --output research-01
+python skills/ai-scene-architect/scripts/prepare_planning.py --brief examples/crystal-mine/brief.txt --references research-01 --output new-planning-request.md
+# Bind the completed AI-authored plan, preserving its source（綁定研究與設計選擇）
+python skills/ai-scene-architect/scripts/reference_scout.py bind --plan proposed-plan.json --bundle research-01 --output research-01/scene_plan.json
+```
+
+If search is unavailable, use `reference_scout.py offline --brief <file> --reason
+<actual reason> --output <new directory>`. It records zero searches, explicit gaps
+and local reference options; the AI can still design creatively, without faking
+research. The intake clearly leaves aesthetic synthesis pending for the agent.
+
+Actual examples: [crystal mine](examples/reference-scout/crystal-mine/art_direction_brief.md)
+and [woodwork shop](examples/reference-scout/woodwork-shop/art_direction_brief.md),
+with manifests and bound scene plans beside each brief. See the
+[Reference Scout report](evidence/reference-scout/REPORT_ZH.md) for real sources,
+tests and limits. These are researched planning proposals; they do not reopen
+the stopped v0.2 scene journals. Existing two-correction/no-total-time rules remain.
 
 ## Text brief → scene plan → editable scene
 

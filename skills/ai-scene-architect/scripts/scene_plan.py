@@ -155,12 +155,21 @@ def preview_cameras(plan):
     return [plan['hero_camera']]+[c['id'] for c in plan['cameras'] if c['id']!=plan['hero_camera']][:2]
 
 
+def load_plan(path):
+    """Load a plan and, when present, its hash-bound reference dossier."""
+    plan = validate_plan(read_json(path))
+    if 'research' in plan:
+        from reference_scout import validate_plan_research
+        validate_plan_research(plan, Path(path).resolve().parent)
+    return plan
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('plan', type=Path)
     args = parser.parse_args()
     try:
-        plan = validate_plan(read_json(args.plan))
+        plan = load_plan(args.plan)
     except (PlanError, ValueError, OSError, KeyError) as exc:
         parser.exit(1, f'INVALID: {exc}\n')
     print(json.dumps({'valid': True, 'scene': plan['id'], 'objects': len(plan['objects']),
