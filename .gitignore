@@ -10,3 +10,7 @@ review-history.json
 /evidence/v02/references/
 # Generator snapshots are retained locally and archived as source-snapshot.zip.
 /output/v02/**/source/
+# Browser-equivalent inspection cache; never scene assets or redistributed art.
+/evidence/reference-scout/private-view-cache/
+# Local development snapshot; current dossiers and test results are published.
+/evidence/reference-scout/initial-dossiers.zip

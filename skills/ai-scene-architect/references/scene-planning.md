@@ -7,6 +7,15 @@ agent; the agent writes `scene_plan.json` against [the schema](scene-plan.schema
 No hosted model credentials or paid 3D-generation service are required by the
 assembler. A standalone Python process cannot understand a new text brief.
 
+Before a new plan, run [AI Reference Scout](reference-scout.md). The AI develops
+its own aesthetic direction using real-world, fantasy or science-fiction
+inspiration; references do not dictate beauty or require realism. Pass the
+compiled bundle to `prepare_planning.py --references`, then bind the authored
+plan to its manifest/brief. The optional `research` field stores byte hashes and
+decision-to-plan value bindings; `load_plan` validates them before Blender runs.
+Legacy v0.2 plans remain compatible. Researching future ideas does not reset an
+existing scene's exhausted visual correction budget.
+
 ## Planning decisions
 
 1. Preserve specified style and purpose. Record inferred scale, presentation

@@ -8,7 +8,7 @@ import json
 import subprocess
 from pathlib import Path
 
-from scene_plan import digest, preview_cameras, read_json, validate_plan
+from scene_plan import digest, preview_cameras, load_plan
 
 
 def main():
@@ -20,7 +20,7 @@ def main():
     p.add_argument('--history',type=Path)
     args=p.parse_args()
     blender=args.blender.resolve();plan_path=args.plan.resolve();out=args.output.resolve()
-    plan=validate_plan(read_json(plan_path))
+    plan=load_plan(plan_path)
     if not blender.is_file():p.error('Blender executable does not exist')
     if out.exists():p.error('Output must be a new directory')
     scripts=Path(__file__).resolve().parent

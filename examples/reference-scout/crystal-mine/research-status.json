@@ -1,0 +1,12 @@
+{
+  "warnings": [
+    "nps-shaft: reuse license unknown; reference only",
+    "nps-haul: reuse license unknown; reference only",
+    "riot: reuse license unknown; reference only",
+    "lotus: reuse license unknown; reference only"
+  ],
+  "search_available": true,
+  "query_attempts": 4,
+  "web_sources_read": 5,
+  "provenance_validation": "consistency only; source truth and tool use are agent assertions"
+}

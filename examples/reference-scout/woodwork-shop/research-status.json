@@ -1,0 +1,14 @@
+{
+  "warnings": [
+    "bench: reuse license unknown; reference only",
+    "wood: reuse license unknown; reference only",
+    "vise: reuse license unknown; reference only",
+    "vise: source content not verified",
+    "riot: reuse license unknown; reference only",
+    "Unresolved question: clamping"
+  ],
+  "search_available": true,
+  "query_attempts": 4,
+  "web_sources_read": 3,
+  "provenance_validation": "consistency only; source truth and tool use are agent assertions"
+}

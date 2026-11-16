@@ -1,0 +1,451 @@
+{
+  "schema_version": "1.0",
+  "brief": "建立小型、低模風格的奇幻水晶礦洞，包含不規則洞穴岩壁、木製支架、不同大小的發光水晶、一輛廢棄礦車、散落礦石、入口與主要探索區域，燈光與構圖合理。",
+  "brief_sha256": "96306593bd57b835359642530fb9184ab8064288203c9d8954103af72c287c95",
+  "availability": {
+    "status": "available",
+    "tools": [
+      "mcp__codex_apps__search_service_web_run"
+    ],
+    "reason": "本次 AI 代理實際可呼叫網路搜尋／開頁工具；Python 工具本身不包含搜尋供應商。"
+  },
+  "strategy": {
+    "intent": "以 AI 自己的美感設計「靜默的斷脈」，研究真實與幻想的功能、形狀和構圖語彙；參考是靈感，並不裁定本案必須寫實。",
+    "questions": [
+      {
+        "id": "support",
+        "category": "real_structure",
+        "question": "地下岩壁與木支架有哪些可查證的支撐用途？",
+        "why": "避免柱樑只是無功能裝飾，並辨別現場參考與安全工程設計。"
+      },
+      {
+        "id": "haulage",
+        "category": "functional_construction",
+        "question": "礦車、軌道與提昇構造在開採流程中如何銜接？",
+        "why": "確立運礦區與探索區的空間關係。"
+      },
+      {
+        "id": "mineral",
+        "category": "natural_form",
+        "question": "真實石英參考可支持哪些材料資訊，哪些發光設定屬幻想？",
+        "why": "避免把奇幻青色自發光當成地質事實。"
+      },
+      {
+        "id": "clarity",
+        "category": "art_style",
+        "question": "優秀遊戲場景如何在強烈題材中保留辨識與動線可讀性？",
+        "why": "讓主要水晶焦點突出，但不以漆黑或過量發光掩蓋結構。"
+      }
+    ],
+    "selection_criteria": [
+      "結構及材料優先找博物館、歷史機構、地質機構或實作者的第一方資料。",
+      "美術來源按可讀性與場景用途選擇；只借鑑原則，使用者的低模風格優先。",
+      "搜尋摘要是線索；原頁未開啟、未看圖或未查到授權，都要明確保留未知。"
+    ]
+  },
+  "searches": [
+    {
+      "id": "mine-structure",
+      "question_ids": [
+        "support",
+        "haulage"
+      ],
+      "query": "site:nps.gov hard rock mine timber supports ore cart historic",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "status": "succeeded",
+      "accessed_on": "2026-11-15",
+      "result_urls": [
+        "https://www.nps.gov/articles/the-no-2-quincy-shaft-rockhouse-9-240-feet-into-the-earth-teaching-with-historic-places.htm",
+        "https://www.nps.gov/para/learn/historyculture/copper-from-discovery-to-boom-to-ruin.htm"
+      ],
+      "note": "實際首批搜尋；保留兩個相關結果，並開啟各自原頁。"
+    },
+    {
+      "id": "mine-mineral",
+      "question_ids": [
+        "mineral"
+      ],
+      "query": "site:usgs.gov quartz crystal hexagonal habit",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "status": "succeeded",
+      "accessed_on": "2026-11-15",
+      "result_urls": [
+        "https://www.usgs.gov/media/images/quartz-crystal"
+      ],
+      "note": "實際首批搜尋；選擇可開啟的 USGS 媒體頁，未將其他 PDF 摘要的晶形描述升格為已查證內容。"
+    },
+    {
+      "id": "art-search",
+      "question_ids": [
+        "clarity"
+      ],
+      "query": "site:playvalorant.com art map environment clarity visual art design",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "status": "succeeded",
+      "accessed_on": "2026-11-15",
+      "result_urls": [
+        "https://playvalorant.com/en-gb/news/dev/the-art-of-valorant-map-environments/",
+        "https://playvalorant.com/en-us/news/dev/lotus-unearthing-valorant-s-lost-city/"
+      ],
+      "note": "本次第二批實際搜尋；同一可讀性原則可供兩種場景不同的構圖轉譯。"
+    },
+    {
+      "id": "lotus-image-search",
+      "question_ids": [
+        "clarity"
+      ],
+      "query": "site:playvalorant.com lotus concept art rock cut architecture",
+      "tool": "mcp__codex_apps__search_service_web_run",
+      "status": "no_results",
+      "accessed_on": "2026-11-15",
+      "result_urls": [],
+      "note": "本次實際圖片搜尋回傳 Empty search results；改以唯讀開啟已知官方頁面 HTML，取得其 CDN 圖片網址並實際檢視。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nps-shaft",
+      "url": "https://www.nps.gov/articles/the-no-2-quincy-shaft-rockhouse-9-240-feet-into-the-earth-teaching-with-historic-places.htm",
+      "title": "The No. 2 Quincy Shaft-Rockhouse: 9,240 Feet into the Earth",
+      "publisher": "U.S. National Park Service",
+      "origin": "web_search",
+      "categories": [
+        "real_structure",
+        "functional_construction"
+      ],
+      "question_ids": [
+        "support"
+      ],
+      "discovered_by": [
+        "mine-structure"
+      ],
+      "access": {
+        "status": "page_read",
+        "tool": "mcp__codex_apps__search_service_web_run",
+        "checked_on": "2026-11-15",
+        "image_reviewed": false,
+        "note": "已開啟來源文字；未獨立檢視原圖。"
+      },
+      "evidence": [
+        {
+          "id": "timber-purpose",
+          "kind": "verified_fact",
+          "statement": "該史料記載木支撐樑由地下木工安裝維護，用來支撐礦井；本文也提到木材的火災風險。",
+          "locator": "Reading 2，木支撐段落，行 154；turn536776view3。",
+          "limitations": "不能據此推導本案的樑截面、承載力或每座礦井都相同的構造尺寸。",
+          "scope": "physical_fact"
+        }
+      ],
+      "license": {
+        "status": "unknown",
+        "statement": "本次未查得該內容或圖片可重用的明確授權；不可由可瀏覽推定可複製。",
+        "scope": "頁面文字及附圖的重用權利未確認。",
+        "evidence_url": ""
+      },
+      "usage": "reference_only",
+      "domain": "real_world"
+    },
+    {
+      "id": "nps-haul",
+      "url": "https://www.nps.gov/para/learn/historyculture/copper-from-discovery-to-boom-to-ruin.htm",
+      "title": "Copper: From Discovery to Boom to Ruin",
+      "publisher": "U.S. National Park Service",
+      "origin": "web_search",
+      "categories": [
+        "functional_construction",
+        "real_structure"
+      ],
+      "question_ids": [
+        "haulage"
+      ],
+      "discovered_by": [
+        "mine-structure"
+      ],
+      "access": {
+        "status": "page_read",
+        "tool": "mcp__codex_apps__search_service_web_run",
+        "checked_on": "2026-11-15",
+        "image_reviewed": false,
+        "note": "已開啟來源文字；未獨立檢視原圖。"
+      },
+      "evidence": [
+        {
+          "id": "haulage-purpose",
+          "kind": "verified_fact",
+          "statement": "頁面以圖說介紹礦車軌道通向井架，井架用於上下運送礦工與礦石。",
+          "locator": "礦車軌道與井架圖說，行 37；turn265520view0。",
+          "limitations": "圖說文字已讀，圖片未獨立檢視；不是本案礦車輪軸或料斗的尺寸圖。",
+          "scope": "physical_fact"
+        }
+      ],
+      "license": {
+        "status": "unknown",
+        "statement": "本次未查得該內容或圖片可重用的明確授權；不可由可瀏覽推定可複製。",
+        "scope": "頁面文字及附圖的重用權利未確認。",
+        "evidence_url": ""
+      },
+      "usage": "reference_only",
+      "domain": "real_world"
+    },
+    {
+      "id": "quartz",
+      "url": "https://www.usgs.gov/media/images/quartz-crystal",
+      "title": "Quartz Crystal",
+      "publisher": "U.S. Geological Survey",
+      "origin": "web_search",
+      "categories": [
+        "natural_form",
+        "materials"
+      ],
+      "question_ids": [
+        "mineral"
+      ],
+      "discovered_by": [
+        "mine-mineral"
+      ],
+      "access": {
+        "status": "page_read",
+        "tool": "mcp__codex_apps__search_service_web_run",
+        "checked_on": "2026-11-15",
+        "image_reviewed": false,
+        "note": "已開啟來源文字；未獨立檢視原圖。"
+      },
+      "evidence": [
+        {
+          "id": "caption-material",
+          "kind": "verified_fact",
+          "statement": "此媒體頁將樣本描述為館藏石英，圖說提到透明結構與裂紋。",
+          "locator": "Detailed Description，行 11–17；turn536776view2。",
+          "limitations": "僅查核文字圖說，未看原圖；本頁沒有證明青色自發光或精確切面數。",
+          "scope": "physical_fact"
+        }
+      ],
+      "license": {
+        "status": "public_domain",
+        "statement": "該媒體頁 Sources/Usage 明確標示 Public Domain。",
+        "scope": "限此頁所描述的石英媒體項目；不外推到所有 USGS 或第三方圖片。",
+        "evidence_url": "https://www.usgs.gov/media/images/quartz-crystal"
+      },
+      "usage": "reference_only",
+      "domain": "real_world"
+    },
+    {
+      "id": "riot",
+      "url": "https://playvalorant.com/en-gb/news/dev/the-art-of-valorant-map-environments/",
+      "title": "The Art of VALORANT Map Environments",
+      "publisher": "Riot Games / Lydia Zanotti",
+      "origin": "web_search",
+      "categories": [
+        "art_style",
+        "composition"
+      ],
+      "question_ids": [
+        "clarity"
+      ],
+      "discovered_by": [
+        "art-search"
+      ],
+      "access": {
+        "status": "page_read",
+        "tool": "mcp__codex_apps__search_service_web_run",
+        "checked_on": "2026-11-15",
+        "image_reviewed": false,
+        "note": "已開啟來源文字；未獨立檢視原圖。"
+      },
+      "evidence": [
+        {
+          "id": "clarity-principle",
+          "kind": "verified_fact",
+          "statement": "作者將場景美術置於遊戲可讀性之下，並討論用材質明度與照明減少視覺干擾。",
+          "locator": "MORE ON MAP CLARITY，文字行 43–49；本次工具定位 turn265520view3。",
+          "limitations": "這是該遊戲作者的設計原則，不是本案必須模仿的畫風，也沒有聲稱已檢視文章內圖片。",
+          "scope": "author_principle"
+        }
+      ],
+      "license": {
+        "status": "unknown",
+        "statement": "本次未查得該內容或圖片可重用的明確授權；不可由可瀏覽推定可複製。",
+        "scope": "頁面文字及附圖的重用權利未確認。",
+        "evidence_url": ""
+      },
+      "usage": "reference_only",
+      "domain": "mixed"
+    },
+    {
+      "id": "lotus",
+      "url": "https://playvalorant.com/en-us/news/dev/lotus-unearthing-valorant-s-lost-city/",
+      "title": "Lotus: Unearthing VALORANT’s Lost City",
+      "publisher": "Riot Games / Kenny Cameron",
+      "origin": "web_search",
+      "domain": "fictional",
+      "categories": [
+        "art_style",
+        "functional_construction"
+      ],
+      "question_ids": [
+        "clarity"
+      ],
+      "discovered_by": [
+        "art-search"
+      ],
+      "access": {
+        "status": "page_read",
+        "tool": "mcp__codex_apps__search_service_web_run; urllib page inspection; functions.view_image",
+        "checked_on": "2026-11-15",
+        "image_reviewed": true,
+        "note": "已讀官方頁面；圖片搜尋無結果後，唯讀讀取官方 HTML 找到此媒體 URL，以本機暫存實際開圖。快取不加入 Git 或場景素材。",
+        "media_url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/05ea5a1b66bf52b9f64eb003903c9962b6c43136-1694x952.jpg",
+        "media_sha256": "55e5c57763465b684de3378b5749b91d4d963e6ba8b053a8269fbcc36f158ed2"
+      },
+      "evidence": [
+        {
+          "id": "fiction-motif",
+          "kind": "verified_fact",
+          "scope": "depicted_design",
+          "statement": "第一方介紹將虛構藤蔓設計成能量傳導意象，連結植物、建築與機關的世界觀。",
+          "locator": "A Hidden History，行 20–24；turn439097view0。",
+          "limitations": "這是虛構作品設定，不是植物或能量的物理事實；沒有複製其根系圖案或門扉。"
+        },
+        {
+          "id": "visual-hierarchy",
+          "kind": "visual_observation",
+          "scope": "depicted_design",
+          "statement": "我在這張圖中看到寬闊、較安靜的石牆面，暖光與冷陰影分區，少量粉色花朵形成高處的重點，而地面通道較少裝飾。",
+          "locator": "已開啟之官方 CDN 圖片；精確 URL 與 SHA-256 見 access.media_url / media_sha256。",
+          "limitations": "這是 AI 對單張作品圖片的視覺判讀，不是整個遊戲的客觀美術定律；不複製圖案、構圖或素材。"
+        }
+      ],
+      "license": {
+        "status": "unknown",
+        "statement": "沒有查得可重用作品圖像或模型的授權；僅研究其設計意圖。",
+        "scope": "文章與遊戲美術作品；不假設可再製。",
+        "evidence_url": ""
+      },
+      "usage": "reference_only"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "supported-timber",
+      "topic": "支撐與命名",
+      "proposal": "保留成對立柱與橫樑支架，讓角色通行及軌道從柱腳之間穿過；尺寸仍是遊戲設計假設。",
+      "target": "/art_direction/assumptions",
+      "confidence": "supported_adaptation",
+      "basis": [
+        {
+          "source_id": "nps-shaft",
+          "evidence_id": "timber-purpose"
+        }
+      ],
+      "rationale": "研究支持支架的用途，不宣稱已完成地下工程承載驗證。"
+    },
+    {
+      "id": "haulage-route",
+      "topic": "配置與動線",
+      "proposal": "偏左軌道形成運礦帶，右側步行到主要探索區；兩者不被裝飾物堵塞。",
+      "target": "/paths/0/purpose",
+      "confidence": "supported_adaptation",
+      "basis": [
+        {
+          "source_id": "nps-haul",
+          "evidence_id": "haulage-purpose"
+        }
+      ],
+      "rationale": "將真實運輸功能轉為本案可讀的分區；不複製歷史礦場布局。"
+    },
+    {
+      "id": "mineral-interpretation",
+      "topic": "材質與幻想邊界",
+      "proposal": "青色發光只作使用者需求的奇幻轉譯；石英圖說只支持透明結構與裂紋的研究方向。",
+      "target": "/art_direction/palette_rationale",
+      "confidence": "supported_adaptation",
+      "basis": [
+        {
+          "source_id": "quartz",
+          "evidence_id": "caption-material"
+        }
+      ],
+      "rationale": "避免使用來源沒有證明的礦物發光敘述。"
+    },
+    {
+      "id": "mine-focal-clarity",
+      "topic": "美術焦點",
+      "proposal": "以後右晶簇作焦點，控制周邊材質對比及照明，保留可辨的行走地面。",
+      "target": "/art_direction/focal_point",
+      "confidence": "supported_adaptation",
+      "basis": [
+        {
+          "source_id": "riot",
+          "evidence_id": "clarity-principle"
+        }
+      ],
+      "rationale": "只借鑑可讀性原則；不轉換成 VALORANT 視覺風格或複製其素材。"
+    },
+    {
+      "id": "original-mine-aesthetic",
+      "topic": "AI 自主美感：靜默的斷脈",
+      "proposal": "採不對稱晶簇焦點、入口節奏與探索留白，讓尖銳晶形和寬岩面對話；不以完全寫實為目標。",
+      "target": "/art_direction/focal_point",
+      "confidence": "creative_judgment",
+      "basis": [],
+      "rationale": "這是 AI 對本案的主觀選擇。比較過滿洞霓虹與封閉寫實礦坑後，我認為克制的對比更有發現感，毋須外部作品替每個選擇背書。"
+    },
+    {
+      "id": "world-motif-inspiration",
+      "topic": "幻想作品的設計語彙",
+      "proposal": "從虛構作品借鑑世界觀與功能互相呼應的想法，但晶體光與採礦痕跡仍用本案自己的語彙表達。",
+      "target": "/art_direction/assumptions",
+      "confidence": "creative_judgment",
+      "basis": [
+        {
+          "source_id": "lotus",
+          "evidence_id": "fiction-motif"
+        },
+        {
+          "source_id": "lotus",
+          "evidence_id": "visual-hierarchy"
+        }
+      ],
+      "rationale": "這是靈感轉譯，不是抄用作品設定，也不是聲稱幻想機關符合現實物理。"
+    }
+  ],
+  "gaps": [
+    "已檢視 Lotus 的一張官方作品圖片；礦物與真實結構原圖尚未獨立檢視，不宣稱完成比例或全面視覺比對。",
+    "洞穴連續曲面、岩頂截面與木支架尺寸沒有足夠的測量證據，保持設計假設。",
+    "本研究不會重啟已達兩次修正上限的 v0.2 礦洞建模紀錄。"
+  ],
+  "offline_options": [],
+  "creative_direction": {
+    "status": "proposed",
+    "design_intent": "靜默的斷脈：入口木構的秩序被深處偏生的晶簇打破，讓探索者先感到安靜，再被一小塊不尋常的光吸引。",
+    "mood": [
+      "靜謐",
+      "粗獷",
+      "微光"
+    ],
+    "composition": "入口支架作前景框，偏左軌道收束視線；晶簇偏右後方形成不對稱焦點，中央探索區留白。",
+    "shape_language": "岩體採寬而斷裂的面；木構是克制的直線節奏；晶體是少量尖銳上升的形狀，避免全場同一密度。",
+    "palette_and_light": "我選低飽和藍灰岩體、乾燥棕木與局部翡翠光；暖光只點出人工痕跡，保留清楚的中間調與接觸陰影。",
+    "reference_transformation": "借用歷史礦場的功能關係、Riot 的可讀性思路，以及幻想作品把世界觀融入功能的想法；不採用其造型、配色表或現成構圖。 看過 Lotus 單張作品後，我選擇借鑑「安靜大面與少量重點」的節奏，捨棄它的花朵、遺跡圖案和露天日光，維持本案微光礦洞。",
+    "alternatives_considered": [
+      {
+        "direction": "滿洞高飽和霓虹晶體",
+        "why_not_selected": "會把每個區域都推成焦點，削弱我想要的安靜與發現感。"
+      },
+      {
+        "direction": "嚴格寫實的封閉地下礦坑",
+        "why_not_selected": "寫實並非本案最高目的；開放剖面與克制的幻想光更符合低模小場景。"
+      }
+    ],
+    "self_review_questions": [
+      "晶簇是否先被注意，但沒有把木構與行走路徑洗白？",
+      "三種形狀語彙是否形成對比，而不是靠隨機碎屑增加豐富度？",
+      "即使不認識參考作品，場景是否仍有自己的意圖？"
+    ],
+    "quality_risks": [
+      "大面岩體和岩頂若缺少合理的輪廓轉折，容易像板片堆成，削弱洞穴感。",
+      "發光過強、過多會把晶形洗白；過暗又會遮住木構與地面。",
+      "支架可能遮住礦車或主要晶簇，必須以實際鏡頭判斷，不靠文字構圖自我說服。"
+    ]
+  }
+}

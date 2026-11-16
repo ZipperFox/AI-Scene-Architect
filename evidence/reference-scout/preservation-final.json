@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "prior_evidence_and_scene_files_unchanged": true,
+    "crystal-mine_geometric_plan_unchanged": true,
+    "crystal-mine_research_bound": true,
+    "woodwork-shop_geometric_plan_unchanged": true,
+    "woodwork-shop_research_bound": true,
+    "offline_explicitly_no_searches": true
+  },
+  "all_passed": true,
+  "preserved_files": 192
+}
