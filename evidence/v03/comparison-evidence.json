@@ -1,0 +1,48 @@
+{
+  "crystal-mine": {
+    "substantive_plan_changes": {
+      "assets": true,
+      "objects": true,
+      "materials": true,
+      "lights": true
+    },
+    "same_cameras": {
+      "hero": true,
+      "three_quarter": false,
+      "top": true
+    },
+    "all_three_pixel_payloads_changed": true,
+    "views": {
+      "hero": true,
+      "three_quarter": true,
+      "top": true
+    },
+    "before_blend": "D:\\AI_work\\AI-Scene-Architect\\output\\v02\\crystal-mine\\iteration-2\\scene.blend",
+    "after_blend": "D:\\AI_work\\AI-Scene-Architect\\output\\v03\\crystal-mine\\iteration-2\\scene.blend",
+    "retouching": false,
+    "board": "D:\\AI_work\\AI-Scene-Architect\\evidence\\v03\\crystal-mine-comparison.png"
+  },
+  "woodwork-shop": {
+    "substantive_plan_changes": {
+      "assets": true,
+      "objects": true,
+      "materials": true,
+      "lights": true
+    },
+    "same_cameras": {
+      "hero": true,
+      "three_quarter": true,
+      "top": true
+    },
+    "all_three_pixel_payloads_changed": true,
+    "views": {
+      "hero": true,
+      "three_quarter": true,
+      "top": true
+    },
+    "before_blend": "D:\\AI_work\\AI-Scene-Architect\\output\\v02\\woodwork-shop\\iteration-1\\scene.blend",
+    "after_blend": "D:\\AI_work\\AI-Scene-Architect\\output\\v03\\woodwork-shop\\iteration-2\\scene.blend",
+    "retouching": false,
+    "board": "D:\\AI_work\\AI-Scene-Architect\\evidence\\v03\\woodwork-shop-comparison.png"
+  }
+}

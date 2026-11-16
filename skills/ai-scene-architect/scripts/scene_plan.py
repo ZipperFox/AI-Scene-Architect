@@ -13,7 +13,7 @@ from pathlib import Path
 
 SCHEMA = Path(__file__).resolve().parents[1] / 'references/scene-plan.schema.json'
 KINDS = ('ground', 'wall', 'rock', 'rock_wall', 'beam', 'timber_frame',
-         'crystal', 'furniture', 'mechanism')
+         'crystal', 'furniture', 'mechanism', 'cave_shell', 'platform', 'window_wall')
 
 
 class PlanError(ValueError):
@@ -108,13 +108,13 @@ def validate_plan(plan):
             if material not in materials:
                 raise PlanError(f'{asset["id"]}: unknown material {material}')
         p = asset['parameters']
-        if asset['kind'] == 'furniture' and p.get('variant') not in ('table', 'bench', 'crate'):
-            raise PlanError('furniture requires variant table, bench or crate')
+        if asset['kind'] == 'furniture' and p.get('variant') not in ('table', 'bench', 'crate', 'tool_rack'):
+            raise PlanError('furniture requires variant table, bench, crate or tool_rack')
         if asset['kind'] == 'mechanism' and p.get('variant') not in ('minecart', 'winch'):
             raise PlanError('mechanism requires variant minecart or winch')
         if asset['kind'] not in ('furniture', 'mechanism') and 'variant' in p:
             raise PlanError('variant is only supported for furniture/mechanism')
-        if 'segments' in p and asset['kind'] not in ('crystal', 'rock_wall'):
+        if 'segments' in p and asset['kind'] not in ('crystal', 'rock_wall', 'cave_shell'):
             raise PlanError('segments is only supported for crystal/rock_wall')
         if 'roughness' in p and asset['kind'] not in ('rock', 'rock_wall'):
             raise PlanError('geometric roughness is only supported for rock/rock_wall')
@@ -122,6 +122,8 @@ def validate_plan(plan):
             raise PlanError('braces is only supported for timber_frame')
         if 'bevel' in p and asset['kind'] not in ('beam', 'wall', 'ground', 'furniture', 'mechanism', 'timber_frame'):
             raise PlanError('bevel is unsupported for this builder')
+        if 'craft_detail' in p and asset['kind'] not in ('beam','timber_frame','furniture','window_wall'):
+            raise PlanError('craft_detail is unsupported for this builder')
     for obj in objects.values():
         if obj['asset'] not in assets:
             raise PlanError(f'{obj["id"]}: unknown asset')
@@ -129,7 +131,7 @@ def validate_plan(plan):
         if support:
             if support not in objects or support == obj['id']:
                 raise PlanError(f'{obj["id"]}: invalid support')
-            if assets[objects[support]['asset']]['kind'] not in ('ground', 'wall', 'beam', 'furniture'):
+            if assets[objects[support]['asset']]['kind'] not in ('ground', 'wall', 'beam', 'furniture', 'platform'):
                 raise PlanError('support must be ground, wall, beam or furniture')
         for exempt in obj.get('allow_overlap_with', []):
             if exempt not in objects or exempt == obj['id']:

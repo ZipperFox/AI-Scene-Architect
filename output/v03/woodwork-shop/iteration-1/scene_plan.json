@@ -1,0 +1,1326 @@
+{
+  "schema_version": "0.2",
+  "id": "afternoon-pause-v03",
+  "brief": "建立小型開放剖面的低模木工作坊：工作桌、長凳、木箱、木製柱樑與手動繩索絞盤。保留中央走道，暖木色配灰白牆，日光從開放前側照入，沒有水晶或礦洞。",
+  "scene_type": "Open-front carpentry workshop",
+  "style": "Low-poly crafted timber workshop, open-window afternoon light, long-grain worn honey timber, quiet central aisle",
+  "purpose": "Second independently planned reuse test with furniture, structure and hand machinery",
+  "seed": 73,
+  "art_direction": {
+    "mood": [
+      "溫暖",
+      "實用",
+      "安靜"
+    ],
+    "focal_point": "工作桌作主要量體，較低長凳承接前景，絞盤在右側形成次焦點；左側疊箱較密，中央保持安靜。",
+    "palette_rationale": "我選蜂蜜棕木、灰白牆與深鐵灰；從開放前側引入偏暖的大面柔光，讓材質靠明度與粗糙度區分，不靠每件物品不同顏色。",
+    "assumptions": [
+      "6×5 公尺開放前側與屋頂的剖面工作坊。",
+      "家具與機械保持可辨識的構件和實際支撐。",
+      "Reference Scout：分板檯面、四腳與下方橫撐是本案選擇，非宣稱所有工作檯必須如此；夾具與絞盤細節保留未驗證狀態。"
+    ],
+    "avoid": [
+      "水晶與發光",
+      "全表面同樣倒角",
+      "塞滿中央動線"
+    ]
+  },
+  "space": {
+    "units": "meters",
+    "up_axis": "Z",
+    "size": [
+      8,
+      7,
+      5
+    ],
+    "origin": "Room center XY; Z=0 finished floor"
+  },
+  "zones": [
+    {
+      "id": "work",
+      "center": [
+        0,
+        1.35,
+        0
+      ],
+      "size": [
+        3,
+        1.8,
+        2
+      ],
+      "purpose": "工作桌與長凳。"
+    },
+    {
+      "id": "storage",
+      "center": [
+        -2,
+        0,
+        0
+      ],
+      "size": [
+        1.4,
+        2,
+        2
+      ],
+      "purpose": "側邊堆放木箱，不阻擋中央。"
+    },
+    {
+      "id": "hoist",
+      "center": [
+        2,
+        1,
+        0
+      ],
+      "size": [
+        1.6,
+        1.5,
+        2
+      ],
+      "purpose": "手動絞盤工位。"
+    }
+  ],
+  "paths": [
+    {
+      "id": "aisle",
+      "points": [
+        [
+          0,
+          -2.2,
+          0.045
+        ],
+        [
+          0,
+          -0.85,
+          0.045
+        ],
+        [
+          1,
+          -0.65,
+          0.045
+        ]
+      ],
+      "width": 0.65,
+      "purpose": "入口搬運空間保持留白，避開座凳與絞盤。"
+    }
+  ],
+  "materials": [
+    {
+      "id": "oak",
+      "color": [
+        0.35,
+        0.18,
+        0.065
+      ],
+      "roughness": 0.73,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "wood",
+      "variation": 0.07,
+      "texture_style": "wood_grain"
+    },
+    {
+      "id": "old_oak",
+      "color": [
+        0.21,
+        0.092,
+        0.033
+      ],
+      "roughness": 0.85,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "wood",
+      "variation": 0.07,
+      "texture_style": "wood_grain"
+    },
+    {
+      "id": "fresh_oak",
+      "color": [
+        0.48,
+        0.29,
+        0.12
+      ],
+      "roughness": 0.77,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "wood",
+      "variation": 0.07,
+      "texture_style": "wood_grain"
+    },
+    {
+      "id": "plaster",
+      "color": [
+        0.54,
+        0.5,
+        0.4
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "plain",
+      "variation": 0.04,
+      "texture_style": "mineral_mottle"
+    },
+    {
+      "id": "floor_gray",
+      "color": [
+        0.16,
+        0.15,
+        0.13
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "stone",
+      "variation": 0.07,
+      "texture_style": "mineral_mottle"
+    },
+    {
+      "id": "steel",
+      "color": [
+        0.09,
+        0.115,
+        0.125
+      ],
+      "roughness": 0.43,
+      "metallic": 0.8,
+      "emission": 0,
+      "surface": "metal",
+      "variation": 0.07,
+      "texture_style": "none"
+    },
+    {
+      "id": "cord",
+      "color": [
+        0.4,
+        0.29,
+        0.14
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "wood",
+      "variation": 0.07,
+      "texture_style": "none"
+    },
+    {
+      "id": "floor_oak_a",
+      "color": [
+        0.29,
+        0.145,
+        0.055
+      ],
+      "roughness": 0.73,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "wood",
+      "variation": 0.07,
+      "texture_style": "wood_grain"
+    },
+    {
+      "id": "floor_oak_b",
+      "color": [
+        0.27,
+        0.135,
+        0.052
+      ],
+      "roughness": 0.73,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "wood",
+      "variation": 0.07,
+      "texture_style": "wood_grain"
+    },
+    {
+      "id": "floor_oak_c",
+      "color": [
+        0.31,
+        0.16,
+        0.063
+      ],
+      "roughness": 0.73,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "wood",
+      "variation": 0.07,
+      "texture_style": "wood_grain"
+    }
+  ],
+  "assets": [
+    {
+      "id": "floor_slab",
+      "kind": "ground",
+      "dimensions": [
+        6,
+        5,
+        0.24
+      ],
+      "materials": [
+        "floor_gray"
+      ],
+      "parameters": {
+        "bevel": 0.01
+      }
+    },
+    {
+      "id": "rear_window",
+      "kind": "window_wall",
+      "dimensions": [
+        6,
+        0.38,
+        3.05
+      ],
+      "materials": [
+        "plaster",
+        "old_oak"
+      ],
+      "parameters": {
+        "craft_detail": true
+      }
+    },
+    {
+      "id": "side_wall",
+      "kind": "wall",
+      "dimensions": [
+        0.18,
+        5,
+        2.75
+      ],
+      "materials": [
+        "plaster"
+      ],
+      "parameters": {
+        "bevel": 0.005
+      }
+    },
+    {
+      "id": "worktable",
+      "kind": "furniture",
+      "dimensions": [
+        2.85,
+        1.1,
+        1.03
+      ],
+      "materials": [
+        "oak",
+        "steel",
+        "fresh_oak"
+      ],
+      "parameters": {
+        "variant": "table",
+        "craft_detail": true,
+        "bevel": 0.012
+      }
+    },
+    {
+      "id": "seat",
+      "kind": "furniture",
+      "dimensions": [
+        1.65,
+        0.46,
+        0.48
+      ],
+      "materials": [
+        "old_oak",
+        "steel"
+      ],
+      "parameters": {
+        "variant": "bench",
+        "bevel": 0.009,
+        "craft_detail": true
+      }
+    },
+    {
+      "id": "crate",
+      "kind": "furniture",
+      "dimensions": [
+        0.75,
+        0.62,
+        0.6
+      ],
+      "materials": [
+        "old_oak",
+        "steel"
+      ],
+      "parameters": {
+        "variant": "crate",
+        "bevel": 0.009,
+        "craft_detail": true
+      }
+    },
+    {
+      "id": "winch",
+      "kind": "mechanism",
+      "dimensions": [
+        1.05,
+        0.75,
+        0.95
+      ],
+      "materials": [
+        "old_oak",
+        "steel",
+        "cord"
+      ],
+      "parameters": {
+        "variant": "winch",
+        "bevel": 0.008
+      }
+    },
+    {
+      "id": "spare_beam",
+      "kind": "beam",
+      "dimensions": [
+        0.11,
+        0.11,
+        1.8
+      ],
+      "materials": [
+        "fresh_oak"
+      ],
+      "parameters": {
+        "bevel": 0.006,
+        "craft_detail": true
+      }
+    },
+    {
+      "id": "rear_lintel",
+      "kind": "beam",
+      "dimensions": [
+        5.8,
+        0.19,
+        0.19
+      ],
+      "materials": [
+        "old_oak"
+      ],
+      "parameters": {
+        "bevel": 0.009,
+        "craft_detail": true
+      }
+    },
+    {
+      "id": "structural_post",
+      "kind": "beam",
+      "dimensions": [
+        0.16,
+        0.16,
+        2.74
+      ],
+      "materials": [
+        "old_oak"
+      ],
+      "parameters": {
+        "bevel": 0.008,
+        "craft_detail": true
+      }
+    },
+    {
+      "id": "rack",
+      "kind": "furniture",
+      "dimensions": [
+        0.8,
+        0.19,
+        0.95
+      ],
+      "materials": [
+        "old_oak",
+        "steel"
+      ],
+      "parameters": {
+        "variant": "tool_rack",
+        "craft_detail": true
+      }
+    },
+    {
+      "id": "floorboard_a",
+      "kind": "beam",
+      "dimensions": [
+        5.72,
+        0.337,
+        0.045
+      ],
+      "materials": [
+        "floor_oak_a"
+      ],
+      "parameters": {
+        "bevel": 0.003,
+        "craft_detail": true
+      }
+    },
+    {
+      "id": "floorboard_b",
+      "kind": "beam",
+      "dimensions": [
+        5.72,
+        0.337,
+        0.045
+      ],
+      "materials": [
+        "floor_oak_b"
+      ],
+      "parameters": {
+        "bevel": 0.003,
+        "craft_detail": true
+      }
+    },
+    {
+      "id": "floorboard_c",
+      "kind": "beam",
+      "dimensions": [
+        5.72,
+        0.337,
+        0.045
+      ],
+      "materials": [
+        "floor_oak_c"
+      ],
+      "parameters": {
+        "bevel": 0.003,
+        "craft_detail": true
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "floor",
+      "asset": "floor_slab",
+      "position": [
+        0,
+        0,
+        -0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floor"
+    },
+    {
+      "id": "rear",
+      "asset": "rear_window",
+      "position": [
+        0,
+        2.35,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "rear",
+      "support": "floor"
+    },
+    {
+      "id": "side",
+      "asset": "side_wall",
+      "position": [
+        -2.9,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "side",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear"
+      ]
+    },
+    {
+      "id": "table",
+      "asset": "worktable",
+      "position": [
+        -0.25,
+        1.25,
+        0.045
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "table",
+      "support": "floorboard_10"
+    },
+    {
+      "id": "bench",
+      "asset": "seat",
+      "position": [
+        -0.3,
+        -0.1,
+        0.045
+      ],
+      "rotation": [
+        0,
+        0,
+        -5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "bench",
+      "support": "floorboard_6"
+    },
+    {
+      "id": "storage_lower",
+      "asset": "crate",
+      "position": [
+        -2,
+        -0.7,
+        0.045
+      ],
+      "rotation": [
+        0,
+        0,
+        7
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "storage lower",
+      "support": "floorboard_4"
+    },
+    {
+      "id": "storage_upper",
+      "asset": "crate",
+      "position": [
+        -2,
+        -0.7,
+        0.645
+      ],
+      "rotation": [
+        0,
+        0,
+        -3
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "purpose": "storage upper",
+      "support": "storage_lower"
+    },
+    {
+      "id": "hand_winch",
+      "asset": "winch",
+      "position": [
+        2.0,
+        0.1,
+        0.045
+      ],
+      "rotation": [
+        0,
+        0,
+        -12
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "hand winch",
+      "support": "floorboard_7"
+    },
+    {
+      "id": "spare_timber_0",
+      "asset": "spare_beam",
+      "position": [
+        -2.6,
+        1.7,
+        0.045
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "spare timber 0",
+      "support": "floorboard_11"
+    },
+    {
+      "id": "spare_timber_1",
+      "asset": "spare_beam",
+      "position": [
+        -2.4,
+        1.7,
+        0.045
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        0.8
+      ],
+      "purpose": "spare timber 1",
+      "support": "floorboard_11"
+    },
+    {
+      "id": "rear_beam",
+      "asset": "rear_lintel",
+      "position": [
+        0,
+        2.15,
+        2.72
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "後壁上緣連續木樑，由兩端立柱承接。",
+      "allow_overlap_with": [
+        "rear",
+        "side",
+        "rear_post_left",
+        "rear_post_right"
+      ]
+    },
+    {
+      "id": "rear_post_left",
+      "asset": "structural_post",
+      "position": [
+        -2.75,
+        2.12,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "rear post left",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear",
+        "side"
+      ]
+    },
+    {
+      "id": "rear_post_right",
+      "asset": "structural_post",
+      "position": [
+        2.75,
+        2.12,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "rear post right",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear"
+      ]
+    },
+    {
+      "id": "tool_storage",
+      "asset": "rack",
+      "position": [
+        2.18,
+        2.12,
+        1.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "掛架固定在窗洞右側實牆，工具沿垂直方向收納。",
+      "allow_overlap_with": [
+        "rear"
+      ]
+    },
+    {
+      "id": "floorboard_0",
+      "asset": "floorboard_a",
+      "position": [
+        0,
+        -2.21,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floorboard 0",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear",
+        "side",
+        "rear_post_left",
+        "rear_post_right"
+      ]
+    },
+    {
+      "id": "floorboard_1",
+      "asset": "floorboard_a",
+      "position": [
+        0,
+        -1.8699999999999999,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floorboard 1",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear",
+        "side",
+        "rear_post_left",
+        "rear_post_right"
+      ]
+    },
+    {
+      "id": "floorboard_2",
+      "asset": "floorboard_b",
+      "position": [
+        0,
+        -1.5299999999999998,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floorboard 2",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear",
+        "side",
+        "rear_post_left",
+        "rear_post_right"
+      ]
+    },
+    {
+      "id": "floorboard_3",
+      "asset": "floorboard_a",
+      "position": [
+        0,
+        -1.19,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floorboard 3",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear",
+        "side",
+        "rear_post_left",
+        "rear_post_right"
+      ]
+    },
+    {
+      "id": "floorboard_4",
+      "asset": "floorboard_c",
+      "position": [
+        0,
+        -0.8499999999999999,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floorboard 4",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear",
+        "side",
+        "rear_post_left",
+        "rear_post_right"
+      ]
+    },
+    {
+      "id": "floorboard_5",
+      "asset": "floorboard_a",
+      "position": [
+        0,
+        -0.5099999999999998,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floorboard 5",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear",
+        "side",
+        "rear_post_left",
+        "rear_post_right"
+      ]
+    },
+    {
+      "id": "floorboard_6",
+      "asset": "floorboard_a",
+      "position": [
+        0,
+        -0.16999999999999993,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floorboard 6",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear",
+        "side",
+        "rear_post_left",
+        "rear_post_right"
+      ]
+    },
+    {
+      "id": "floorboard_7",
+      "asset": "floorboard_a",
+      "position": [
+        0,
+        0.17000000000000037,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floorboard 7",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear",
+        "side",
+        "rear_post_left",
+        "rear_post_right"
+      ]
+    },
+    {
+      "id": "floorboard_8",
+      "asset": "floorboard_a",
+      "position": [
+        0,
+        0.5100000000000002,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floorboard 8",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear",
+        "side",
+        "rear_post_left",
+        "rear_post_right"
+      ]
+    },
+    {
+      "id": "floorboard_9",
+      "asset": "floorboard_b",
+      "position": [
+        0,
+        0.8500000000000001,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floorboard 9",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear",
+        "side",
+        "rear_post_left",
+        "rear_post_right"
+      ]
+    },
+    {
+      "id": "floorboard_10",
+      "asset": "floorboard_a",
+      "position": [
+        0,
+        1.1900000000000004,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floorboard 10",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear",
+        "side",
+        "rear_post_left",
+        "rear_post_right"
+      ]
+    },
+    {
+      "id": "floorboard_11",
+      "asset": "floorboard_c",
+      "position": [
+        0,
+        1.5300000000000002,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floorboard 11",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear",
+        "side",
+        "rear_post_left",
+        "rear_post_right"
+      ]
+    },
+    {
+      "id": "floorboard_12",
+      "asset": "floorboard_a",
+      "position": [
+        0,
+        1.87,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floorboard 12",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear",
+        "side",
+        "rear_post_left",
+        "rear_post_right"
+      ]
+    },
+    {
+      "id": "floorboard_13",
+      "asset": "floorboard_a",
+      "position": [
+        0,
+        2.21,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floorboard 13",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rear",
+        "side",
+        "rear_post_left",
+        "rear_post_right"
+      ]
+    }
+  ],
+  "lights": [
+    {
+      "id": "afternoon_sun",
+      "type": "SUN",
+      "position": [
+        -3,
+        5,
+        7
+      ],
+      "target": [
+        0,
+        -2,
+        0
+      ],
+      "color": [
+        1,
+        0.75,
+        0.44
+      ],
+      "energy": 2.0,
+      "size": 0.1
+    },
+    {
+      "id": "window_key",
+      "type": "AREA",
+      "position": [
+        -1,
+        3.6,
+        4.3
+      ],
+      "target": [
+        0,
+        0,
+        0.2
+      ],
+      "color": [
+        1,
+        0.81,
+        0.56
+      ],
+      "energy": 420,
+      "size": 2.1
+    },
+    {
+      "id": "cool_fill",
+      "type": "AREA",
+      "position": [
+        2,
+        -4,
+        5
+      ],
+      "target": [
+        0,
+        0,
+        1
+      ],
+      "color": [
+        0.6,
+        0.73,
+        1
+      ],
+      "energy": 300,
+      "size": 4
+    }
+  ],
+  "cameras": [
+    {
+      "id": "shop_hero",
+      "position": [
+        9,
+        -12,
+        9
+      ],
+      "target": [
+        0,
+        0,
+        0.7
+      ],
+      "lens": 44,
+      "ortho_scale": 0,
+      "purpose": "入口、工作桌與側邊儲物區。"
+    },
+    {
+      "id": "shop_reverse",
+      "position": [
+        8,
+        -2,
+        6
+      ],
+      "target": [
+        0,
+        0.4,
+        0.8
+      ],
+      "lens": 42,
+      "ortho_scale": 0,
+      "purpose": "檢查家具支撐與手動機構。"
+    },
+    {
+      "id": "shop_overview",
+      "position": [
+        0,
+        0,
+        12
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "lens": 45,
+      "ortho_scale": 8,
+      "purpose": "檢查中央走道。"
+    }
+  ],
+  "hero_camera": "shop_hero",
+  "world_color": [
+    0.23,
+    0.29,
+    0.37
+  ],
+  "research": {
+    "manifest": "reference_manifest.json",
+    "manifest_sha256": "e0dda0313525586a69a5c333619ce6778fda7e3b7befee37cc5521c8f3a20667",
+    "art_direction_brief": "art_direction_brief.md",
+    "art_direction_brief_sha256": "5a4009e96b7a893efe2050e2aff22fff1d575e3e1b6ae0a0083af5a922c5a88e",
+    "decision_bindings": [
+      {
+        "decision_id": "bench-structure-choice",
+        "target": "/art_direction/assumptions",
+        "value_sha256": "808e44ff290e5f0ce9581d6be402397c1ed22512e938186a29f6162543035300"
+      },
+      {
+        "decision_id": "grain-aware-materials",
+        "target": "/art_direction/palette_rationale",
+        "value_sha256": "83dc2b8f41d003fd9510bbe3e3dc031a471d3122c986b4202f33b46421a5eaad"
+      },
+      {
+        "decision_id": "shop-focal-clarity",
+        "target": "/art_direction/focal_point",
+        "value_sha256": "a10cfa542cf720b35c3a9a4eff6c732d016b15e633fc40ac386a5ddd7e511890"
+      },
+      {
+        "decision_id": "original-shop-aesthetic",
+        "target": "/art_direction/focal_point",
+        "value_sha256": "a10cfa542cf720b35c3a9a4eff6c732d016b15e633fc40ac386a5ddd7e511890"
+      },
+      {
+        "decision_id": "window-and-crafted-bench",
+        "target": "/assets",
+        "value_sha256": "3de3bf63b6b0c58e3f9ef28df8a01d8183b993668b491984e9b904d769646a42"
+      }
+    ]
+  }
+}

@@ -1,2 +1,6 @@
 # Research bundles contain byte hashes. Keep their portable text bytes stable.
 examples/reference-scout/** text eol=lf
+examples/v03/**/*.json text eol=lf
+examples/v03/**/*.md text eol=lf
+output/v03/**/*.json text eol=lf
+output/v03/**/*.md text eol=lf

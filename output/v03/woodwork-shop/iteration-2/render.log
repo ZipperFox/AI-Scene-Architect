@@ -1,0 +1,9 @@
+00:00.344  blend            | Read blend: "D:\AI_work\AI-Scene-Architect\output\v03\woodwork-shop\iteration-2\scene.blend"
+00:02.422  render           | Saved: 'D:\AI_work\AI-Scene-Architect\output\v03\woodwork-shop\iteration-2\previews\hero.png'
+00:05.703  render           | Saved: 'D:\AI_work\AI-Scene-Architect\output\v03\woodwork-shop\iteration-2\previews\three_quarter.png'
+00:08.781  render           | Saved: 'D:\AI_work\AI-Scene-Architect\output\v03\woodwork-shop\iteration-2\previews\top.png'
+ASA_PREVIEW_MANIFEST=D:\AI_work\AI-Scene-Architect\output\v03\woodwork-shop\iteration-2\previews\manifest.json
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:33:43)
+
+Blender quit
+Error: Not freed memory blocks: 2, total unfreed memory 0.000046 MB

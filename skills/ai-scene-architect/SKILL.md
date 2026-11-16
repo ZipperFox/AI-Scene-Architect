@@ -5,6 +5,22 @@ description: Research real, fantasy or science-fiction references with available
 
 # AI Scene Architect
 
+## v0.3 visual-quality validation
+
+When asked to validate a researched direction, read
+[visual-validation.md](references/visual-validation.md). Execute the proposal in
+geometry/layout/material/light changes, preserve old renders and journals, and
+open actual new and old images. Use matching hero cameras and settings for a
+meaningful comparison. Record visible improvements, regressions and unknowns;
+technical PASS or changed hashes are not a beauty PASS. New tasks explicitly
+authorized by the user get independent journals, never a reset of an old run.
+Initial render 0 and at most two corrections remain the entire autonomous
+revision limit; no total-time or new automatic quality stop thresholds are added.
+
+The retained v0.3 validation cases are mixed: workshop improved; the mine still
+has cutaway/mood problems after its budget. Do not promote a partial result into
+a general claim that Reference Scout guarantees better art.
+
 ## AI Reference Scout: original design before planning
 
 Before a new scene plan or Blender build, read

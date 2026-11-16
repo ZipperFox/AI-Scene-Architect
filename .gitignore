@@ -14,3 +14,5 @@ review-history.json
 /evidence/reference-scout/private-view-cache/
 # Local development snapshot; current dossiers and test results are published.
 /evidence/reference-scout/initial-dossiers.zip
+/evidence/v03/private-reference-cache/
+/output/v03/**/source/

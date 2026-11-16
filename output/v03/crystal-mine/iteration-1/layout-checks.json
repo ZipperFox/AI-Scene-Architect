@@ -1,0 +1,310 @@
+{
+  "errors": [],
+  "warnings": [
+    {
+      "kind": "overlap_candidate",
+      "objects": [
+        "cave_enclosure",
+        "entrance_support"
+      ]
+    },
+    {
+      "kind": "overlap_candidate",
+      "objects": [
+        "cave_enclosure",
+        "inner_support"
+      ]
+    },
+    {
+      "kind": "overlap_candidate",
+      "objects": [
+        "cave_enclosure",
+        "rail_left"
+      ]
+    },
+    {
+      "kind": "overlap_candidate",
+      "objects": [
+        "cave_enclosure",
+        "front_boulder"
+      ]
+    },
+    {
+      "kind": "overlap_candidate",
+      "objects": [
+        "cave_enclosure",
+        "sleeper_6"
+      ]
+    },
+    {
+      "kind": "overlap_candidate",
+      "objects": [
+        "cave_enclosure",
+        "sleeper_7"
+      ]
+    },
+    {
+      "kind": "overlap_candidate",
+      "objects": [
+        "cave_enclosure",
+        "ore_3"
+      ]
+    },
+    {
+      "kind": "overlap_candidate",
+      "objects": [
+        "cave_enclosure",
+        "ore_5"
+      ]
+    },
+    {
+      "kind": "overlap_candidate",
+      "objects": [
+        "focal_crystal",
+        "focal_companion"
+      ]
+    },
+    {
+      "kind": "overlap_candidate",
+      "objects": [
+        "focal_companion",
+        "low_shard"
+      ]
+    },
+    {
+      "kind": "overlap_candidate",
+      "objects": [
+        "wall_boulder",
+        "ore_3"
+      ]
+    },
+    {
+      "kind": "overlap_candidate",
+      "objects": [
+        "left_boulder",
+        "sleeper_7"
+      ]
+    },
+    {
+      "kind": "path_clearance_candidate",
+      "path": "explore_route",
+      "objects": [
+        "focal_crystal",
+        "focal_shard"
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "object": "cave_enclosure",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "entrance_support",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "inner_support",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "rail_left",
+      "support": "sleeper_0",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "rail_right",
+      "support": "sleeper_0",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "abandoned_cart",
+      "support": "rail_left",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "focal_crystal",
+      "support": "floor",
+      "vertical_gap": -3.725290298461914e-09,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "focal_companion",
+      "support": "floor",
+      "vertical_gap": 1.862645149230957e-09,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "focal_shard",
+      "support": "floor",
+      "vertical_gap": -9.313225746154785e-10,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "low_shard",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "entry_shard",
+      "support": "floor",
+      "vertical_gap": -9.313225746154785e-10,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "wall_boulder",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "left_boulder",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "front_boulder",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "supply_crate",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "haul_winch",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "sleeper_0",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "sleeper_1",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "sleeper_2",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "sleeper_3",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "sleeper_4",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "sleeper_5",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "sleeper_6",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "sleeper_7",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "ore_0",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "ore_1",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "ore_2",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "ore_3",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "ore_4",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "ore_5",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    }
+  ],
+  "method": "Evaluated part AABBs and sampled path discs; visual review remains required."
+}

@@ -1,0 +1,1502 @@
+{
+  "schema_version": "0.2",
+  "id": "silent-vein-v03",
+  "brief": "建立小型、低模風格的奇幻水晶礦洞，包含不規則洞穴岩壁、木製支架、不同大小的發光水晶、一輛廢棄礦車、散落礦石、入口與主要探索區域，燈光與構圖合理。",
+  "scene_type": "Cutaway fantasy mining chamber",
+  "style": "Faceted low-poly, continuous inward rock shoulder, quiet dark mineral ground, restrained emerald focal light",
+  "purpose": "Editable game environment diorama with a clear entrance and exploration route",
+  "seed": 37,
+  "art_direction": {
+    "mood": [
+      "幽靜",
+      "粗獷",
+      "微光"
+    ],
+    "focal_point": "入口支架作前景框，偏左軌道收束視線；晶簇偏右後方形成不對稱焦點，中央探索區留白。",
+    "palette_rationale": "我選低飽和藍灰岩體、乾燥棕木與局部翡翠光；暖光只點出人工痕跡，保留清楚的中間調與接觸陰影。",
+    "assumptions": [
+      "採用可檢視的剖面洞穴，前側與上方開放，以便遊戲鏡頭與俯視檢查；不是封閉的整座地下山體。",
+      "範圍約 12×12 公尺，洞壁最高 4.4 公尺，人物參考通行高度 1.9 公尺。",
+      "礦車留有空心料斗、四輪、車軸、輪轂及牽引柄，保留廢棄但結構完整的狀態。",
+      "水晶為不透明低模礦物，使用低強度發光及有限局部補光，不使用粒子或泛光。",
+      "Reference Scout：木樑支撐用途有史料支持，截面與承載力未驗證；本案尺寸屬遊戲設計假設。",
+      "幻想作品可以提供世界觀與功能呼應的靈感；本案晶體光與構圖是 AI 自主美感提案，不宣稱植物能量或礦物自發光是現實事實。"
+    ],
+    "avoid": [
+      "均勻圓滑倒角",
+      "全場發光",
+      "隨機裝飾填滿動線",
+      "以漆黑掩藏未完成的岩壁"
+    ]
+  },
+  "space": {
+    "units": "meters",
+    "up_axis": "Z",
+    "size": [
+      14,
+      14,
+      7
+    ],
+    "origin": "XY center of chamber; Z=0 is the walkable ground surface"
+  },
+  "zones": [
+    {
+      "id": "entrance",
+      "center": [
+        -0.7,
+        -4,
+        0
+      ],
+      "size": [
+        4,
+        2,
+        3.8
+      ],
+      "purpose": "支架形成入口門洞，右側保留步行空間。"
+    },
+    {
+      "id": "exploration",
+      "center": [
+        0.8,
+        0.5,
+        0
+      ],
+      "size": [
+        3.2,
+        4,
+        3.5
+      ],
+      "purpose": "入口到晶簇前方的清楚探索區。"
+    },
+    {
+      "id": "extraction",
+      "center": [
+        1.7,
+        2.7,
+        0
+      ],
+      "size": [
+        3.5,
+        2.5,
+        3.5
+      ],
+      "purpose": "主要水晶焦點及開採工具區。"
+    },
+    {
+      "id": "haulage",
+      "center": [
+        -2,
+        -0.2,
+        0
+      ],
+      "size": [
+        2.1,
+        7.5,
+        2
+      ],
+      "purpose": "偏左軌道與停駛礦車。"
+    }
+  ],
+  "paths": [
+    {
+      "id": "explore_route",
+      "points": [
+        [
+          0,
+          -5,
+          0
+        ],
+        [
+          0,
+          -2,
+          0
+        ],
+        [
+          0.15,
+          -0.4,
+          0
+        ],
+        [
+          0.2,
+          1.2,
+          0
+        ]
+      ],
+      "width": 0.9,
+      "purpose": "入口的木構框景後，步行路徑與左側運礦軌道分開。"
+    }
+  ],
+  "materials": [
+    {
+      "id": "slate",
+      "color": [
+        0.065,
+        0.1,
+        0.13
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "stone",
+      "variation": 0.07,
+      "texture_style": "mineral_mottle"
+    },
+    {
+      "id": "strata",
+      "color": [
+        0.095,
+        0.135,
+        0.16
+      ],
+      "roughness": 0.91,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "stone",
+      "variation": 0.07,
+      "texture_style": "mineral_mottle"
+    },
+    {
+      "id": "rock_light",
+      "color": [
+        0.14,
+        0.18,
+        0.2
+      ],
+      "roughness": 0.93,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "stone",
+      "variation": 0.07,
+      "texture_style": "mineral_mottle"
+    },
+    {
+      "id": "earth",
+      "color": [
+        0.11,
+        0.085,
+        0.063
+      ],
+      "roughness": 0.97,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "stone",
+      "variation": 0.07,
+      "texture_style": "mineral_mottle"
+    },
+    {
+      "id": "timber",
+      "color": [
+        0.23,
+        0.105,
+        0.035
+      ],
+      "roughness": 0.82,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "wood",
+      "variation": 0.07,
+      "texture_style": "wood_grain"
+    },
+    {
+      "id": "iron",
+      "color": [
+        0.095,
+        0.12,
+        0.13
+      ],
+      "roughness": 0.5,
+      "metallic": 0.75,
+      "emission": 0,
+      "surface": "metal",
+      "variation": 0.07,
+      "texture_style": "none"
+    },
+    {
+      "id": "rust",
+      "color": [
+        0.15,
+        0.07,
+        0.032
+      ],
+      "roughness": 0.84,
+      "metallic": 0.35,
+      "emission": 0,
+      "surface": "metal",
+      "variation": 0.07,
+      "texture_style": "mineral_mottle"
+    },
+    {
+      "id": "cyan",
+      "color": [
+        0.025,
+        0.38,
+        0.31
+      ],
+      "roughness": 0.28,
+      "metallic": 0.08,
+      "emission": 0.55,
+      "surface": "crystal",
+      "variation": 0,
+      "texture_style": "none"
+    },
+    {
+      "id": "teal",
+      "color": [
+        0.018,
+        0.21,
+        0.2
+      ],
+      "roughness": 0.35,
+      "metallic": 0.08,
+      "emission": 0.18,
+      "surface": "crystal",
+      "variation": 0,
+      "texture_style": "none"
+    },
+    {
+      "id": "pale",
+      "color": [
+        0.08,
+        0.5,
+        0.39
+      ],
+      "roughness": 0.28,
+      "metallic": 0.05,
+      "emission": 0.32,
+      "surface": "crystal",
+      "variation": 0,
+      "texture_style": "none"
+    },
+    {
+      "id": "ore",
+      "color": [
+        0.24,
+        0.22,
+        0.17
+      ],
+      "roughness": 0.91,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "stone",
+      "variation": 0.07,
+      "texture_style": "mineral_mottle"
+    },
+    {
+      "id": "rope",
+      "color": [
+        0.3,
+        0.22,
+        0.12
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "emission": 0,
+      "surface": "wood",
+      "variation": 0.07,
+      "texture_style": "none"
+    }
+  ],
+  "assets": [
+    {
+      "id": "chamber_floor",
+      "kind": "platform",
+      "dimensions": [
+        12,
+        12,
+        0.45
+      ],
+      "materials": [
+        "earth"
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "chamber_shell",
+      "kind": "cave_shell",
+      "dimensions": [
+        11,
+        9.7,
+        4.7
+      ],
+      "materials": [
+        "slate",
+        "strata",
+        "rock_light"
+      ],
+      "parameters": {
+        "seed": 47,
+        "segments": 22
+      }
+    },
+    {
+      "id": "entry_frame",
+      "kind": "timber_frame",
+      "dimensions": [
+        3.8,
+        0.34,
+        3.05
+      ],
+      "materials": [
+        "timber",
+        "iron"
+      ],
+      "parameters": {
+        "braces": true,
+        "craft_detail": true,
+        "bevel": 0.012
+      }
+    },
+    {
+      "id": "rear_frame",
+      "kind": "timber_frame",
+      "dimensions": [
+        3.4,
+        0.31,
+        2.65
+      ],
+      "materials": [
+        "timber",
+        "iron"
+      ],
+      "parameters": {
+        "braces": true,
+        "craft_detail": true,
+        "bevel": 0.008
+      }
+    },
+    {
+      "id": "rail",
+      "kind": "beam",
+      "dimensions": [
+        0.085,
+        8,
+        0.13
+      ],
+      "materials": [
+        "iron"
+      ],
+      "parameters": {
+        "bevel": 0.004
+      }
+    },
+    {
+      "id": "sleeper",
+      "kind": "beam",
+      "dimensions": [
+        1.9,
+        0.21,
+        0.09
+      ],
+      "materials": [
+        "timber"
+      ],
+      "parameters": {
+        "bevel": 0.012,
+        "craft_detail": true
+      }
+    },
+    {
+      "id": "cart",
+      "kind": "mechanism",
+      "dimensions": [
+        1.55,
+        2.15,
+        1.35
+      ],
+      "materials": [
+        "rust",
+        "iron"
+      ],
+      "parameters": {
+        "variant": "minecart",
+        "bevel": 0.006
+      }
+    },
+    {
+      "id": "crystal_tall",
+      "kind": "crystal",
+      "dimensions": [
+        0.65,
+        0.6,
+        2.25
+      ],
+      "materials": [
+        "cyan"
+      ],
+      "parameters": {
+        "seed": 5,
+        "segments": 6
+      }
+    },
+    {
+      "id": "crystal_mid",
+      "kind": "crystal",
+      "dimensions": [
+        0.6,
+        0.52,
+        1.5
+      ],
+      "materials": [
+        "teal"
+      ],
+      "parameters": {
+        "seed": 8,
+        "segments": 5
+      }
+    },
+    {
+      "id": "crystal_small",
+      "kind": "crystal",
+      "dimensions": [
+        0.3,
+        0.29,
+        0.65
+      ],
+      "materials": [
+        "pale"
+      ],
+      "parameters": {
+        "seed": 9,
+        "segments": 6
+      }
+    },
+    {
+      "id": "boulder_a",
+      "kind": "rock",
+      "dimensions": [
+        1.4,
+        1.1,
+        0.65
+      ],
+      "materials": [
+        "strata"
+      ],
+      "parameters": {
+        "seed": 4,
+        "roughness": 0.28
+      }
+    },
+    {
+      "id": "boulder_b",
+      "kind": "rock",
+      "dimensions": [
+        0.7,
+        0.52,
+        0.27
+      ],
+      "materials": [
+        "slate"
+      ],
+      "parameters": {
+        "seed": 9,
+        "roughness": 0.3
+      }
+    },
+    {
+      "id": "ore_fragment",
+      "kind": "rock",
+      "dimensions": [
+        0.28,
+        0.21,
+        0.14
+      ],
+      "materials": [
+        "ore"
+      ],
+      "parameters": {
+        "seed": 19,
+        "roughness": 0.3
+      }
+    },
+    {
+      "id": "supply_box",
+      "kind": "furniture",
+      "dimensions": [
+        0.8,
+        0.65,
+        0.58
+      ],
+      "materials": [
+        "timber",
+        "iron"
+      ],
+      "parameters": {
+        "variant": "crate",
+        "bevel": 0.009,
+        "craft_detail": true
+      }
+    },
+    {
+      "id": "manual_winch",
+      "kind": "mechanism",
+      "dimensions": [
+        1.0,
+        0.7,
+        0.93
+      ],
+      "materials": [
+        "timber",
+        "iron",
+        "rope"
+      ],
+      "parameters": {
+        "variant": "winch",
+        "bevel": 0.008
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "floor",
+      "asset": "chamber_floor",
+      "position": [
+        0,
+        0,
+        -0.45
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "floor"
+    },
+    {
+      "id": "cave_enclosure",
+      "asset": "chamber_shell",
+      "position": [
+        0,
+        0.25,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "cave enclosure",
+      "support": "floor"
+    },
+    {
+      "id": "entrance_support",
+      "asset": "entry_frame",
+      "position": [
+        -2.05,
+        -3.55,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "entrance support",
+      "support": "floor"
+    },
+    {
+      "id": "inner_support",
+      "asset": "rear_frame",
+      "position": [
+        -2.0,
+        1.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "inner support",
+      "support": "floor"
+    },
+    {
+      "id": "rail_left",
+      "asset": "rail",
+      "position": [
+        -2.74,
+        -0.35,
+        0.09
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "rail left",
+      "support": "sleeper_0"
+    },
+    {
+      "id": "rail_right",
+      "asset": "rail",
+      "position": [
+        -1.46,
+        -0.35,
+        0.09
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "rail right",
+      "support": "sleeper_0"
+    },
+    {
+      "id": "abandoned_cart",
+      "asset": "cart",
+      "position": [
+        -2.1,
+        -0.5,
+        0.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "abandoned cart",
+      "support": "rail_left"
+    },
+    {
+      "id": "focal_crystal",
+      "asset": "crystal_tall",
+      "position": [
+        1.35,
+        0.9,
+        0
+      ],
+      "rotation": [
+        -7,
+        11,
+        -12
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "focal crystal",
+      "support": "floor"
+    },
+    {
+      "id": "focal_companion",
+      "asset": "crystal_mid",
+      "position": [
+        2.15,
+        0.8,
+        0
+      ],
+      "rotation": [
+        5,
+        -12,
+        20
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "focal companion",
+      "support": "floor"
+    },
+    {
+      "id": "focal_shard",
+      "asset": "crystal_small",
+      "position": [
+        0.75,
+        1.4,
+        0
+      ],
+      "rotation": [
+        -4,
+        -10,
+        34
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "focal shard",
+      "support": "floor"
+    },
+    {
+      "id": "low_shard",
+      "asset": "crystal_small",
+      "position": [
+        1.65,
+        0.35,
+        0
+      ],
+      "rotation": [
+        0,
+        14,
+        -20
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.7
+      ],
+      "purpose": "low shard",
+      "support": "floor"
+    },
+    {
+      "id": "entry_shard",
+      "asset": "crystal_small",
+      "position": [
+        -3.75,
+        -2.6,
+        0
+      ],
+      "rotation": [
+        -8,
+        8,
+        20
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.65
+      ],
+      "purpose": "entry shard",
+      "support": "floor"
+    },
+    {
+      "id": "wall_boulder",
+      "asset": "boulder_a",
+      "position": [
+        3.5,
+        3.45,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        30
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.85
+      ],
+      "purpose": "wall boulder",
+      "support": "floor",
+      "allow_overlap_with": [
+        "cave_enclosure"
+      ]
+    },
+    {
+      "id": "left_boulder",
+      "asset": "boulder_a",
+      "position": [
+        -3.7,
+        3.35,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -30
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "purpose": "left boulder",
+      "support": "floor",
+      "allow_overlap_with": [
+        "cave_enclosure"
+      ]
+    },
+    {
+      "id": "front_boulder",
+      "asset": "boulder_b",
+      "position": [
+        3.8,
+        -3.35,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        15
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "front boulder",
+      "support": "floor"
+    },
+    {
+      "id": "supply_crate",
+      "asset": "supply_box",
+      "position": [
+        -3.8,
+        -0.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -8
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "supply crate",
+      "support": "floor"
+    },
+    {
+      "id": "haul_winch",
+      "asset": "manual_winch",
+      "position": [
+        3.1,
+        -0.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -15
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "haul winch",
+      "support": "floor"
+    },
+    {
+      "id": "sleeper_0",
+      "asset": "sleeper",
+      "position": [
+        -2.1,
+        -3.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "sleeper 0",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rail_left",
+        "rail_right"
+      ]
+    },
+    {
+      "id": "sleeper_1",
+      "asset": "sleeper",
+      "position": [
+        -2.1,
+        -2.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "sleeper 1",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rail_left",
+        "rail_right"
+      ]
+    },
+    {
+      "id": "sleeper_2",
+      "asset": "sleeper",
+      "position": [
+        -2.1,
+        -1.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "sleeper 2",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rail_left",
+        "rail_right"
+      ]
+    },
+    {
+      "id": "sleeper_3",
+      "asset": "sleeper",
+      "position": [
+        -2.1,
+        -0.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "sleeper 3",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rail_left",
+        "rail_right"
+      ]
+    },
+    {
+      "id": "sleeper_4",
+      "asset": "sleeper",
+      "position": [
+        -2.1,
+        0.3,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "sleeper 4",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rail_left",
+        "rail_right"
+      ]
+    },
+    {
+      "id": "sleeper_5",
+      "asset": "sleeper",
+      "position": [
+        -2.1,
+        1.3,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "sleeper 5",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rail_left",
+        "rail_right"
+      ]
+    },
+    {
+      "id": "sleeper_6",
+      "asset": "sleeper",
+      "position": [
+        -2.1,
+        2.3,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "sleeper 6",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rail_left",
+        "rail_right"
+      ]
+    },
+    {
+      "id": "sleeper_7",
+      "asset": "sleeper",
+      "position": [
+        -2.1,
+        3.3,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "sleeper 7",
+      "support": "floor",
+      "allow_overlap_with": [
+        "rail_left",
+        "rail_right"
+      ]
+    },
+    {
+      "id": "ore_0",
+      "asset": "ore_fragment",
+      "position": [
+        -3.4,
+        0.1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "purpose": "ore 0",
+      "support": "floor"
+    },
+    {
+      "id": "ore_1",
+      "asset": "ore_fragment",
+      "position": [
+        -3.5,
+        0.4,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        41
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "purpose": "ore 1",
+      "support": "floor"
+    },
+    {
+      "id": "ore_2",
+      "asset": "ore_fragment",
+      "position": [
+        1.3,
+        3.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        82
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "purpose": "ore 2",
+      "support": "floor"
+    },
+    {
+      "id": "ore_3",
+      "asset": "ore_fragment",
+      "position": [
+        2.7,
+        3.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        123
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "purpose": "ore 3",
+      "support": "floor"
+    },
+    {
+      "id": "ore_4",
+      "asset": "ore_fragment",
+      "position": [
+        3.4,
+        1.6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        164
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "purpose": "ore 4",
+      "support": "floor"
+    },
+    {
+      "id": "ore_5",
+      "asset": "ore_fragment",
+      "position": [
+        3.6,
+        1.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        205
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "purpose": "ore 5",
+      "support": "floor"
+    },
+    {
+      "id": "floor_stratum_0",
+      "asset": "boulder_b",
+      "position": [
+        0,
+        -3,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.4,
+        1,
+        0.16
+      ],
+      "support": "floor",
+      "purpose": "嵌在探索地面上的低矮天然岩層，強化材質分區而不堵塞路徑。"
+    },
+    {
+      "id": "floor_stratum_1",
+      "asset": "boulder_b",
+      "position": [
+        0.25,
+        -2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        21
+      ],
+      "scale": [
+        1.2,
+        1,
+        0.16
+      ],
+      "support": "floor",
+      "purpose": "嵌在探索地面上的低矮天然岩層，強化材質分區而不堵塞路徑。"
+    },
+    {
+      "id": "floor_stratum_2",
+      "asset": "boulder_b",
+      "position": [
+        0.1,
+        -1.0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        42
+      ],
+      "scale": [
+        1.7,
+        1,
+        0.16
+      ],
+      "support": "floor",
+      "purpose": "嵌在探索地面上的低矮天然岩層，強化材質分區而不堵塞路徑。"
+    },
+    {
+      "id": "floor_stratum_3",
+      "asset": "boulder_b",
+      "position": [
+        0.0,
+        0.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        63
+      ],
+      "scale": [
+        1.3,
+        1,
+        0.16
+      ],
+      "support": "floor",
+      "purpose": "嵌在探索地面上的低矮天然岩層，強化材質分區而不堵塞路徑。"
+    }
+  ],
+  "lights": [
+    {
+      "id": "entrance_daylight",
+      "type": "AREA",
+      "position": [
+        0,
+        -5,
+        6
+      ],
+      "target": [
+        0,
+        1,
+        0
+      ],
+      "color": [
+        1,
+        0.82,
+        0.62
+      ],
+      "energy": 1800,
+      "size": 5
+    },
+    {
+      "id": "warm_worklight",
+      "type": "AREA",
+      "position": [
+        -3,
+        -1.5,
+        3
+      ],
+      "target": [
+        -1,
+        1,
+        0
+      ],
+      "color": [
+        1,
+        0.48,
+        0.2
+      ],
+      "energy": 260,
+      "size": 2
+    },
+    {
+      "id": "crystal_fill",
+      "type": "POINT",
+      "position": [
+        1.5,
+        0.6,
+        1.0
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "color": [
+        0.08,
+        0.95,
+        0.67
+      ],
+      "energy": 45,
+      "size": 0.6
+    },
+    {
+      "id": "rim_light",
+      "type": "AREA",
+      "position": [
+        0,
+        4,
+        6
+      ],
+      "target": [
+        1,
+        1,
+        1
+      ],
+      "color": [
+        0.32,
+        0.56,
+        1
+      ],
+      "energy": 900,
+      "size": 3
+    }
+  ],
+  "cameras": [
+    {
+      "id": "mine_hero",
+      "position": [
+        11,
+        -16,
+        12
+      ],
+      "target": [
+        0,
+        0.2,
+        1.1
+      ],
+      "lens": 42,
+      "ortho_scale": 0,
+      "purpose": "入口、礦車與晶簇的整體三角構圖。"
+    },
+    {
+      "id": "mine_reverse",
+      "position": [
+        -8,
+        -12,
+        7
+      ],
+      "target": [
+        0,
+        0.5,
+        1
+      ],
+      "lens": 39,
+      "ortho_scale": 0,
+      "purpose": "較低反向視角檢查岩肩、礦車及晶簇支撐。"
+    },
+    {
+      "id": "mine_overview",
+      "position": [
+        0,
+        0,
+        20
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "lens": 45,
+      "ortho_scale": 14.5,
+      "purpose": "俯視檢查步行路徑與物件配置。"
+    }
+  ],
+  "hero_camera": "mine_hero",
+  "world_color": [
+    0.07,
+    0.1,
+    0.15
+  ],
+  "research": {
+    "manifest": "reference_manifest.json",
+    "manifest_sha256": "1444392e6fef6c089b9714f0293cc0d9e4bfabdde1835ee717a7fca9779dc7f8",
+    "art_direction_brief": "art_direction_brief.md",
+    "art_direction_brief_sha256": "406268e21ec9cd27a1993e561cf334f8f33ca75e62e973c5b95685c8969325cd",
+    "decision_bindings": [
+      {
+        "decision_id": "supported-timber",
+        "target": "/art_direction/assumptions",
+        "value_sha256": "94dade7040371dc81a4317d41550802b43a007f212a2b8e83e353968e0bbbe87"
+      },
+      {
+        "decision_id": "haulage-route",
+        "target": "/paths/0/purpose",
+        "value_sha256": "2d2105e42fcb30489e4ea4697db143bd91cf63f9c7ae251cc47a5fda7c2d1244"
+      },
+      {
+        "decision_id": "mineral-interpretation",
+        "target": "/art_direction/palette_rationale",
+        "value_sha256": "866ef6d470f42b0aac3493d42c46e230ca8cf572036ba4ad4e593eaa3210140f"
+      },
+      {
+        "decision_id": "mine-focal-clarity",
+        "target": "/art_direction/focal_point",
+        "value_sha256": "75747987357ae7ab2d643acb80d63e726739d62291d5479678c816c79332beba"
+      },
+      {
+        "decision_id": "original-mine-aesthetic",
+        "target": "/art_direction/focal_point",
+        "value_sha256": "75747987357ae7ab2d643acb80d63e726739d62291d5479678c816c79332beba"
+      },
+      {
+        "decision_id": "world-motif-inspiration",
+        "target": "/art_direction/assumptions",
+        "value_sha256": "94dade7040371dc81a4317d41550802b43a007f212a2b8e83e353968e0bbbe87"
+      }
+    ]
+  }
+}

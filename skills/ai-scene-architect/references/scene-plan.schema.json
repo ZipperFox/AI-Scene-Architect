@@ -293,7 +293,8 @@
             "bench",
             "crate",
             "minecart",
-            "winch"
+            "winch",
+            "tool_rack"
           ]
         },
         "seed": {
@@ -317,6 +318,9 @@
           "maximum": 0.08
         },
         "braces": {
+          "type": "boolean"
+        },
+        "craft_detail": {
           "type": "boolean"
         }
       },
@@ -360,6 +364,14 @@
           "type": "number",
           "minimum": 0,
           "maximum": 0.3
+        },
+        "texture_style": {
+          "type": "string",
+          "enum": [
+            "none",
+            "wood_grain",
+            "mineral_mottle"
+          ]
         }
       },
       "required": [
@@ -389,7 +401,10 @@
             "timber_frame",
             "crystal",
             "furniture",
-            "mechanism"
+            "mechanism",
+            "cave_shell",
+            "platform",
+            "window_wall"
           ]
         },
         "dimensions": {

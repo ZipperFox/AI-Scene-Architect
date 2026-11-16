@@ -1,0 +1,24 @@
+{
+  "iteration": 1,
+  "visual_reviewed": true,
+  "change_signature": "cutaway:lower-shoulders;lighting:fill",
+  "renders": {
+    "hero": "675b614f8424463ae884fed1a79fbaa4b62cdb5a725c27f82b60f9b470b6539c",
+    "three_quarter": "81ac99306dcb106156e93a401061d35cc369d446a0254627f78ee01191f1dcc8",
+    "top": "366117c781823f97010abda7a21edbe83a657795c10782fb781ca5fcf8a65adf"
+  },
+  "issues": [
+    {
+      "id": "crystal-occlusion",
+      "severity": 2,
+      "evidence": "Hero still loses the lower main cluster behind the side shoulder.（主圖的主晶簇下部仍被側肩遮住。）",
+      "fix": "Lower side cutaway further and move cluster toward the inner foreground."
+    },
+    {
+      "id": "exposure-readability",
+      "severity": 2,
+      "evidence": "Packed albedo and cool-dominant lighting still make timber and floor too dark.（封裝色彩及偏冷光使木材、地面仍偏暗。）",
+      "fix": "Correct albedo color-space encoding and rebalance warm entrance / neutral fill."
+    }
+  ]
+}

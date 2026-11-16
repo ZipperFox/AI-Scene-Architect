@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "examples/v03/crystal-mine/manifest": true,
+    "examples/v03/crystal-mine/art_direction_brief": true,
+    "examples/v03/woodwork-shop/manifest": true,
+    "examples/v03/woodwork-shop/art_direction_brief": true,
+    "output/v03/crystal-mine/iteration-2/manifest": true,
+    "output/v03/crystal-mine/iteration-2/art_direction_brief": true,
+    "output/v03/woodwork-shop/iteration-2/manifest": true,
+    "output/v03/woodwork-shop/iteration-2/art_direction_brief": true
+  },
+  "all_passed": true
+}

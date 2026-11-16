@@ -1,0 +1,18 @@
+{
+  "iteration": 1,
+  "visual_reviewed": true,
+  "change_signature": "albedo:srgb;floor:close-values;fill:readability",
+  "renders": {
+    "hero": "692be95824116b155515765be2027b251ea2de15f68de3f0ad54d5e8b70b9f8b",
+    "three_quarter": "bc3232f392f2f6a8b07424127ea446e01590596124b4610d0bdc3c181c87cb9b",
+    "top": "6785b9178aad229c63169ef1fe5ef8e6ccec2a4e6b48e313babccaf2ab3fa20a"
+  },
+  "issues": [
+    {
+      "id": "plaster-repetition",
+      "severity": 1,
+      "evidence": "Repeated wavy bands on the left plaster wall distract from the otherwise clearer workshop.（左側灰泥牆規律波紋干擾構圖。）",
+      "fix": "Remove the periodic albedo pattern and retain restrained rough plaster."
+    }
+  ]
+}

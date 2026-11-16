@@ -1,0 +1,39 @@
+{
+  "blender_version": "5.3.0",
+  "source_blend": "D:\\AI_work\\AI-Scene-Architect\\output\\v03\\woodwork-shop\\iteration-2\\scene.blend",
+  "engine": "CYCLES",
+  "resolution": 768,
+  "temporary_lighting_added": false,
+  "viewpoints": {
+    "hero": {
+      "path": "D:\\AI_work\\AI-Scene-Architect\\output\\v03\\woodwork-shop\\iteration-2\\previews\\hero.png",
+      "sha256": "01d11545363a8a35f5a9b80eae7d015b0a0060f6467a064fc6967f61cdd3921e",
+      "camera": "shop_hero",
+      "location": [
+        9.0,
+        -12.0,
+        9.0
+      ]
+    },
+    "three_quarter": {
+      "path": "D:\\AI_work\\AI-Scene-Architect\\output\\v03\\woodwork-shop\\iteration-2\\previews\\three_quarter.png",
+      "sha256": "2ddbca68d1a427602f7dd514aa41f01d6149f1d92873124252bf68c41d4ec7ed",
+      "camera": "shop_reverse",
+      "location": [
+        8.0,
+        -2.0,
+        6.0
+      ]
+    },
+    "top": {
+      "path": "D:\\AI_work\\AI-Scene-Architect\\output\\v03\\woodwork-shop\\iteration-2\\previews\\top.png",
+      "sha256": "2f988965ce3499966a546bc752b7e34d0f1f371372e310e4f36d1522c92f0fb1",
+      "camera": "shop_overview",
+      "location": [
+        0.0,
+        0.0,
+        12.0
+      ]
+    }
+  }
+}

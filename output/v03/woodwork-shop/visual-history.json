@@ -1,0 +1,55 @@
+[
+  {
+    "iteration": 0,
+    "visual_reviewed": true,
+    "change_signature": "initial-v03",
+    "renders": {
+      "hero": "e4583e0ead91d9ca126a1d0d8418bf085b5a8987371ecd179521a692eecf9405",
+      "three_quarter": "f767b781c5d408d65df901d5da885cce05163bb221fedee3d308e01b91279f17",
+      "top": "7120d73a864fa7bfbedaf4bc5098db5582853b8c5c9a48e6fdfdb0159f14258a"
+    },
+    "issues": [
+      {
+        "id": "exposure-readability",
+        "severity": 2,
+        "evidence": "Window geometry and tabletop details are readable, but the room remains too dark for the intended afternoon.（窗洞與桌面可辨，但全室仍過暗。）",
+        "fix": "Correct packed albedo encoding and lift broad fill."
+      },
+      {
+        "id": "floor-striping",
+        "severity": 2,
+        "evidence": "Large alternating floor colors dominate the quiet room.（地板大色差條紋搶走主次。）",
+        "fix": "Use close-valued wood tones and subtler grain."
+      }
+    ]
+  },
+  {
+    "iteration": 1,
+    "visual_reviewed": true,
+    "change_signature": "albedo:srgb;floor:close-values;fill:readability",
+    "renders": {
+      "hero": "692be95824116b155515765be2027b251ea2de15f68de3f0ad54d5e8b70b9f8b",
+      "three_quarter": "bc3232f392f2f6a8b07424127ea446e01590596124b4610d0bdc3c181c87cb9b",
+      "top": "6785b9178aad229c63169ef1fe5ef8e6ccec2a4e6b48e313babccaf2ab3fa20a"
+    },
+    "issues": [
+      {
+        "id": "plaster-repetition",
+        "severity": 1,
+        "evidence": "Repeated wavy bands on the left plaster wall distract from the otherwise clearer workshop.（左側灰泥牆規律波紋干擾構圖。）",
+        "fix": "Remove the periodic albedo pattern and retain restrained rough plaster."
+      }
+    ]
+  },
+  {
+    "iteration": 2,
+    "visual_reviewed": true,
+    "change_signature": "plaster:remove-periodic-pattern",
+    "renders": {
+      "hero": "01d11545363a8a35f5a9b80eae7d015b0a0060f6467a064fc6967f61cdd3921e",
+      "three_quarter": "2ddbca68d1a427602f7dd514aa41f01d6149f1d92873124252bf68c41d4ec7ed",
+      "top": "2f988965ce3499966a546bc752b7e34d0f1f371372e310e4f36d1522c92f0fb1"
+    },
+    "issues": []
+  }
+]
