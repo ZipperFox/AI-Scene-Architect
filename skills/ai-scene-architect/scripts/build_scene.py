@@ -68,7 +68,20 @@ def layout_checks(plan, groups):
     names=list(groups)
     # Inter-object evaluated part bounds, not whole-frame bounds: openings stay open.
     # Bounds overlaps are candidates, not proof of surface penetration.
-    part_boxes={n:[bounds([o]) for o in groups[n]] for n in names}
+    kinds={a['id']:a['kind'] for a in plan['assets']}
+    part_boxes={}
+    for n in names:
+        if kinds[items[n]['asset']]=='cave_shell':
+            # A concave enclosure's whole AABB contains its empty room. Use
+            # individual face bounds for candidates instead of filling the void.
+            boxes_for_shell=[]
+            for obj in groups[n]:
+                for face in obj.data.polygons:
+                    points=[obj.matrix_world @ obj.data.vertices[i].co for i in face.vertices]
+                    boxes_for_shell.append([[min(v[j] for v in points) for j in range(3)],
+                                            [max(v[j] for v in points) for j in range(3)]])
+            part_boxes[n]=boxes_for_shell
+        else:part_boxes[n]=[bounds([obj]) for obj in groups[n]]
     for i,a in enumerate(names):
         for b in names[i+1:]:
             if items[a].get('support')==b or items[b].get('support')==a:
@@ -222,6 +235,13 @@ def main():
               'blend_sha256':digest(blend),'glb_sha256':digest(glb),'metrics':metrics,
               'layout':layout,'cameras':[c['id'] for c in plan['cameras']],
               'material_export':'PBR factors/emission portable; procedural bump stays Blender-only. Area/world lights are not supported in GLB; relight in target engine.'}
+    manifest['texture_means']={}
+    for spec in plan['materials']:
+        material=bpy.data.materials.get(spec['id'])
+        textures=[n.image for n in material.node_tree.nodes if n.type=='TEX_IMAGE' and n.image]
+        if textures:
+            values=list(textures[0].pixels)
+            manifest['texture_means'][spec['id']]=[sum(values[i::4])/(len(values)/4) for i in range(3)]
     (target/'build-manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
     print('ASA_BUILD_MANIFEST='+str(target/'build-manifest.json'))
 

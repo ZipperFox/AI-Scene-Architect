@@ -1,0 +1,10 @@
+test_new_meshes_closed_outward_uv_and_sized (__main__.DetailContracts.test_new_meshes_closed_outward_uv_and_sized) ... ok
+test_procedural_albedo_packed_with_srgb_encoding (__main__.DetailContracts.test_procedural_albedo_packed_with_srgb_encoding) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.209s
+
+OK
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:33:43)
+
+Blender quit

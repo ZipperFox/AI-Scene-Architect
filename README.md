@@ -2,9 +2,30 @@
 
 An open-source [Agent Skill](https://agentskills.io/) for AI-directed Blender scene creation, visual review, and controlled iteration.
 
-**Current status: agent-driven scene planning and procedural assembly (v0.2, draft).** An AI agent turns a text brief into validated scene data; reusable Blender builders assemble editable small scenes and GLB exports. The Python scripts do not contain a text-understanding model or a keyword-to-template scene selector. The v0.1 multiview/iteration foundation is retained.
+**Current status: v0.3 visual-quality validation (draft, mixed art results).** An AI agent researches and designs scenes; reusable Blender builders assemble editable .blend/GLB, then actual renders are reviewed with a bounded correction journal. Python does not contain a text-understanding model or keyword-to-template scene selector. The v0.1/v0.2/Reference Scout foundations remain.
 
-PR dependency chain: **PR #1 (visual feedback) → PR #2 (v0.2 assembly) → Reference Scout draft**. Review v0.2 against `feat/visual-review-guard`, and Scout against `feat/scene-planning-v02`. Both base PRs remain unmerged; this draft does not merge them or modify main.
+PR dependency chain: **PR #1 → PR #2 → PR #3 (Reference Scout) → v0.3 draft**. Review v0.3 against `feat/ai-reference-scout`. The base PRs remain unmerged; this draft does not merge them or modify main.
+
+## v0.3: visible changes, with a recorded failure
+
+The two Scout proposals were actually modeled and rendered in independent new
+runs. [The comparison report](evidence/v03/REPORT_ZH.md) includes all six final
+authored views, original-before/new-after boards, editable .blend/GLB and executed
+Windows Blender checks. Hero cameras, 768px resolution, 48 samples and AgX match
+the originals; the mine's secondary inspection camera changed and is labeled.
+
+- **Woodwork shop:** improved window light, long-grain workbench with vise/open
+  dog holes/plane, quieter plaster, timber flooring and unobstructed furniture.
+  AI visual assessment: **PASS_WITH_WARNINGS**, user acceptance remains open.
+- **Crystal mine:** connected rock shell and improved visibility, but broad
+  tapered cut edges, awkward rock/timber relationships and an over-warm final
+  atmosphere remain. AI visual assessment: **FAIL** for the complete art brief;
+  two corrections were used and the scene was stopped, not quietly reset.
+
+This validates real implementation and one observed visual improvement. It does
+not prove that Reference Scout alone caused the gain, or guarantees better art.
+Technical checks passed for both final exports; those results do not override
+the mine's unresolved visual and layout issues. Old v0.2 evidence is unchanged.
 
 ## AI Reference Scout (draft extension, stacked on PR #2)
 

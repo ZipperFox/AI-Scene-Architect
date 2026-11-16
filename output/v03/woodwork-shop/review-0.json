@@ -1,0 +1,24 @@
+{
+  "iteration": 0,
+  "visual_reviewed": true,
+  "change_signature": "initial-v03",
+  "renders": {
+    "hero": "e4583e0ead91d9ca126a1d0d8418bf085b5a8987371ecd179521a692eecf9405",
+    "three_quarter": "f767b781c5d408d65df901d5da885cce05163bb221fedee3d308e01b91279f17",
+    "top": "7120d73a864fa7bfbedaf4bc5098db5582853b8c5c9a48e6fdfdb0159f14258a"
+  },
+  "issues": [
+    {
+      "id": "exposure-readability",
+      "severity": 2,
+      "evidence": "Window geometry and tabletop details are readable, but the room remains too dark for the intended afternoon.（窗洞與桌面可辨，但全室仍過暗。）",
+      "fix": "Correct packed albedo encoding and lift broad fill."
+    },
+    {
+      "id": "floor-striping",
+      "severity": 2,
+      "evidence": "Large alternating floor colors dominate the quiet room.（地板大色差條紋搶走主次。）",
+      "fix": "Use close-valued wood tones and subtler grain."
+    }
+  ]
+}

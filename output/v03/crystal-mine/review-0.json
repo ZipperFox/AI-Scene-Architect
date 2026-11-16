@@ -1,0 +1,24 @@
+{
+  "iteration": 0,
+  "visual_reviewed": true,
+  "change_signature": "initial-v03",
+  "renders": {
+    "hero": "32e5815f41c900af91d7dad818ae3d4df6cf785f54450bf5c05d9383694bc47a",
+    "three_quarter": "c09f53c1d20b1fd3edf080375ab1ce6ef4315bcae6093fec85733862d285fb01",
+    "top": "0b785658424a1453d3e130eb7c472b3db74c46e162cdcc43fad69e1e3fa963e8"
+  },
+  "issues": [
+    {
+      "id": "crystal-occlusion",
+      "severity": 3,
+      "evidence": "Hero and top images hide the main crystals behind the right wall / inward shoulder.（主圖及俯視的主晶簇遭岩殼遮擋。）",
+      "fix": "Lower cutaway side shoulders and move the cluster into the visible inner chamber."
+    },
+    {
+      "id": "exposure-readability",
+      "severity": 2,
+      "evidence": "Dark floor and timber lose material separation in all three views.（三圖地面及木構偏暗，材質辨識不足。）",
+      "fix": "Raise broad entrance/fill illumination without adding decorative glow."
+    }
+  ]
+}

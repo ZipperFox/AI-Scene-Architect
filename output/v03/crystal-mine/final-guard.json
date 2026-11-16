@@ -1,0 +1,7 @@
+{
+  "iteration": 2,
+  "remaining_issues": 2,
+  "severity_total": 4,
+  "decision": "stop",
+  "reason": "revision_budget_reached"
+}

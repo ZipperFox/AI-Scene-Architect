@@ -1,0 +1,99 @@
+{
+  "commands": [
+    {
+      "stage": "build",
+      "command": [
+        "D:\\SteamLibrary\\steamapps\\common\\Blender\\blender.exe",
+        "--background",
+        "--factory-startup",
+        "--disable-autoexec",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "D:\\AI_work\\AI-Scene-Architect\\skills\\ai-scene-architect\\scripts\\build_scene.py",
+        "--",
+        "--plan",
+        "D:\\AI_work\\AI-Scene-Architect\\examples\\v03\\woodwork-shop\\scene_plan.json",
+        "--output",
+        "D:\\AI_work\\AI-Scene-Architect\\output\\v03\\woodwork-shop\\iteration-0-rendered",
+        "--revision",
+        "0"
+      ],
+      "exit_code": 0
+    },
+    {
+      "stage": "render",
+      "command": [
+        "D:\\SteamLibrary\\steamapps\\common\\Blender\\blender.exe",
+        "--background",
+        "--factory-startup",
+        "--disable-autoexec",
+        "D:\\AI_work\\AI-Scene-Architect\\output\\v03\\woodwork-shop\\iteration-0-rendered\\scene.blend",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "D:\\AI_work\\AI-Scene-Architect\\skills\\ai-scene-architect\\scripts\\render_previews.py",
+        "--",
+        "--output",
+        "D:\\AI_work\\AI-Scene-Architect\\output\\v03\\woodwork-shop\\iteration-0-rendered\\previews",
+        "--resolution",
+        "768",
+        "--samples",
+        "48",
+        "--engine",
+        "scene",
+        "--camera-names",
+        "shop_hero",
+        "shop_reverse",
+        "shop_overview"
+      ],
+      "exit_code": 0
+    },
+    {
+      "stage": "verify-blend",
+      "command": [
+        "D:\\SteamLibrary\\steamapps\\common\\Blender\\blender.exe",
+        "--background",
+        "--factory-startup",
+        "--disable-autoexec",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "D:\\AI_work\\AI-Scene-Architect\\skills\\ai-scene-architect\\scripts\\verify_scene.py",
+        "--",
+        "--manifest",
+        "D:\\AI_work\\AI-Scene-Architect\\output\\v03\\woodwork-shop\\iteration-0-rendered\\build-manifest.json",
+        "--mode",
+        "blend",
+        "--output",
+        "D:\\AI_work\\AI-Scene-Architect\\output\\v03\\woodwork-shop\\iteration-0-rendered\\verify-blend.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "stage": "verify-glb",
+      "command": [
+        "D:\\SteamLibrary\\steamapps\\common\\Blender\\blender.exe",
+        "--background",
+        "--factory-startup",
+        "--disable-autoexec",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "D:\\AI_work\\AI-Scene-Architect\\skills\\ai-scene-architect\\scripts\\verify_scene.py",
+        "--",
+        "--manifest",
+        "D:\\AI_work\\AI-Scene-Architect\\output\\v03\\woodwork-shop\\iteration-0-rendered\\build-manifest.json",
+        "--mode",
+        "glb",
+        "--output",
+        "D:\\AI_work\\AI-Scene-Architect\\output\\v03\\woodwork-shop\\iteration-0-rendered\\verify-glb.json",
+        "--render-output",
+        "D:\\AI_work\\AI-Scene-Architect\\output\\v03\\woodwork-shop\\iteration-0-rendered\\glb-previews"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "technical_pass": true,
+  "visual_review": "REQUIRED: open all images; do not infer quality from exit codes."
+}

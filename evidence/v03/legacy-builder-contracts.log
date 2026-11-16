@@ -1,0 +1,12 @@
+test_all_builder_variants_have_dimensions_uvs_and_outward_closed_meshes (__main__.BuilderContracts.test_all_builder_variants_have_dimensions_uvs_and_outward_closed_meshes) ... ok
+test_revision_three_and_existing_history_reset_are_rejected (__main__.BuilderContracts.test_revision_three_and_existing_history_reset_are_rejected) ... ok
+test_seed_is_repeatable_and_changes_natural_geometry (__main__.BuilderContracts.test_seed_is_repeatable_and_changes_natural_geometry) ... ok
+test_shared_asset_mesh_is_reused_but_objects_are_editable (__main__.BuilderContracts.test_shared_asset_mesh_is_reused_but_objects_are_editable) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.316s
+
+OK
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:33:43)
+
+Blender quit

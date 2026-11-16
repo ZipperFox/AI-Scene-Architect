@@ -1,0 +1,11 @@
+{
+  "iteration": 2,
+  "visual_reviewed": true,
+  "change_signature": "plaster:remove-periodic-pattern",
+  "renders": {
+    "hero": "01d11545363a8a35f5a9b80eae7d015b0a0060f6467a064fc6967f61cdd3921e",
+    "three_quarter": "2ddbca68d1a427602f7dd514aa41f01d6149f1d92873124252bf68c41d4ec7ed",
+    "top": "2f988965ce3499966a546bc752b7e34d0f1f371372e310e4f36d1522c92f0fb1"
+  },
+  "issues": []
+}

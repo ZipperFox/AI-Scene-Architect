@@ -42,7 +42,16 @@ def main():
             actual_color=list(shader.inputs['Base Color'].default_value)[:3]
             glow=shader.inputs['Emission Color'].default_value
             strength=shader.inputs['Emission Strength'].default_value
-            material_checks[spec['id']]=all(abs(actual_color[i]-spec['color'][i])<.002 for i in range(3)) and abs(shader.inputs['Roughness'].default_value-spec['roughness'])<.002 and abs(shader.inputs['Metallic'].default_value-spec['metallic'])<.002 and all(abs(glow[i]*strength-spec['color'][i]*spec['emission'])<.002 for i in range(3))
+            if spec.get('texture_style','none')!='none':
+                textures=[n.image for n in material.node_tree.nodes if n.type=='TEX_IMAGE' and n.image]
+                color_ok=False
+                if textures:
+                    image=textures[0];values=list(image.pixels)
+                    means=[sum(values[i::4])/(len(values)/4) for i in range(3)]
+                    expected_mean=manifest.get('texture_means',{}).get(spec['id'],spec['color'])
+                    color_ok=list(image.size)==[128,128] and all(abs(means[i]-expected_mean[i])<.025 for i in range(3))
+            else:color_ok=all(abs(actual_color[i]-spec['color'][i])<.002 for i in range(3))
+            material_checks[spec['id']]=color_ok and abs(shader.inputs['Roughness'].default_value-spec['roughness'])<.002 and abs(shader.inputs['Metallic'].default_value-spec['metallic'])<.002 and all(abs(glow[i]*strength-spec['color'][i]*spec['emission'])<.002 for i in range(3))
         else:material_checks[spec['id']]=False
     names_match=set(actual['meshes'])==set(expected['meshes'])
     deviations=[]

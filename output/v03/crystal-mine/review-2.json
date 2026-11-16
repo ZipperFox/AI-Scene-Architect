@@ -1,0 +1,24 @@
+{
+  "iteration": 2,
+  "visual_reviewed": true,
+  "change_signature": "albedo:srgb;cutaway:visibility;layout:focal",
+  "renders": {
+    "hero": "6f34cc0efeacc8f84b8ab522f38c5bb0deeb96b771a9128baccbf1088f41b178",
+    "three_quarter": "b5b0f582cb72a6b0e41ea09730f49a99b822327ef968ea0dc3cf2cd82ab656ce",
+    "top": "116c8027c2b0af36c2011eaccd4ac9a432c0aa68812e0dc800144e6fcf8d1af8"
+  },
+  "issues": [
+    {
+      "id": "cutaway-finish",
+      "severity": 2,
+      "evidence": "The continuous shell is improved, but low side shoulders still read as broad thin tapered strips and the timber/rock join is visually awkward.（岩殼連續性改善，但低側肩仍像寬薄切片，木岩接合不夠自然。）",
+      "fix": "Future authorized work should redesign the cut boundary rather than add noise."
+    },
+    {
+      "id": "mood-target",
+      "severity": 2,
+      "evidence": "The final hero is readable but too broadly warm-lit for the intended quiet mineral focal glow.（最終主圖可讀，但廣泛暖光削弱了靜默微光的目標。）",
+      "fix": "Rebalance after this task; the two-revision budget is exhausted."
+    }
+  ]
+}

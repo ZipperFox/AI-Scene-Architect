@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "all_prior_files_unchanged": true,
+    "crystal-mine_consecutive_two_revisions": true,
+    "crystal-mine_stopped": true,
+    "crystal-mine_bound_plan_valid": true,
+    "output\\v03\\crystal-mine\\iteration-0_source_hashes": true,
+    "output\\v03\\crystal-mine\\iteration-1_source_hashes": true,
+    "output\\v03\\crystal-mine\\iteration-2_source_hashes": true,
+    "crystal-mine_blend_fresh_import": true,
+    "crystal-mine_glb_fresh_import": true,
+    "crystal-mine_previews_hashes": true,
+    "crystal-mine_glb-previews_hashes": true,
+    "woodwork-shop_consecutive_two_revisions": true,
+    "woodwork-shop_stopped": true,
+    "woodwork-shop_bound_plan_valid": true,
+    "output\\v03\\woodwork-shop\\iteration-0-rendered_source_hashes": true,
+    "output\\v03\\woodwork-shop\\iteration-1_source_hashes": true,
+    "output\\v03\\woodwork-shop\\iteration-2_source_hashes": true,
+    "woodwork-shop_blend_fresh_import": true,
+    "woodwork-shop_glb_fresh_import": true,
+    "woodwork-shop_previews_hashes": true,
+    "woodwork-shop_glb-previews_hashes": true
+  },
+  "all_passed": true,
+  "preserved_files": 184,
+  "scope": "File integrity, journals, plan provenance and executed technical checks only; no beauty score."
+}

@@ -1,0 +1,12 @@
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:33:43)
+
+Blender quit
+Traceback (most recent call last):
+  File "D:\AI_work\AI-Scene-Architect\skills\ai-scene-architect\scripts\build_scene.py", line 230, in <module>
+    main()
+    ~~~~^^
+  File "D:\AI_work\AI-Scene-Architect\skills\ai-scene-architect\scripts\build_scene.py", line 211, in main
+    raise PlanError('Invalid or degenerate geometry; see builder')
+scene_plan.PlanError: Invalid or degenerate geometry; see builder
+
+Error: script failed, file: 'D:\AI_work\AI-Scene-Architect\skills\ai-scene-architect\scripts\build_scene.py', exiting.

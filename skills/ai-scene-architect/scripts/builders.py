@@ -99,6 +99,10 @@ class Parts:
             for face in o.data.polygons:
                 dominant=max(range(3),key=lambda i:abs(face.normal[i]))
                 axes=[i for i in range(3) if i!=dominant]
+                if self.asset['parameters'].get('craft_detail'):
+                    # Orient generated wood grain along each part's long axis.
+                    extents=[max(v.co[i] for v in o.data.vertices)-min(v.co[i] for v in o.data.vertices) for i in range(3)]
+                    axes.sort(key=lambda i:extents[i],reverse=True)
                 for loop_index in face.loop_indices:
                     point=o.data.vertices[o.data.loops[loop_index].vertex_index].co
                     uv.data[loop_index].uv=tuple(point[i]/dims[i]+(.5 if i<2 else 0) for i in axes)
@@ -257,7 +261,10 @@ def build_asset(asset, materials):
     p=Parts(asset,materials)
     d=asset['dimensions']
     kind=asset['kind']
-    if kind in ('ground','wall','beam','timber_frame'):
+    from builders_detail import BUILDERS, workbench, tool_rack
+    if kind in BUILDERS:
+        BUILDERS[kind](p,d)
+    elif kind in ('ground','wall','beam','timber_frame'):
         structure(p,d,kind)
     elif kind=='rock':
         p.rock('weathered_mass',(0,0,d[2]/2),d,asset['parameters'].get('seed',0),asset['parameters'].get('roughness',.18))
@@ -266,7 +273,9 @@ def build_asset(asset, materials):
     elif kind=='crystal':
         crystal(p,d)
     elif kind=='furniture':
-        furniture(p,d)
+        if asset['parameters'].get('craft_detail') and asset['parameters']['variant']=='table':workbench(p,d)
+        elif asset['parameters']['variant']=='tool_rack':tool_rack(p,d)
+        else:furniture(p,d)
     elif kind=='mechanism':
         (minecart if asset['parameters']['variant']=='minecart' else winch)(p,d)
     else:
@@ -287,6 +296,26 @@ def create_material(spec):
     bsdf.inputs['Metallic'].default_value=spec['metallic']
     bsdf.inputs['Emission Color'].default_value=color
     bsdf.inputs['Emission Strength'].default_value=spec['emission']
+    if spec.get('texture_style','none')!='none':
+        # Original procedural albedo, packed and exported as a normal PNG texture.
+        # Never uses a reference photo as a texture.
+        size=128;pixels=[]
+        for j in range(size):
+            for i in range(size):
+                u=i/size;v=j/size
+                if spec['texture_style']=='wood_grain':
+                    detail=.055*math.sin(v*180+2*math.sin(u*12))+.025*math.sin(v*450+u*7)
+                else:
+                    detail=.045*math.sin(u*20+v*9)*math.sin(v*15-u*5)+.025*math.sin(u*65+v*41)
+                linear=[max(0,min(1,c*(1+detail))) for c in spec['color']]
+                # PNG base color is sRGB-encoded; shader / glTF decode it back
+                # to the intended linear reflectance, avoiding crushed wood.
+                encoded=[12.92*c if c<=.0031308 else 1.055*c**(1/2.4)-.055 for c in linear]
+                pixels.extend(encoded+[1])
+        img=bpy.data.images.new(spec['id']+'_albedo',width=size,height=size,alpha=False)
+        img.pixels.foreach_set(pixels);img.file_format='PNG';img.pack()
+        tex=mat.node_tree.nodes.new('ShaderNodeTexImage');tex.image=img
+        mat.node_tree.links.new(tex.outputs['Color'],bsdf.inputs['Base Color'])
     if spec['variation']:
         nodes=mat.node_tree.nodes;links=mat.node_tree.links
         coords=nodes.new('ShaderNodeTexCoord')

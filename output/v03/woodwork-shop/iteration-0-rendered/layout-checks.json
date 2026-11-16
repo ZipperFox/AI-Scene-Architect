@@ -1,0 +1,182 @@
+{
+  "errors": [],
+  "warnings": [],
+  "contacts": [
+    {
+      "object": "rear",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "side",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "table",
+      "support": "floorboard_10",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "bench",
+      "support": "floorboard_6",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "storage_lower",
+      "support": "floorboard_4",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "storage_upper",
+      "support": "storage_lower",
+      "vertical_gap": -5.960464477539063e-08,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "hand_winch",
+      "support": "floorboard_7",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "spare_timber_0",
+      "support": "floorboard_11",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "spare_timber_1",
+      "support": "floorboard_11",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "rear_post_left",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "rear_post_right",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "floorboard_0",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "floorboard_1",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "floorboard_2",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "floorboard_3",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "floorboard_4",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "floorboard_5",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "floorboard_6",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "floorboard_7",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "floorboard_8",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "floorboard_9",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "floorboard_10",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "floorboard_11",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "floorboard_12",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    },
+    {
+      "object": "floorboard_13",
+      "support": "floor",
+      "vertical_gap": 0.0,
+      "xy_overlap": true,
+      "pass": true
+    }
+  ],
+  "method": "Evaluated part AABBs and sampled path discs; visual review remains required."
+}

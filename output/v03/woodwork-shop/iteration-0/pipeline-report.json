@@ -1,0 +1,27 @@
+{
+  "commands": [
+    {
+      "stage": "build",
+      "command": [
+        "D:\\SteamLibrary\\steamapps\\common\\Blender\\blender.exe",
+        "--background",
+        "--factory-startup",
+        "--disable-autoexec",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "D:\\AI_work\\AI-Scene-Architect\\skills\\ai-scene-architect\\scripts\\build_scene.py",
+        "--",
+        "--plan",
+        "D:\\AI_work\\AI-Scene-Architect\\examples\\v03\\woodwork-shop\\scene_plan.json",
+        "--output",
+        "D:\\AI_work\\AI-Scene-Architect\\output\\v03\\woodwork-shop\\iteration-0",
+        "--revision",
+        "0"
+      ],
+      "exit_code": 1
+    }
+  ],
+  "technical_pass": false,
+  "visual_review": "REQUIRED: open all images; do not infer quality from exit codes."
+}
